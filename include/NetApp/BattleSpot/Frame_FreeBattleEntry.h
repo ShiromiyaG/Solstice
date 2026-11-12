@@ -35,13 +35,13 @@ public:
     virtual void vf15();  // overrides  // slot 15, BattleSpot:000149E0; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, BattleSpot:000149E4; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf17();  // slot 17, BattleSpot:00004734
-    virtual void vf18(u32 a1, u32 a2);  // slot 18, BattleSpot:00004664; the parameters are a guess from its code (types too)
-    virtual void vf19();  // slot 19, BattleSpot:00004720
+    virtual void BossEventListener_vf2(u32 a1, u32 a2);  // overrides gflnet2::boss::BossEventListener's slot 2, through the base at +0x28 (its thunk BattleSpot:000156AC)  // slot 18, BattleSpot:00004664
+    virtual void BossEventListener_vf3();  // overrides gflnet2::boss::BossEventListener's slot 3, through the base at +0x28 (its thunk BattleSpot:00015768)  // slot 19, BattleSpot:00004720
     virtual bool vf20(u32 a1, u32 a2, u32 a3);  // slot 20, BattleSpot:000042B0; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf21();  // slot 21, BattleSpot:00004658
-    virtual void vf22(u32 a1, u32 a2);  // slot 22, BattleSpot:000046D8; the parameters are a guess from its code (types too)
-    virtual void vf23(u32 a1);  // slot 23, BattleSpot:00004250; the parameters are a guess from its code (types too)
-    virtual void vf24(u32 a1, u32 a2);  // slot 24, BattleSpot:00004610; the parameters are a guess from its code (types too)
+    virtual void BossEventListener_vf5(u32 a1, u32 a2, u32 a3);  // overrides gflnet2::boss::BossEventListener's slot 5, through the base at +0x28 (its thunk BattleSpot:000156A0)  // slot 21, BattleSpot:00004658
+    virtual void BossEventListener_vf6(u32 a1, u32 a2);  // overrides gflnet2::boss::BossEventListener's slot 6, through the base at +0x28 (its thunk BattleSpot:00015720)  // slot 22, BattleSpot:000046D8
+    virtual void BossEventListener_vf7(u32 a1);  // overrides gflnet2::boss::BossEventListener's slot 7, through the base at +0x28 (its thunk BattleSpot:00015610)  // slot 23, BattleSpot:00004250
+    virtual void BossEventListener_vf8(u32 a1, u32 a2);  // overrides gflnet2::boss::BossEventListener's slot 8, through the base at +0x28 (its thunk BattleSpot:00015658)  // slot 24, BattleSpot:00004610
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_30;  // +0x30, a guess: a pointer, from 2 functions

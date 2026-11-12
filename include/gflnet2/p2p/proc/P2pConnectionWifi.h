@@ -24,13 +24,13 @@ public:
     virtual void DrawFunc(::gfl2::proc::Manager *pManager, ::gfl2::gfx::CtrDisplayNo displayNo);  // slot 5, code.bin:00363D0C; as gfl2::proc::BaseProcess declares it
     virtual ::gfl2::proc::Result EndFunc(::gfl2::proc::Manager *pManager);  // slot 6, code.bin:00418F54; as gfl2::proc::BaseProcess declares it
     virtual void vf7();  // slot 7, code.bin:004173A8
-    virtual void vf8();  // slot 8, code.bin:00418ED0
+    virtual void NexMatchmakeListener_vf0();  // overrides gflnet2::nex::NexMatchmakeListener's slot 0, through the base at +0x2c (its thunk code.bin:004D03D0)  // slot 8, code.bin:00418ED0
     virtual void vf9(u32 a1);  // slot 9, code.bin:00418F08; the parameters are a guess from its code (types too)
-    virtual void vf10();  // slot 10, code.bin:00418EA0
-    virtual void vf11();  // slot 11, code.bin:00418F3C
-    virtual void vf12(u32 a1, u32 a2);  // slot 12, code.bin:00418DE4; the parameters are a guess from its code (types too)
-    virtual void vf13();  // slot 13, code.bin:00418F48
-    virtual void vf14();  // slot 14, code.bin:00413C18
+    virtual void NexMatchmakeListener_vf2();  // overrides gflnet2::nex::NexMatchmakeListener's slot 2, through the base at +0x2c (its thunk code.bin:004D0398)  // slot 10, code.bin:00418EA0
+    virtual void NexMatchmakeListener_vf4();  // overrides gflnet2::nex::NexMatchmakeListener's slot 4, through the base at +0x2c (its thunk code.bin:004D043C)  // slot 11, code.bin:00418F3C
+    virtual void NexMatchmakeListener_vf8();  // overrides gflnet2::nex::NexMatchmakeListener's slot 8, through the base at +0x2c (its thunk code.bin:004D02DC)  // slot 12, code.bin:00418DE4
+    virtual void NexMatchmakeListener_vf9();  // overrides gflnet2::nex::NexMatchmakeListener's slot 9, through the base at +0x2c (its thunk code.bin:004D0448)  // slot 13, code.bin:00418F48
+    virtual void NexMatchmakeListener_vf5(u32 a1);  // overrides gflnet2::nex::NexMatchmakeListener's slot 5, through the base at +0x2c (its thunk code.bin:004D03C8)  // slot 14, code.bin:00413C18
 
     // data members, from how the class's functions use this (tools/fields.py)
     u32 field_30;  // +0x30, a guess: from 1 function

@@ -125,9 +125,9 @@ public:
     BoxResortState();  // a constructor, Box:0000FD4C: it reads nothing but this (ctors.csv)
     virtual ~BoxResortState();
     virtual void vf2();  // overrides  // slot 2, Box:0000F4E4
-    virtual void vf3();  // slot 3, Box:0000F470
+    virtual s32 InitFunc();  // overrides applib::frame::CellSuper's slot 2, through the base at +0x3c (its thunk Box:00027FE4)  // slot 3, Box:0000F470
     virtual void vf4();  // slot 4, Box:0000E550
-    virtual void vf5();  // slot 5, Box:0000F468
+    virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides applib::frame::CellSuper's slot 4, through the base at +0x3c (its thunk Box:00027FDC)  // slot 5, Box:0000F468
     virtual void vf6();  // slot 6, Box:0000F40C
 
     // data members, from how the class's functions use this (tools/fields.py)

@@ -22,13 +22,13 @@ public:
     virtual void RequestSequenceBase_vf2();  // overrides  // slot 2, code.bin:003DEEE8
     virtual bool RequestSequenceBase_vf3();  // overrides  // slot 3, code.bin:003DE040; the return type is a guess from its code
     virtual void RequestSequenceBase_vf4();  // overrides  // slot 4, code.bin:003DE09C
-    virtual void vf5(u32 a1, u32 a2, u32 a3);  // slot 5, code.bin:003DE7C4; the parameters are a guess from its code (types too)
-    virtual void vf6(u32 a1);  // slot 6, code.bin:003DE8E4; the parameters are a guess from its code (types too)
-    virtual void vf7(u32 a1, u32 a2);  // slot 7, code.bin:003DE74C; the parameters are a guess from its code (types too)
+    virtual void NexDataStoreClientListener_vf0();  // overrides gflnet2::nex::NexDataStoreClientListener's slot 0, through the base at +0x18 (its thunk code.bin:004CED48)  // slot 5, code.bin:003DE7C4
+    virtual void NexDataStoreClientListener_vf11();  // overrides gflnet2::nex::NexDataStoreClientListener's slot 11, through the base at +0x18 (its thunk code.bin:004CEE5C)  // slot 6, code.bin:003DE8E4
+    virtual void PokemonValidationListener_vf2(u32 a1, u32 a2);  // overrides NetLib::Validation::PokemonValidationListener's slot 2, through the base at +0x1c (its thunk code.bin:004CF5B0)  // slot 7, code.bin:003DE74C
     virtual void PokemonValidationListener_vf0(u32 a1, u32 a2, u32 a3);  // overrides NetLib::Validation::PokemonValidationListener's slot 0, through the base at +0x1c (its thunk code.bin:004CF640)  // slot 8, code.bin:003DE794
-    virtual void vf9(u32 a1);  // slot 9, code.bin:003DE704; the parameters are a guess from its code (types too)
-    virtual void vf10(u32 a1, u32 a2);  // slot 10, code.bin:003DE6BC; the parameters are a guess from its code (types too)
-    virtual void vf11();  // slot 11, code.bin:003DE8D8
+    virtual void PokemonValidationListener_vf1(u32 a1);  // overrides NetLib::Validation::PokemonValidationListener's slot 1, through the base at +0x1c (its thunk code.bin:004CF5F8)  // slot 9, code.bin:003DE704
+    virtual void NexDataStoreClientListener_vf12(u32 a1, u32 a2);  // overrides gflnet2::nex::NexDataStoreClientListener's slot 12, through the base at +0x18 (its thunk code.bin:004CED00)  // slot 10, code.bin:003DE6BC
+    virtual void PokemonValidationListener_vf3();  // overrides NetLib::Validation::PokemonValidationListener's slot 3, through the base at +0x1c (its thunk code.bin:004CF674)  // slot 11, code.bin:003DE8D8
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_20;  // +0x20, a guess: a pointer, from 3 functions

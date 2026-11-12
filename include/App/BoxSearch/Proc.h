@@ -20,8 +20,8 @@ public:
     virtual void AppFrameListener_vf0(u32 a1);  // overrides  // slot 0, BoxSearch:00003E0C; the parameters are a guess from its code (types too)
     virtual ~Proc();
     virtual bool vf3();  // slot 3, BoxSearch:00004CB8; the return type is a guess from its code
-    virtual bool vf4();  // slot 4, BoxSearch:00003DE8; the return type is a guess from its code
-    virtual void vf5(u32 a1, u32 a2);  // slot 5, BoxSearch:00004C80; the parameters are a guess from its code (types too)
+    virtual ::gfl2::proc::Result UpdateFunc(::gfl2::proc::Manager *pManager);  // overrides GameSys::GameProc's slot 3, through the base at +0x4 (its thunk BoxSearch:00006E0C)  // slot 4, BoxSearch:00003DE8
+    virtual void DrawFunc(::gfl2::proc::Manager *pManager, ::gfl2::gfx::CtrDisplayNo displayNo);  // overrides GameSys::GameProc's slot 5, through the base at +0x4 (its thunk BoxSearch:00006EE0)  // slot 5, BoxSearch:00004C80
     virtual bool vf6();  // slot 6, BoxSearch:00003E20; the return type is a guess from its code
     virtual bool vf7();  // slot 7, BoxSearch:00003E28; the return type is a guess from its code
 

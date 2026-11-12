@@ -20,17 +20,17 @@ public:
 
     virtual void vf0(u32 a1);  // slot 0, code.bin:003EDB14; the parameters are a guess from its code (types too)
     virtual ~WifiConnectRunner();
-    virtual void vf3();  // slot 3, code.bin:003EDAF8
-    virtual void vf4(u32 a1, u32 a2);  // slot 4, code.bin:003EDAC0; the parameters are a guess from its code (types too)
-    virtual void vf5();  // slot 5, code.bin:003EDB80
-    virtual void vf6(u32 a1, u32 a2);  // slot 6, code.bin:003EDB04; the parameters are a guess from its code (types too)
+    virtual void NexGameServerListener_vf0();  // overrides gflnet2::nex::NexGameServerListener's slot 0, through the base at +0x4 (its thunk code.bin:004D0E34)  // slot 3, code.bin:003EDAF8
+    virtual void NexGameServerListener_vf1(u32 a1, u32 a2);  // overrides gflnet2::nex::NexGameServerListener's slot 1, through the base at +0x4 (its thunk code.bin:004D0E24)  // slot 4, code.bin:003EDAC0
+    virtual void NexGameServerListener_vf3();  // overrides gflnet2::nex::NexGameServerListener's slot 3, through the base at +0x4 (its thunk code.bin:004D0E50)  // slot 5, code.bin:003EDB80
+    virtual void NexGameServerListener_vf4(u32 a1, u32 a2);  // overrides gflnet2::nex::NexGameServerListener's slot 4, through the base at +0x4 (its thunk code.bin:004D0E40)  // slot 6, code.bin:003EDB04
     virtual void vf7(u32 a1, u32 a2, u32 a3);  // slot 7, code.bin:003EDB9C; the parameters are a guess from its code (types too)
-    virtual void vf8(u32 a1, u32 a2);  // slot 8, code.bin:003EDB8C; the parameters are a guess from its code (types too)
+    virtual void NexGameServerListener_vf7(u32 a1, u32 a2);  // overrides gflnet2::nex::NexGameServerListener's slot 7, through the base at +0x4 (its thunk code.bin:004D0E5C)  // slot 8, code.bin:003EDB8C
     virtual void vf9();  // slot 9, code.bin:003EDA64
     virtual void vf10(u32 a1, u32 a2);  // slot 10, code.bin:003EDA34; the parameters are a guess from its code (types too)
     virtual void vf11();  // slot 11, code.bin:003EDAD0
     virtual void vf12();  // slot 12, code.bin:003EDA8C
-    virtual void vf13();  // slot 13, code.bin:003EDAB4
+    virtual void NexGameServerListener_vf9();  // overrides gflnet2::nex::NexGameServerListener's slot 9, through the base at +0x4 (its thunk code.bin:004D0E18)  // slot 13, code.bin:003EDAB4
 
     // member functions the game names. static or not is not in a name, nor is the return type
     // (void until config/<version>/returns.csv has it)

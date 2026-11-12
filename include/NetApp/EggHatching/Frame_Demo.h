@@ -41,7 +41,7 @@ public:
     virtual void vf16();  // overrides  // slot 16, EggHatching:000014CC; as NetAppLib::System::NetAppFrameBase declares it
     virtual void SequenceCallBack_vf2(u32 a1, u32 a2);  // overrides DemoLib::Sequence::SequenceCallBack's slot 2, through the base at +0x24 (its thunk EggHatching:00001884)  // slot 17, EggHatching:00000500
     virtual void vf18();  // slot 18, EggHatching:000005DC
-    virtual void vf19();  // slot 19, EggHatching:00000634
+    virtual void IEventHandler_vf3();  // overrides App::AppDemo::AppDemoUtility::IEventHandler's slot 3, through the base at +0x28 (its thunk EggHatching:000019CC)  // slot 19, EggHatching:00000634
     virtual void vf20(u32 a1);  // slot 20, EggHatching:00000590; the parameters are a guess from its code (types too)
 
     // data members, from how the class's functions use this (tools/fields.py)

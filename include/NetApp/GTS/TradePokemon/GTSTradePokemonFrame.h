@@ -26,13 +26,13 @@ public:
     virtual void vf14();  // overrides  // slot 14, GTS:00003D54; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf17();  // slot 17, GTS:00003E04
     virtual void GTSTradePokemonVerifyResponseListener_vf0();  // overrides NetApp::GTS::RequestSequence::GTSTradePokemonVerifyResponseListener's slot 0, through the base at +0x34 (its thunk GTS:0001AD54)  // slot 18, GTS:00012790
-    virtual void vf19();  // slot 19, GTS:00003E60
+    virtual void GTSTradePokemonVerifyResponseListener_vf1();  // overrides NetApp::GTS::RequestSequence::GTSTradePokemonVerifyResponseListener's slot 1, through the base at +0x34 (its thunk GTS:0001ACE0)  // slot 19, GTS:00003E60
     virtual void vf20();  // slot 20, GTS:00003ED4
-    virtual void vf21();  // slot 21, GTS:00003F4C
+    virtual void GTSTradePokemonConfirmResponseListener_vf0();  // overrides NetApp::GTS::RequestSequence::GTSTradePokemonConfirmResponseListener's slot 0, through the base at +0x38 (its thunk GTS:0001B134)  // slot 21, GTS:00003F4C
     virtual void vf22();  // slot 22, GTS:00003EF4
     virtual void vf23();  // slot 23, GTS:00003EE4
-    virtual void vf24();  // slot 24, GTS:00003E54
-    virtual void vf25();  // slot 25, GTS:00003E48
+    virtual void GTSTradePokemonResponseListener_vf0();  // overrides NetApp::GTS::RequestSequence::GTSTradePokemonResponseListener's slot 0, through the base at +0x3c (its thunk GTS:0001B1F0)  // slot 24, GTS:00003E54
+    virtual void GTSTradePokemonResponseListener_vf1();  // overrides NetApp::GTS::RequestSequence::GTSTradePokemonResponseListener's slot 1, through the base at +0x3c (its thunk GTS:0001B1E4)  // slot 25, GTS:00003E48
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_40;  // +0x40, a guess: a pointer, from 8 functions

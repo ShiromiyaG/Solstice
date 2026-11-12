@@ -31,7 +31,7 @@ public:
     virtual void vf15();  // overrides  // slot 15, QuickMatch:00003438; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, QuickMatch:0000343C; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf17();  // slot 17, QuickMatch:000023E8
-    virtual void vf18();  // slot 18, QuickMatch:00002408
+    virtual void QuickMatchDrawListener_vf0();  // overrides App::FieldMenu::QuickMatchDrawListener's slot 0, through the base at +0x24 (its thunk QuickMatch:000035B4)  // slot 18, QuickMatch:00002408
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_28;  // +0x28, a guess: a pointer, from 6 functions

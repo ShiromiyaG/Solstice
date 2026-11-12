@@ -46,7 +46,7 @@ public:
     virtual void IRecvListener_vf3();  // overrides NetApp::Gift::DeliveryUtil::IRecvListener's slot 3, through the base at +0x24 (its thunk MysteryGift:0000F4B8)  // slot 23, MysteryGift:00002490
     virtual void vf24();  // slot 24, MysteryGift:0000248C
     virtual bool IValueProvider_vf0();  // overrides NetApp::Gift::GiftMessageMenu::IValueProvider's slot 0, through the base at +0x34 (its thunk MysteryGift:00010468)  // slot 25, MysteryGift:0000247C
-    virtual u32 vf26();  // slot 26, MysteryGift:00002484; the return type is a guess from its code
+    virtual u32 IValueProvider_vf1();  // overrides NetApp::Gift::GiftMessageMenu::IValueProvider's slot 1, through the base at +0x34 (its thunk MysteryGift:00010470)  // slot 26, MysteryGift:00002484
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_38;  // +0x38, a guess: a pointer, from 4 functions

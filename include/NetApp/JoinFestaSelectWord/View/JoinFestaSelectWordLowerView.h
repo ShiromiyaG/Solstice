@@ -42,13 +42,13 @@ public:
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
     virtual void Create2DOneLayout(::NetAppLib::System::ApplicationWorkBase*, int, unsigned int, unsigned int, ::app::util::G2DUtil::SETUP_DISPLAY_TYPE, ::NetAppLib::Message::MessageUtility*, unsigned int);  // overrides  // slot 21, imported; as NetAppLib::System::NetApplicationViewBase declares it
-    virtual bool vf22(u32 a1);  // slot 22, JoinFestaSelectWord:00000BD0; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf23(u32 a1);  // slot 23, JoinFestaSelectWord:000007F0; the parameters are a guess from its code (types too)
+    virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0xa0 (its thunk JoinFestaSelectWord:000029D0)  // slot 22, JoinFestaSelectWord:00000BD0
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0xa0 (its thunk JoinFestaSelectWord:00002974)  // slot 23, JoinFestaSelectWord:000007F0
     virtual void vf24();  // slot 24, JoinFestaSelectWord:00000D44
     virtual void vf25();  // slot 25, JoinFestaSelectWord:00000CD0
-    virtual void vf26(u32 a1, u32 a2, u32 a3);  // slot 26, JoinFestaSelectWord:00000CD4; the parameters are a guess from its code (types too)
+    virtual void CallBack_vf2(u32 a1, u32 a2, u32 a3);  // overrides app::tool::PaneList::CallBack's slot 2, through the base at +0xa4 (its thunk JoinFestaSelectWord:00003130)  // slot 26, JoinFestaSelectWord:00000CD4
     virtual void vf27();  // slot 27, JoinFestaSelectWord:00000D48
-    virtual void vf28(u32 a1);  // slot 28, JoinFestaSelectWord:00000D4C; the parameters are a guess from its code (types too)
+    virtual void Listener_vf0(u32 a1);  // overrides app::tool::PaneListView::Listener's slot 0, through the base at +0xa8 (its thunk JoinFestaSelectWord:000031A8)  // slot 28, JoinFestaSelectWord:00000D4C
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_AC;  // +0xac, a guess: a pointer, from 4 functions

@@ -24,8 +24,8 @@ public:
     virtual void BossEventListener_vf7(u32 a1);  // overrides  // slot 7, RegulationSelect:000008C0; the parameters are a guess from its code (types too)
     virtual void BossEventListener_vf8(u32 a1, u32 a2);  // overrides  // slot 8, RegulationSelect:00000B20; the parameters are a guess from its code (types too)
     virtual void vf9();  // slot 9, RegulationSelect:00000CA4
-    virtual void vf10();  // slot 10, RegulationSelect:00000914
-    virtual void vf11();  // slot 11, RegulationSelect:00000B14
+    virtual bool RequestSequenceBase_vf3();  // overrides gflnet2::ServerClient::RequestSequenceBase's slot 3, through the base at +0x8 (its thunk RegulationSelect:00007EB4)  // slot 10, RegulationSelect:00000914
+    virtual void RequestSequenceBase_vf4();  // overrides gflnet2::ServerClient::RequestSequenceBase's slot 4, through the base at +0x8 (its thunk RegulationSelect:00007FA0)  // slot 11, RegulationSelect:00000B14
 
     // data members, from how the class's functions use this (tools/fields.py)
     u32 field_20;  // +0x20, a guess: from 2 functions

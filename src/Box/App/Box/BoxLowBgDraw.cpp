@@ -15,3 +15,10 @@ void App::Box::BoxLowBgDraw::BoxDrawPartsListener_vf0(u32 a1) {
     }
 }
 
+// overrides App::Box::BoxDrawPartsListener's slot 1, through the base at +0x84 (its thunk Box:000277DC)
+//! Box:0x000277DC _ZThn132_N3App3Box12BoxLowBgDraw24BoxDrawPartsListener_vf1
+void App::Box::BoxLowBgDraw::BoxDrawPartsListener_vf1(u32 a1) {
+    ::gfl2::lyt::LytWk *layout_work = GetLayoutWork(0);
+    layout_work->GetPartsPane(a1 + 0x100);
+}
+

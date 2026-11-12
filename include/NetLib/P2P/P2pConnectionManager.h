@@ -33,7 +33,7 @@ public:
     virtual void vf8();  // slot 8, code.bin:003EA2A8
     virtual ~P2pConnectionManager();
     virtual bool vf11(u32 a1);  // slot 11, code.bin:003EA324; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf12();  // slot 12, code.bin:003EA29C
+    virtual void NexRatingClientListener_vf1();  // overrides NetLib::P2P::NexRatingClientListener's slot 1, through the base at +0x4 (its thunk code.bin:004D0CC4)  // slot 12, code.bin:003EA29C
     virtual void vf13(u32 a1, u32 a2);  // slot 13, code.bin:003EA164; the parameters are a guess from its code (types too)
     virtual void vf14();  // slot 14, code.bin:003EA280
     virtual void vf15();  // slot 15, code.bin:003E9CE0

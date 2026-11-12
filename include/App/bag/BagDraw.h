@@ -29,17 +29,17 @@ public:
     virtual void vf1();  // slot 1, Bag:00005530
     virtual void vf2_BagDraw();  // slot 2, Bag:00005518
     virtual void vf3();  // slot 3, Bag:000052F4
-    virtual void vf4(u32 a1);  // slot 4, Bag:00005160; the parameters are a guess from its code (types too)
+    virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides app::ui::UIView's slot 14, through the base at +0x4 (its thunk Bag:00015180)  // slot 4, Bag:00005160
     virtual void vf5(u32 a1);  // slot 5, Bag:00004FC8; the parameters are a guess from its code (types too)
     virtual void vf6(u32 a1);  // slot 6, Bag:00004FB0; the parameters are a guess from its code (types too)
     virtual void vf7(u32 a1, u32 a2, u32 a3);  // slot 7, Bag:000047A8; the parameters are a guess from its code (types too)
     virtual void vf8();  // slot 8, Bag:000044D0
     virtual void vf9(u32 a1, u32 a2, u32 a3);  // slot 9, Bag:000044D4; the parameters are a guess from its code (types too)
     virtual void vf10(u32 a1, u32 a2, u32 a3);  // slot 10, Bag:00004884; the parameters are a guess from its code (types too)
-    virtual void vf11(u32 a1);  // slot 11, Bag:00002DC4; the parameters are a guess from its code (types too)
+    virtual void BagPokemonListener_vf0(u32 a1);  // overrides app::bag::BagPokemonListener's slot 0, through the base at +0x94 (its thunk Bag:00015068)  // slot 11, Bag:00002DC4
     virtual void vf12(u32 a1, u32 a2, u32 a3);  // slot 12, Bag:000036EC; the parameters are a guess from its code (types too)
-    virtual void vf13(u32 a1);  // slot 13, Bag:00002B84; the parameters are a guess from its code (types too)
-    virtual bool vf14(u32 a1);  // slot 14, Bag:000041B0; the parameters are a guess from its code (types too); the return type is a guess from its code
+    virtual void SelectMenu(unsigned int);  // overrides app::tool::MenuWindowListener's slot 0, through the base at +0x88 (its thunk Bag:00014D08)  // slot 13, Bag:00002B84
+    virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x84 (its thunk Bag:00014CB0)  // slot 14, Bag:000041B0
     virtual bool vf15(u32 a1, u32 a2);  // slot 15, Bag:00002C6C; the parameters are a guess from its code (types too); the return type is a guess from its code
 
     // data members, from how the class's functions use this (tools/fields.py)

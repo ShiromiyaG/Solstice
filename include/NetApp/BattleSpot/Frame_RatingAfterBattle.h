@@ -31,13 +31,13 @@ public:
     virtual void vf14();  // overrides  // slot 14, BattleSpot:00006ACC; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf15();  // overrides  // slot 15, BattleSpot:000149E0; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, BattleSpot:000149E4; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17(u32 a1, u32 a2);  // slot 17, BattleSpot:00006C94; the parameters are a guess from its code (types too)
-    virtual void vf18();  // slot 18, BattleSpot:00006D2C
+    virtual void IEventHandler_vf2();  // overrides NetApp::BattleSpot::LowerView_Selection::IEventHandler's slot 2, through the base at +0x28 (its thunk BattleSpot:000157C8)  // slot 17, BattleSpot:00006C94
+    virtual void BattleVideoResponseListener_vf0(u32 a1);  // overrides NetApp::BattleVideo::BattleVideoResponseListener's slot 0, through the base at +0x24 (its thunk BattleSpot:0001532C)  // slot 18, BattleSpot:00006D2C
     virtual void vf19();  // slot 19, BattleSpot:00006AB8
     virtual void vf20();  // slot 20, BattleSpot:00006C64
     virtual void vf21();  // slot 21, BattleSpot:00006C88
-    virtual void vf22();  // slot 22, BattleSpot:00006C74
-    virtual void vf23();  // slot 23, BattleSpot:00006C68
+    virtual void BattleVideoResponseListener_vf4();  // overrides NetApp::BattleVideo::BattleVideoResponseListener's slot 4, through the base at +0x24 (its thunk BattleSpot:0001530C)  // slot 22, BattleSpot:00006C74
+    virtual void BattleVideoResponseListener_vf5();  // overrides NetApp::BattleVideo::BattleVideoResponseListener's slot 5, through the base at +0x24 (its thunk BattleSpot:00015300)  // slot 23, BattleSpot:00006C68
     virtual void vf24();  // slot 24, BattleSpot:00006C80
     virtual void vf25();  // slot 25, BattleSpot:00006C84
     virtual void vf26();  // slot 26, BattleSpot:00006C8C

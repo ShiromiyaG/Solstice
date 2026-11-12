@@ -41,8 +41,8 @@ public:
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
     virtual bool vf21(u32 a1);  // slot 21, FinderMenu:00002C58; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual bool vf22(u32 a1, u32 a2);  // slot 22, FinderMenu:000028EC; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf23(u32 a1);  // slot 23, FinderMenu:00002890; the parameters are a guess from its code (types too)
-    virtual void vf24(u32 a1);  // slot 24, FinderMenu:00002BFC; the parameters are a guess from its code (types too)
+    virtual void SelectMenu(unsigned int);  // overrides app::tool::MenuWindowListener's slot 0, through the base at +0x84 (its thunk FinderMenu:000069AC)  // slot 23, FinderMenu:00002890
+    virtual void MessageWindowListener_vf1();  // overrides App::FinderMenu::MessageWindowListener's slot 1, through the base at +0x88 (its thunk FinderMenu:00006AC4)  // slot 24, FinderMenu:00002BFC
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_8C[0x4];  // +0x8c: nothing seen to use it

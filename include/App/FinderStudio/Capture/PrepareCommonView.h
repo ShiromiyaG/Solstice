@@ -32,11 +32,11 @@ public:
     virtual void vf28();  // overrides  // slot 28, FinderStudioCapture:0000E92C
     virtual void vf30();  // slot 30, FinderStudioCapture:0000EC1C
     virtual bool vf31(u32 a1);  // slot 31, FinderStudioCapture:0000EAF8; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf32();  // slot 32, FinderStudioCapture:0000EB58
-    virtual void vf33();  // slot 33, FinderStudioCapture:0000EBA0
-    virtual void vf34();  // slot 34, FinderStudioCapture:0000EBE8
-    virtual void vf35();  // slot 35, FinderStudioCapture:0000EC04
-    virtual void vf36();  // slot 36, FinderStudioCapture:0000ED78
+    virtual void PrepareCommonViewListener_vf0();  // overrides App::FinderStudio::Capture::PrepareCommonViewListener's slot 0, through the base at +0xc4 (its thunk FinderStudioCapture:00015390)  // slot 32, FinderStudioCapture:0000EB58
+    virtual void PrepareCommonViewListener_vf1();  // overrides App::FinderStudio::Capture::PrepareCommonViewListener's slot 1, through the base at +0xc4 (its thunk FinderStudioCapture:000153D8)  // slot 33, FinderStudioCapture:0000EBA0
+    virtual void PrepareCommonViewListener_vf2();  // overrides App::FinderStudio::Capture::PrepareCommonViewListener's slot 2, through the base at +0xc4 (its thunk FinderStudioCapture:00015420)  // slot 34, FinderStudioCapture:0000EBE8
+    virtual void PrepareCommonViewListener_vf3();  // overrides App::FinderStudio::Capture::PrepareCommonViewListener's slot 3, through the base at +0xc4 (its thunk FinderStudioCapture:0001543C)  // slot 35, FinderStudioCapture:0000EC04
+    virtual void InfoWindowBookTypeListener_vf2();  // overrides app::tool::InfoWindowBookTypeListener's slot 2, through the base at +0xc8 (its thunk FinderStudioCapture:00015640)  // slot 36, FinderStudioCapture:0000ED78
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_CC[0x4];  // +0xcc: nothing seen to use it

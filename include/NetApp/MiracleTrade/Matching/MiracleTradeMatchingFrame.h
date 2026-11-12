@@ -25,14 +25,14 @@ public:
     virtual void vf13();  // overrides  // slot 13, MiracleTrade:00002FA8; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, MiracleTrade:00002FC0; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void MiracleTradeVerifyResponseListener_vf0();  // overrides NetApp::MiracleTrade::RequestSequence::MiracleTradeVerifyResponseListener's slot 0, through the base at +0x34 (its thunk MiracleTrade:000045B8)  // slot 17, MiracleTrade:00003B88
-    virtual void vf18();  // slot 18, MiracleTrade:00003C00
+    virtual void MiracleTradeVerifyResponseListener_vf1();  // overrides NetApp::MiracleTrade::RequestSequence::MiracleTradeVerifyResponseListener's slot 1, through the base at +0x34 (its thunk MiracleTrade:000045A8)  // slot 18, MiracleTrade:00003C00
     virtual void vf19();  // slot 19, MiracleTrade:00003038
-    virtual void vf20();  // slot 20, MiracleTrade:00003058
+    virtual void MiracleTradeMatchingResponseListener_vf0();  // overrides NetApp::MiracleTrade::RequestSequence::MiracleTradeMatchingResponseListener's slot 0, through the base at +0x38 (its thunk MiracleTrade:000045E8)  // slot 20, MiracleTrade:00003058
     virtual void vf21();  // slot 21, MiracleTrade:00003048
-    virtual void vf22();  // slot 22, MiracleTrade:000030A0
+    virtual void MiracleTradeMatchingResponseListener_vf2();  // overrides NetApp::MiracleTrade::RequestSequence::MiracleTradeMatchingResponseListener's slot 2, through the base at +0x38 (its thunk MiracleTrade:00004630)  // slot 22, MiracleTrade:000030A0
     virtual void MiracleTradeMatchingResponseListener_vf3(u32 a1);  // overrides NetApp::MiracleTrade::RequestSequence::MiracleTradeMatchingResponseListener's slot 3, through the base at +0x38 (its thunk MiracleTrade:00004650)  // slot 23, MiracleTrade:000030C0
-    virtual void vf24();  // slot 24, MiracleTrade:00003758
-    virtual void vf25();  // slot 25, MiracleTrade:000030B0
+    virtual void MiracleTradeMatchingResponseListener_vf4();  // overrides NetApp::MiracleTrade::RequestSequence::MiracleTradeMatchingResponseListener's slot 4, through the base at +0x38 (its thunk MiracleTrade:0000466C)  // slot 24, MiracleTrade:00003758
+    virtual void MiracleTradeMatchingResponseListener_vf5();  // overrides NetApp::MiracleTrade::RequestSequence::MiracleTradeMatchingResponseListener's slot 5, through the base at +0x38 (its thunk MiracleTrade:00004640)  // slot 25, MiracleTrade:000030B0
     virtual void vf26();  // slot 26, MiracleTrade:00002FA4
 
     // data members, from how the class's functions use this (tools/fields.py)

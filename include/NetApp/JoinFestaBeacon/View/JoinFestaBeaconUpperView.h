@@ -36,9 +36,9 @@ public:
     virtual void UIView_vf18();  // overrides  // slot 18, JoinFestaBeacon:000005B8; as app::ui::UIView declares it
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
-    virtual bool vf21();  // slot 21, JoinFestaBeacon:00002248; the return type is a guess from its code
+    virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x80 (its thunk JoinFestaBeacon:000039C8)  // slot 21, JoinFestaBeacon:00002248
     virtual void vf22();  // slot 22, JoinFestaBeacon:00002250
-    virtual bool vf23();  // slot 23, JoinFestaBeacon:00002130; the return type is a guess from its code
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0x80 (its thunk JoinFestaBeacon:000039C0)  // slot 23, JoinFestaBeacon:00002130
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_84[0x4];  // +0x84: nothing seen to use it

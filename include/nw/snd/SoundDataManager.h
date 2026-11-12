@@ -16,9 +16,9 @@ public:
     SoundDataManager();  // a constructor, code.bin:002AEADC: it reads nothing but this (ctors.csv)
     virtual ~SoundDataManager();
     virtual void DisposeCallback_vf2(u32 a1, u32 a2);  // overrides  // slot 2, code.bin:002AE904; the parameters are a guess from its code (types too)
-    virtual void vf3(u32 a1, u32 a2);  // slot 3, code.bin:002AEA58; the parameters are a guess from its code (types too)
-    virtual void vf4(u32 a1);  // slot 4, code.bin:004A4258; the parameters are a guess from its code (types too)
-    virtual void vf5(u32 a1);  // slot 5, code.bin:004A41C8; the parameters are a guess from its code (types too)
+    virtual void SoundArchiveLoader_vf2();  // overrides nw::snd::internal::SoundArchiveLoader's slot 2, through the base at +0xc (its thunk code.bin:004CBBA8)  // slot 3, code.bin:002AEA58
+    virtual void SoundArchiveLoader_vf3();  // overrides nw::snd::internal::SoundArchiveLoader's slot 3, through the base at +0xc (its thunk code.bin:004CBDE8)  // slot 4, code.bin:004A4258
+    virtual void SoundArchiveLoader_vf4();  // overrides nw::snd::internal::SoundArchiveLoader's slot 4, through the base at +0xc (its thunk code.bin:004CBD84)  // slot 5, code.bin:004A41C8
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_217[0x1];  // +0x217: nothing seen to use it

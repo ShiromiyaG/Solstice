@@ -20,7 +20,7 @@ public:
     virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 4, BattleVideoPlayer:00008404; as applib::frame::CellSuper declares it
     virtual s32 EndFunc();  // overrides  // slot 5, BattleVideoPlayer:000083C8; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, BattleVideoPlayer:0000AFFC; as applib::frame::CellSuper declares it
-    virtual void vf7(u32 a1, u32 a2);  // slot 7, BattleVideoPlayer:000083C0; the parameters are a guess from its code (types too)
+    virtual void IEventHandler_vf2(u32 a1, u32 a2);  // overrides app::tool::GeneralLowerView::IEventHandler's slot 2, through the base at +0x18 (its thunk BattleVideoPlayer:0000B4E8)  // slot 7, BattleVideoPlayer:000083C0
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_1C;  // +0x1c, a guess: a pointer, from 7 functions

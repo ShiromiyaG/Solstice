@@ -42,8 +42,8 @@ public:
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
     virtual void Create2DOneLayout(::NetAppLib::System::ApplicationWorkBase*, int, unsigned int, unsigned int, ::app::util::G2DUtil::SETUP_DISPLAY_TYPE, ::NetAppLib::Message::MessageUtility*, unsigned int);  // overrides  // slot 21, imported; as NetAppLib::System::NetApplicationViewBase declares it
-    virtual bool vf22(u32 a1);  // slot 22, RegulationSelect:00002648; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf23(u32 a1);  // slot 23, RegulationSelect:00002194; the parameters are a guess from its code (types too)
+    virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0xa0 (its thunk RegulationSelect:0000781C)  // slot 22, RegulationSelect:00002648
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0xa0 (its thunk RegulationSelect:000077C0)  // slot 23, RegulationSelect:00002194
     virtual void CallBack_vf0(f32 f0, f32 f1, f32 f2, f32 f3, f32 f4, f32 f5);  // overrides app::tool::PaneList::CallBack's slot 0, through the base at +0xa4 (its thunk RegulationSelect:00007B04)  // slot 24, RegulationSelect:00002878
     virtual void vf25();  // slot 25, RegulationSelect:000026CC
     virtual void vf26(u32 a1, u32 a2, u32 a3);  // slot 26, RegulationSelect:000026D0; the parameters are a guess from its code (types too)

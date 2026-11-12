@@ -57,7 +57,7 @@ public:
     virtual void vf25(u32 a1);  // slot 25, QRReader:00002594; the parameters are a guess from its code (types too)
     virtual void IEventHandler_vf2(u32 a1);  // overrides App::Tool::MessageMenuView::IEventHandler's slot 2, through the base at +0xa4 (its thunk QRReader:00009494)  // slot 26, QRReader:00002A58
     virtual void vf27(u32 a1);  // slot 27, QRReader:00002AF0; the parameters are a guess from its code (types too)
-    virtual void vf28(u32 a1);  // slot 28, QRReader:00002BBC; the parameters are a guess from its code (types too)
+    virtual void IInfoWindowOpenPositionProvider_vf0(u32 a1);  // overrides NetApp::QRReader::LowerView_InfoWindow::IInfoWindowOpenPositionProvider's slot 0, through the base at +0xac (its thunk QRReader:00009594)  // slot 28, QRReader:00002BBC
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_B0;  // +0xb0, a guess: a pointer, from 2 functions

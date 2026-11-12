@@ -44,7 +44,7 @@ public:
     virtual void vf22(u32 a1);  // slot 22, RegulationSelect:00002EB4; the parameters are a guess from its code (types too)
     virtual void vf23(u32 a1);  // slot 23, RegulationSelect:00002FD0; the parameters are a guess from its code (types too)
     virtual void vf24(u32 a1);  // slot 24, RegulationSelect:00002E4C; the parameters are a guess from its code (types too)
-    virtual void vf25(u32 a1);  // slot 25, RegulationSelect:00002DE0; the parameters are a guess from its code (types too)
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0xa8 (its thunk RegulationSelect:00007D1C)  // slot 25, RegulationSelect:00002DE0
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_AC;  // +0xac, a guess: a pointer, from 2 functions

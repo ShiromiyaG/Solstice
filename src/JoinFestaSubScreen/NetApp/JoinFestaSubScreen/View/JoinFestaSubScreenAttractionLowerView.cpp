@@ -4,8 +4,8 @@ namespace NetApp {
 namespace JoinFestaSubScreen {
 namespace View {
 
-//! JoinFestaSubScreen:0x000032C4 vf22
-bool JoinFestaSubScreenAttractionLowerView::vf22(u32 a1)
+//! JoinFestaSubScreen:0x000032C4 UIInputListener_vf2
+bool JoinFestaSubScreenAttractionLowerView::UIInputListener_vf2(u32 a1)
 {
     u32 *v = (u32 *)field_A8;
     if (!v)

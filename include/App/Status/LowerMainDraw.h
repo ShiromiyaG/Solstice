@@ -43,17 +43,17 @@ public:
     virtual void UIView_vf18();  // overrides  // slot 18, Status:000051B4; as app::ui::UIView declares it
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
-    virtual void vf21(u32 a1);  // slot 21, Status:000053FC; the parameters are a guess from its code (types too)
+    virtual void UIInputListener_vf5(u32 a1);  // overrides app::ui::UIInputListener's slot 5, through the base at +0x80 (its thunk Status:0000B110)  // slot 21, Status:000053FC
     virtual bool vf22();  // slot 22, Status:00004FFC; the return type is a guess from its code
     virtual bool vf23(u32 a1);  // slot 23, Status:0000432C; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual bool vf24(u32 a1);  // slot 24, Status:00004C98; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual void vf25(u32 a1);  // slot 25, Status:0000549C; the parameters are a guess from its code (types too)
-    virtual void vf26(u32 a1);  // slot 26, Status:000053DC; the parameters are a guess from its code (types too)
-    virtual void vf27();  // slot 27, Status:000053C0
-    virtual void vf28();  // slot 28, Status:00004EC4
+    virtual void InformationListener_vf0(u32 a1);  // overrides App::Status::InformationListener's slot 0, through the base at +0x84 (its thunk Status:0000B378)  // slot 26, Status:000053DC
+    virtual void BallPlateListener_vf0();  // overrides App::Status::BallPlateListener's slot 0, through the base at +0x88 (its thunk Status:0000B398)  // slot 27, Status:000053C0
+    virtual void WazaExchangeExplainListener_vf0();  // overrides App::Status::WazaExchangeExplainListener's slot 0, through the base at +0x8c (its thunk Status:0000B3B4)  // slot 28, Status:00004EC4
     virtual bool vf29();  // slot 29, Status:00005A78; the return type is a guess from its code
-    virtual void vf30();  // slot 30, Status:00007EA0
-    virtual void vf31(u32 a1);  // slot 31, Status:000051E8; the parameters are a guess from its code (types too)
+    virtual void RibbonListener_vf0();  // overrides App::Status::RibbonListener's slot 0, through the base at +0x94 (its thunk Status:0000B40C)  // slot 30, Status:00007EA0
+    virtual void RibbonListener_vf1(u32 a1);  // overrides App::Status::RibbonListener's slot 1, through the base at +0x94 (its thunk Status:0000B4A4)  // slot 31, Status:000051E8
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_98;  // +0x98, a guess: a pointer, from 2 functions

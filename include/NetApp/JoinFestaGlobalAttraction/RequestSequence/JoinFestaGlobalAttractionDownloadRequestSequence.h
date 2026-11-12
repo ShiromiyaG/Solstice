@@ -24,8 +24,8 @@ public:
     virtual void BossEventListener_vf7(u32 a1);  // overrides  // slot 7, JoinFestaGlobalAttraction:000006BC; the parameters are a guess from its code (types too)
     virtual void BossEventListener_vf8(u32 a1, u32 a2);  // overrides  // slot 8, JoinFestaGlobalAttraction:0000094C; the parameters are a guess from its code (types too)
     virtual void vf9();  // slot 9, JoinFestaGlobalAttraction:00000A70
-    virtual void vf10();  // slot 10, JoinFestaGlobalAttraction:00000704
-    virtual void vf11();  // slot 11, JoinFestaGlobalAttraction:00000940
+    virtual bool RequestSequenceBase_vf3();  // overrides gflnet2::ServerClient::RequestSequenceBase's slot 3, through the base at +0x8 (its thunk JoinFestaGlobalAttraction:00004BC0)  // slot 10, JoinFestaGlobalAttraction:00000704
+    virtual void RequestSequenceBase_vf4();  // overrides gflnet2::ServerClient::RequestSequenceBase's slot 4, through the base at +0x8 (its thunk JoinFestaGlobalAttraction:00004C94)  // slot 11, JoinFestaGlobalAttraction:00000940
 
     // data members, from how the class's functions use this (tools/fields.py)
     u32 field_20;  // +0x20, a guess: from 2 functions

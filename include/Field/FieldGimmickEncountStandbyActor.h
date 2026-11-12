@@ -20,10 +20,10 @@ public:
     virtual void vf16();  // overrides  // slot 16, FieldRo:00035F14
     virtual void vf17();  // overrides  // slot 17, FieldRo:00035F58
     virtual void vf18();  // overrides  // slot 18, FieldRo:00036320
-    virtual u32 vf19();  // slot 19, FieldRo:0008C434; the return type is a guess from its code
-    virtual u32 vf20();  // slot 20, FieldRo:0008C43C; the return type is a guess from its code
-    virtual void vf21();  // slot 21, FieldRo:000360F0
-    virtual void *vf22();  // slot 22, FieldRo:0008C42C; the return type is a guess from its code
+    virtual u32 IFieldGimmickEncountActorBase_vf0();  // overrides Field::IFieldGimmickEncountActorBase's slot 0, through the base at +0x4c (its thunk FieldRo:00096930)  // slot 19, FieldRo:0008C434
+    virtual u32 IFieldGimmickEncountActorBase_vf1();  // overrides Field::IFieldGimmickEncountActorBase's slot 1, through the base at +0x4c (its thunk FieldRo:00096938)  // slot 20, FieldRo:0008C43C
+    virtual void IFieldGimmickEncountActorBase_vf2();  // overrides Field::IFieldGimmickEncountActorBase's slot 2, through the base at +0x4c (its thunk FieldRo:00096920)  // slot 21, FieldRo:000360F0
+    virtual u32 IFieldGimmickEncountActorBase_vf3();  // overrides Field::IFieldGimmickEncountActorBase's slot 3, through the base at +0x4c (its thunk FieldRo:00096928)  // slot 22, FieldRo:0008C42C
     virtual void vf23();  // slot 23, FieldRo:00036100
 
     // data members, from how the class's functions use this (tools/fields.py)

@@ -22,9 +22,9 @@ public:
     virtual void RequestSequenceBase_vf4();  // overrides  // slot 4, code.bin:0047EA78
     virtual void vf5(u32 a1, u32 a2, u32 a3);  // slot 5, code.bin:0047EC2C; the parameters are a guess from its code (types too)
     virtual void vf6();  // slot 6, code.bin:0047EE98
-    virtual bool vf7(u32 a1, u32 a2);  // slot 7, code.bin:0047EB84; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual bool vf8(u32 a1, u32 a2);  // slot 8, code.bin:0047EA84; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf9(u32 a1, u32 a2, u32 a3);  // slot 9, code.bin:0047EB20; the parameters are a guess from its code (types too)
+    virtual void PGLConnectorListener_vf11(u32 a1, u32 a2);  // overrides NetLib::Pgl::PGLConnectorListener's slot 11, through the base at +0x18 (its thunk code.bin:004CF164)  // slot 7, code.bin:0047EB84
+    virtual void PGLConnectorListener_vf12(u32 a1, u32 a2);  // overrides NetLib::Pgl::PGLConnectorListener's slot 12, through the base at +0x18 (its thunk code.bin:004CF064)  // slot 8, code.bin:0047EA84
+    virtual void PGLConnectorListener_vf13(u32 a1, u32 a2, u32 a3);  // overrides NetLib::Pgl::PGLConnectorListener's slot 13, through the base at +0x18 (its thunk code.bin:004CF100)  // slot 9, code.bin:0047EB20
 
     // data members, from how the class's functions use this (tools/fields.py)
     u32 field_1C;  // +0x1c, a guess: from 1 function

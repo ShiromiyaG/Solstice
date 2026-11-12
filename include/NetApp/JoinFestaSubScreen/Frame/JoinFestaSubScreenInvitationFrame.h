@@ -26,11 +26,11 @@ public:
     virtual void vf13();  // overrides  // slot 13, JoinFestaSubScreen:0000559C; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, JoinFestaSubScreen:0000560C; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf17();  // slot 17, JoinFestaSubScreen:00005678
-    virtual void vf18();  // slot 18, JoinFestaSubScreen:00005A50
-    virtual void vf19();  // slot 19, JoinFestaSubScreen:00005B1C
+    virtual void JoinFestaSubScreenInvitationLowerInputListener_vf2();  // overrides NetApp::JoinFestaSubScreen::View::JoinFestaSubScreenInvitationLowerInputListener's slot 2, through the base at +0x30 (its thunk JoinFestaSubScreen:00006FAC)  // slot 18, JoinFestaSubScreen:00005A50
+    virtual void JoinFestaSubScreenInvitationLowerInputListener_vf1();  // overrides NetApp::JoinFestaSubScreen::View::JoinFestaSubScreenInvitationLowerInputListener's slot 1, through the base at +0x30 (its thunk JoinFestaSubScreen:00006F84)  // slot 19, JoinFestaSubScreen:00005B1C
     virtual void vf20(u32 a1);  // slot 20, JoinFestaSubScreen:000054BC; the parameters are a guess from its code (types too)
-    virtual void vf21();  // slot 21, JoinFestaSubScreen:000059A4
-    virtual void vf22();  // slot 22, JoinFestaSubScreen:00006518
+    virtual void JoinFestaSubScreenSelectLowerInputListener_vf1();  // overrides NetApp::JoinFestaSubScreen::View::JoinFestaSubScreenSelectLowerInputListener's slot 1, through the base at +0x34 (its thunk JoinFestaSubScreen:00007200)  // slot 21, JoinFestaSubScreen:000059A4
+    virtual void JoinFestaSubScreenSelectLowerInputListener_vf2();  // overrides NetApp::JoinFestaSubScreen::View::JoinFestaSubScreenSelectLowerInputListener's slot 2, through the base at +0x34 (its thunk JoinFestaSubScreen:000072B4)  // slot 22, JoinFestaSubScreen:00006518
     virtual void vf23();  // slot 23, JoinFestaSubScreen:00006508
 };
 

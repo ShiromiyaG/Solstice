@@ -21,7 +21,7 @@ class SceneGraphManager : public ::gfl2::gfx::GLMemory, public ::gfl2::gfx::IGLG
 public:
     virtual void GLMemory_vf0();  // overrides  // slot 0, code.bin:0032CA70
     virtual void GLMemory_vf1();  // overrides  // slot 1, code.bin:0032CA50
-    virtual void vf2();  // slot 2, code.bin:0032C784
+    virtual void IGLGLCallBack_vf0();  // overrides gfl2::gfx::IGLGLCallBack's slot 0, through the base at +0x8 (its thunk code.bin:004D1748)  // slot 2, code.bin:0032C784
 
     // member functions the game names. static or not is not in a name, nor is the return type
     // (void until config/<version>/returns.csv has it)

@@ -41,18 +41,18 @@ public:
     virtual void vf16();  // overrides  // slot 16, BattleSpot:000149E4; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf17();  // slot 17, BattleSpot:00005B74
     virtual void vf18(u32 a1, u32 a2);  // slot 18, BattleSpot:0000E2DC; the parameters are a guess from its code (types too)
-    virtual void vf19();  // slot 19, BattleSpot:00005B24
-    virtual void vf20(u32 a1);  // slot 20, BattleSpot:00005A6C; the parameters are a guess from its code (types too)
+    virtual void GameSyncConfirmPlayStatusResponseListener_vf0();  // overrides NetAppLib::GameSync::GameSyncConfirmPlayStatusResponseListener's slot 0, through the base at +0x24 (its thunk BattleSpot:00015240)  // slot 19, BattleSpot:00005B24
+    virtual void GameSyncConfirmPlayStatusResponseListener_vf1(u32 a1);  // overrides NetAppLib::GameSync::GameSyncConfirmPlayStatusResponseListener's slot 1, through the base at +0x24 (its thunk BattleSpot:00015188)  // slot 20, BattleSpot:00005A6C
     virtual void vf21();  // slot 21, BattleSpot:00005B20
-    virtual void vf22();  // slot 22, BattleSpot:00005A60
+    virtual void GameSyncSaveDataSyncResponseListener_vf0();  // overrides NetAppLib::GameSync::GameSyncSaveDataSyncResponseListener's slot 0, through the base at +0x28 (its thunk BattleSpot:000157BC)  // slot 22, BattleSpot:00005A60
     virtual void vf23();  // slot 23, BattleSpot:00005A34
     virtual void vf24();  // slot 24, BattleSpot:00005A5C
     virtual void vf25(u32 a1, u32 a2, u32 a3);  // slot 25, BattleSpot:00005D6C; the parameters are a guess from its code (types too)
-    virtual void vf26();  // slot 26, BattleSpot:00005DD0
-    virtual void vf27();  // slot 27, BattleSpot:00005D40
-    virtual void vf28(u32 a1, u32 a2);  // slot 28, BattleSpot:000059D8; the parameters are a guess from its code (types too)
-    virtual void vf29(u32 a1, u32 a2);  // slot 29, BattleSpot:00005920; the parameters are a guess from its code (types too)
-    virtual void vf30(u32 a1, u32 a2, u32 a3);  // slot 30, BattleSpot:0000597C; the parameters are a guess from its code (types too)
+    virtual void PGLConnectorListener_vf5();  // overrides NetLib::Pgl::PGLConnectorListener's slot 5, through the base at +0x2c (its thunk BattleSpot:00015F6C)  // slot 26, BattleSpot:00005DD0
+    virtual void PGLConnectorListener_vf6();  // overrides NetLib::Pgl::PGLConnectorListener's slot 6, through the base at +0x2c (its thunk BattleSpot:00015EDC)  // slot 27, BattleSpot:00005D40
+    virtual void PGLConnectorListener_vf11(u32 a1, u32 a2);  // overrides NetLib::Pgl::PGLConnectorListener's slot 11, through the base at +0x2c (its thunk BattleSpot:00015E80)  // slot 28, BattleSpot:000059D8
+    virtual void PGLConnectorListener_vf12(u32 a1, u32 a2);  // overrides NetLib::Pgl::PGLConnectorListener's slot 12, through the base at +0x2c (its thunk BattleSpot:00015DC8)  // slot 29, BattleSpot:00005920
+    virtual void PGLConnectorListener_vf13(u32 a1, u32 a2, u32 a3);  // overrides NetLib::Pgl::PGLConnectorListener's slot 13, through the base at +0x2c (its thunk BattleSpot:00015E24)  // slot 30, BattleSpot:0000597C
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_38;  // +0x38, a guess: a pointer, from 8 functions

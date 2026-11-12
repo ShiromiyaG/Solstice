@@ -32,7 +32,7 @@ public:
     virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 14, MysteryGift:0000E9F4; as app::ui::UIView declares it
     virtual void UIView_vf18();  // overrides  // slot 18, MysteryGift:00000C08; as app::ui::UIView declares it
     virtual void IEventHandler_vf2(u32 a1, u32 a2);  // overrides app::tool::GeneralLowerView::IEventHandler's slot 2, through the base at +0xa0 (its thunk MysteryGift:0000EF74)  // slot 22, MysteryGift:0000D860
-    virtual void vf23();  // slot 23, MysteryGift:0000D8D8
+    virtual void IResourceProvider_OnResourceRequest(unsigned int, unsigned int);  // overrides app::tool::IResourceProvider's slot 2, through the base at +0xa4 (its thunk MysteryGift:0000F224)  // slot 23, MysteryGift:0000D8D8
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_A8;  // +0xa8, a guess: a pointer, from 2 functions

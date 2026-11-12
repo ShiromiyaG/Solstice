@@ -15,7 +15,7 @@ public:
     NetEventBase();  // a constructor, code.bin:00436064: it reads nothing but this (ctors.csv)
     virtual ~NetEventBase();
     virtual bool vf6();  // overrides  // slot 6, code.bin:00436004; as GameSys::GameEvent declares it
-    virtual void vf7();  // slot 7, code.bin:0043600C
+    virtual void NijiNetworkErrorListener_vf0();  // overrides NetLib::Error::NijiNetworkErrorListener's slot 0, through the base at +0x18 (its thunk code.bin:004CEFB4)  // slot 7, code.bin:0043600C
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 field_1C;  // +0x1c, a guess: from 1 function

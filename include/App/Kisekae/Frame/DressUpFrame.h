@@ -36,8 +36,8 @@ public:
     virtual void vf14();  // overrides  // slot 14, Kisekae:00002C10; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf15();  // overrides  // slot 15, Kisekae:00009D54; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, Kisekae:00009D58; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17(u32 a1);  // slot 17, Kisekae:00003108; the parameters are a guess from its code (types too)
-    virtual void vf18();  // slot 18, Kisekae:000062C0
+    virtual void IEventHandler_vf2(u32 a1);  // overrides App::Tool::MessageMenuView::IEventHandler's slot 2, through the base at +0x24 (its thunk Kisekae:0000A0FC)  // slot 17, Kisekae:00003108
+    virtual void CharaModelViewerDelegate_vf0();  // overrides app::tool::CharaModelViewerDelegate's slot 0, through the base at +0x30 (its thunk Kisekae:0000A64C)  // slot 18, Kisekae:000062C0
     virtual bool LowerItemSelectViewDelegate_vf0(u32 a1, u32 a2);  // overrides App::Kisekae::View::LowerItemSelectViewDelegate's slot 0, through the base at +0x28 (its thunk Kisekae:0000A168)  // slot 19, Kisekae:00003110
     virtual void vf20(u32 a1, u32 a2);  // slot 20, Kisekae:00005FFC; the parameters are a guess from its code (types too)
     virtual void vf21(u32 a1, u32 a2);  // slot 21, Kisekae:00003288; the parameters are a guess from its code (types too)

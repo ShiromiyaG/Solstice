@@ -20,17 +20,17 @@ public:
     virtual void vf4();  // overrides  // slot 4, SequencePlayer:000133C4
     virtual void vf5();  // slot 5, SequencePlayer:000134F8
     virtual void vf6();  // slot 6, SequencePlayer:00013D2C
-    virtual u32 vf7();  // slot 7, SequencePlayer:00012EAC; the return type is a guess from its code
+    virtual bool ObjectRenderPipeLine_vf8();  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 8, through the base at +0x80 (its thunk SequencePlayer:0001B180)  // slot 7, SequencePlayer:00012EAC
     virtual void vf8(u32 a1, u32 a2);  // slot 8, SequencePlayer:00013210; the parameters are a guess from its code (types too)
     virtual void vf9(u32 a1, u32 a2);  // slot 9, SequencePlayer:00013B18; the parameters are a guess from its code (types too)
-    virtual void vf10(u32 a1, u32 a2);  // slot 10, SequencePlayer:00013444; the parameters are a guess from its code (types too)
-    virtual void vf11(u32 a1, u32 a2);  // slot 11, SequencePlayer:00013C78; the parameters are a guess from its code (types too)
-    virtual void vf12(u32 a1, u32 a2);  // slot 12, SequencePlayer:00014014; the parameters are a guess from its code (types too)
-    virtual void vf13(u32 a1, u32 a2);  // slot 13, SequencePlayer:000140EC; the parameters are a guess from its code (types too)
+    virtual void ObjectRenderPipeLine_vf4(u32 a1, u32 a2);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 4, through the base at +0x80 (its thunk SequencePlayer:0001B1B0)  // slot 10, SequencePlayer:00013444
+    virtual void ObjectRenderPipeLine_vf5(u32 a1, u32 a2);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 5, through the base at +0x80 (its thunk SequencePlayer:0001B270)  // slot 11, SequencePlayer:00013C78
+    virtual void ObjectRenderPipeLine_vf6(u32 a1);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 6, through the base at +0x80 (its thunk SequencePlayer:0001B3DC)  // slot 12, SequencePlayer:00014014
+    virtual void ObjectRenderPipeLine_vf7(u32 a1);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 7, through the base at +0x80 (its thunk SequencePlayer:0001B4B4)  // slot 13, SequencePlayer:000140EC
     virtual void vf14(u32 a1, u32 a2);  // slot 14, SequencePlayer:00013658; the parameters are a guess from its code (types too)
-    virtual void vf15(u32 a1, u32 a2);  // slot 15, SequencePlayer:00013E84; the parameters are a guess from its code (types too)
-    virtual void vf16();  // slot 16, SequencePlayer:000138D0
-    virtual void vf17();  // slot 17, SequencePlayer:00013F30
+    virtual void ObjectRenderPipeLine_vf11();  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 11, through the base at +0x80 (its thunk SequencePlayer:0001B31C)  // slot 15, SequencePlayer:00013E84
+    virtual void ObjectRenderPipeLine_vf12();  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 12, through the base at +0x80 (its thunk SequencePlayer:0001B25C)  // slot 16, SequencePlayer:000138D0
+    virtual void ObjectRenderPipeLine_vf13();  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 13, through the base at +0x80 (its thunk SequencePlayer:0001B3C8)  // slot 17, SequencePlayer:00013F30
     virtual void vf18();  // slot 18, SequencePlayer:000131DC
     virtual bool ObjectRenderPipeLine_vf14();  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 14, through the base at +0x80 (its thunk SequencePlayer:0001B190)  // slot 19, SequencePlayer:00013384
 

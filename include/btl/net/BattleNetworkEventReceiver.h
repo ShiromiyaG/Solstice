@@ -21,7 +21,7 @@ public:
     virtual void NijiNetworkErrorListener_vf0();  // overrides  // slot 0, Battle:000AED3C
     virtual ~BattleNetworkEventReceiver();
     virtual void vf3();  // slot 3, Battle:000AEE04
-    virtual void vf4();  // slot 4, Battle:000AED64
+    virtual void NetGameMigrationListener_vf0();  // overrides gflnet2::p2p::NetGameMigrationListener's slot 0, through the base at +0x8 (its thunk Battle:000E74A4)  // slot 4, Battle:000AED64
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 field_C;  // +0xc, a guess: from 1 function

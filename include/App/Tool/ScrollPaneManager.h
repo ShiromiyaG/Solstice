@@ -39,7 +39,7 @@ public:
     virtual bool vf21(u32 a1);  // slot 21, code.bin:002FD114; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0x80 (its thunk code.bin:004CBAF0)  // slot 22, code.bin:002FBA34
     virtual bool vf23(u32 a1, u32 a2);  // slot 23, code.bin:002FBB14; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf24(u32 a1);  // slot 24, code.bin:002FD3E8; the parameters are a guess from its code (types too)
+    virtual void UIInputListener_vf4();  // overrides app::ui::UIInputListener's slot 4, through the base at +0x80 (its thunk code.bin:004CBB0C)  // slot 24, code.bin:002FD3E8
 
     // member functions the game names. static or not is not in a name, nor is the return type
     // (void until config/<version>/returns.csv has it)

@@ -28,10 +28,10 @@ public:
     virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 14, code.bin:0046D1EC; as app::ui::UIView declares it
     virtual bool IsDrawing() const;  // overrides  // slot 17, code.bin:004C90B4; as app::ui::UIView declares it
     virtual bool vf22();  // slot 22, code.bin:00464450; the return type is a guess from its code
-    virtual void vf23(u32 a1, u32 a2);  // slot 23, code.bin:00463E10; the parameters are a guess from its code (types too)
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0xc4 (its thunk code.bin:004CD4EC)  // slot 23, code.bin:00463E10
     virtual void vf24();  // slot 24, code.bin:0046475C
     virtual void vf25();  // slot 25, code.bin:0046468C
-    virtual void vf26(u32 a1, u32 a2, u32 a3);  // slot 26, code.bin:00464690; the parameters are a guess from its code (types too)
+    virtual void CallBack_vf2(u32 a1, u32 a2, u32 a3);  // overrides app::tool::PaneList::CallBack's slot 2, through the base at +0xc8 (its thunk code.bin:004CDB28)  // slot 26, code.bin:00464690
     virtual void vf27();  // slot 27, code.bin:00464760
     virtual void vf28();  // slot 28, code.bin:00464764
 

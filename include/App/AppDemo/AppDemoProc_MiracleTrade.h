@@ -16,7 +16,7 @@ public:
     virtual ~AppDemoProc_MiracleTrade();
     virtual void vf10();  // overrides  // slot 10, AppDemo:0000128C
     virtual u32 vf11(u32 a1);  // overrides  // slot 11, AppDemo:00000FEC; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf14(u32 a1, u32 a2);  // slot 14, AppDemo:00000EFC; the parameters are a guess from its code (types too)
+    virtual void SequenceCallBack_vf2(u32 a1, u32 a2);  // overrides DemoLib::Sequence::SequenceCallBack's slot 2, through the base at +0x2c (its thunk AppDemo:00001838)  // slot 14, AppDemo:00000EFC
 
     // data members, from how the class's functions use this (tools/fields.py)
     u32 field_30;  // +0x30, a guess: from 1 function

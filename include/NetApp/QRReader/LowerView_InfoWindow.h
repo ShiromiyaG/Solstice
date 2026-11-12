@@ -37,8 +37,8 @@ public:
     virtual void UIView_vf12();  // overrides  // slot 12, QRReader:00000890; as app::ui::UIView declares it
     virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 14, QRReader:000091BC; as app::ui::UIView declares it
     virtual void UIView_vf18();  // overrides  // slot 18, QRReader:0000088C; as app::ui::UIView declares it
-    virtual void vf22();  // slot 22, QRReader:00007968
-    virtual void vf23(u32 a1);  // slot 23, QRReader:00007914; the parameters are a guess from its code (types too)
+    virtual void InfoWindowBookTypeListener_vf2();  // overrides app::tool::InfoWindowBookTypeListener's slot 2, through the base at +0xa0 (its thunk QRReader:000093B8)  // slot 22, QRReader:00007968
+    virtual void InfoWindowBookTypeListener_vf3();  // overrides app::tool::InfoWindowBookTypeListener's slot 3, through the base at +0xa0 (its thunk QRReader:00009364)  // slot 23, QRReader:00007914
     virtual void vf24();  // slot 24, QRReader:00007988
 
     // data members, from how the class's functions use this (tools/fields.py)

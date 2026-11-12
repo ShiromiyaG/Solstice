@@ -30,7 +30,7 @@ public:
     virtual void UIView_vf12();  // overrides  // slot 12, MysteryGift:00000C0C; as app::ui::UIView declares it
     virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 14, MysteryGift:0000E9F4; as app::ui::UIView declares it
     virtual void UIView_vf18();  // overrides  // slot 18, MysteryGift:00000C08; as app::ui::UIView declares it
-    virtual void vf22();  // slot 22, MysteryGift:0000CCE8
+    virtual void InfoWindowBookTypeListener_vf2();  // overrides app::tool::InfoWindowBookTypeListener's slot 2, through the base at +0xa0 (its thunk MysteryGift:0000EE98)  // slot 22, MysteryGift:0000CCE8
     virtual void vf23(u32 a1);  // slot 23, MysteryGift:0000CC70; the parameters are a guess from its code (types too)
     virtual void vf24();  // slot 24, MysteryGift:0000CD18
 

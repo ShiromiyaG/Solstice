@@ -31,26 +31,26 @@ public:
     virtual void CellSuper_vf6();  // overrides  // slot 6, Resort:00022384; as applib::frame::CellSuper declares it
     virtual void ResortDrawListener_vf0(u32 a1);  // overrides App::Resort::ResortDrawListener's slot 0, through the base at +0x18 (its thunk Resort:000229C4)  // slot 7, Resort:000080D8
     virtual bool ResortDrawListener_vf1();  // overrides App::Resort::ResortDrawListener's slot 1, through the base at +0x18 (its thunk Resort:00022964)  // slot 8, Resort:00007B00
-    virtual void vf9();  // slot 9, Resort:00016C24
+    virtual void ResortDrawListener_vf2();  // overrides App::Resort::ResortDrawListener's slot 2, through the base at +0x18 (its thunk Resort:00022958)  // slot 9, Resort:00016C24
     virtual bool vf10(u32 a1);  // slot 10, Resort:00007714; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf11();  // slot 11, Resort:00007C14
-    virtual void vf12();  // slot 12, Resort:00007B08
-    virtual void vf13();  // slot 13, Resort:00007B34
+    virtual void ResortDrawListener_vf4();  // overrides App::Resort::ResortDrawListener's slot 4, through the base at +0x18 (its thunk Resort:000229AC)  // slot 11, Resort:00007C14
+    virtual void ResortDrawListener_vf5();  // overrides App::Resort::ResortDrawListener's slot 5, through the base at +0x18 (its thunk Resort:0002296C)  // slot 12, Resort:00007B08
+    virtual void ResortDrawListener_vf6();  // overrides App::Resort::ResortDrawListener's slot 6, through the base at +0x18 (its thunk Resort:00022998)  // slot 13, Resort:00007B34
     virtual void vf14();  // slot 14, Resort:00007C6C
-    virtual void vf15(u32 a1);  // slot 15, Resort:000081A8; the parameters are a guess from its code (types too)
-    virtual void vf16();  // slot 16, Resort:00008944
-    virtual void vf17(u32 a1);  // slot 17, Resort:0000937C; the parameters are a guess from its code (types too)
+    virtual void ResortTouchToFlowListener_vf1(u32 a1);  // overrides App::Resort::ResortTouchToFlowListener's slot 1, through the base at +0x1c (its thunk Resort:000229F0)  // slot 15, Resort:000081A8
+    virtual void ResortTouchToFlowListener_vf2();  // overrides App::Resort::ResortTouchToFlowListener's slot 2, through the base at +0x1c (its thunk Resort:00022AB0)  // slot 16, Resort:00008944
+    virtual void ResortTouchToFlowListener_vf3(u32 a1);  // overrides App::Resort::ResortTouchToFlowListener's slot 3, through the base at +0x1c (its thunk Resort:00022AC4)  // slot 17, Resort:0000937C
     virtual void vf18(u32 a1);  // slot 18, Resort:00007BB4; the parameters are a guess from its code (types too)
-    virtual void vf19();  // slot 19, Resort:00008144
-    virtual void vf20();  // slot 20, Resort:00007AD8
-    virtual void vf21();  // slot 21, Resort:00007BEC
-    virtual void vf22();  // slot 22, Resort:00007C3C
+    virtual void ResortFlowListener_vf1();  // overrides App::Resort::ResortFlowListener's slot 1, through the base at +0x20 (its thunk Resort:00022D24)  // slot 19, Resort:00008144
+    virtual void ResortFlowListener_vf2();  // overrides App::Resort::ResortFlowListener's slot 2, through the base at +0x20 (its thunk Resort:00022BB4)  // slot 20, Resort:00007AD8
+    virtual void ResortFlowListener_vf3();  // overrides App::Resort::ResortFlowListener's slot 3, through the base at +0x20 (its thunk Resort:00022C80)  // slot 21, Resort:00007BEC
+    virtual void ResortFlowListener_vf4();  // overrides App::Resort::ResortFlowListener's slot 4, through the base at +0x20 (its thunk Resort:00022CA8)  // slot 22, Resort:00007C3C
     virtual void ResortFlowListener_vf5();  // overrides App::Resort::ResortFlowListener's slot 5, through the base at +0x20 (its thunk Resort:00022CDC)  // slot 23, Resort:00008100
-    virtual void vf24();  // slot 24, Resort:0000816C
-    virtual void vf25(u32 a1);  // slot 25, Resort:00007B48; the parameters are a guess from its code (types too)
-    virtual void vf26();  // slot 26, Resort:000080BC
-    virtual void vf27();  // slot 27, Resort:0000892C
-    virtual bool vf28();  // slot 28, Resort:00008728; the return type is a guess from its code
+    virtual void ResortFlowListener_vf6();  // overrides App::Resort::ResortFlowListener's slot 6, through the base at +0x20 (its thunk Resort:00022D4C)  // slot 24, Resort:0000816C
+    virtual void ResortFlowListener_vf7(u32 a1);  // overrides App::Resort::ResortFlowListener's slot 7, through the base at +0x20 (its thunk Resort:00022BDC)  // slot 25, Resort:00007B48
+    virtual void ResortFlowListener_vf8();  // overrides App::Resort::ResortFlowListener's slot 8, through the base at +0x20 (its thunk Resort:00022CD0)  // slot 26, Resort:000080BC
+    virtual void ResortTouchToFlowListener_vf4();  // overrides App::Resort::ResortTouchToFlowListener's slot 4, through the base at +0x1c (its thunk Resort:00022A98)  // slot 27, Resort:0000892C
+    virtual bool ResortTouchToFlowListener_vf5();  // overrides App::Resort::ResortTouchToFlowListener's slot 5, through the base at +0x1c (its thunk Resort:00022A6C)  // slot 28, Resort:00008728
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_24[0x8];  // +0x24: nothing seen to use it

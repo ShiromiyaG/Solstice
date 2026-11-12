@@ -33,7 +33,7 @@ public:
     virtual void UIView_vf18();  // overrides  // slot 18, Box:000275CC; as app::ui::UIView declares it
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
-    virtual void vf21(u32 a1);  // slot 21, Box:0001CFAC; the parameters are a guess from its code (types too)
+    virtual void SelectMenu(unsigned int);  // overrides app::tool::MenuWindowListener's slot 0, through the base at +0x80 (its thunk Box:00027790)  // slot 21, Box:0001CFAC
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_84[0x4];  // +0x84: nothing seen to use it

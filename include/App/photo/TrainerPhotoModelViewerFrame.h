@@ -21,7 +21,7 @@ public:
     virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 4, TrainerPhoto:00003504; as applib::frame::CellSuper declares it
     virtual s32 EndFunc();  // overrides  // slot 5, TrainerPhoto:000034EC; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, TrainerPhoto:00003F10; as applib::frame::CellSuper declares it
-    virtual void vf7(u32 a1, u32 a2);  // slot 7, TrainerPhoto:00003394; the parameters are a guess from its code (types too)
+    virtual void TrainerPhotoLowRootViewInputDelegate_vf0();  // overrides app::photo::TrainerPhotoLowRootViewInputDelegate's slot 0, through the base at +0x18 (its thunk TrainerPhoto:000040FC)  // slot 7, TrainerPhoto:00003394
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_1C;  // +0x1c, a guess: a pointer, from 4 functions

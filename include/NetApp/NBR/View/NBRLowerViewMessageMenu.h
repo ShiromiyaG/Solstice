@@ -15,7 +15,7 @@ class NBRLowerViewMessageMenu : public ::NetApp::NBR::View::NBRLowerViewBase, pu
     // App::Tool::MessageMenuView::IEventHandler at +0x148
 public:
     virtual ~NBRLowerViewMessageMenu();
-    virtual void vf25(u32 a1);  // slot 25, NBR:00002600; the parameters are a guess from its code (types too)
+    virtual void IEventHandler_vf2(u32 a1);  // overrides App::Tool::MessageMenuView::IEventHandler's slot 2, through the base at +0x148 (its thunk NBR:0000AE80)  // slot 25, NBR:00002600
 };
 
 }  // namespace View

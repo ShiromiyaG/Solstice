@@ -42,31 +42,31 @@ public:
     virtual void vf15();  // overrides  // slot 15, BattleSpot:000149E0; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, BattleSpot:000149E4; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf17(u32 a1, u32 a2);  // slot 17, BattleSpot:0000EC2C; the parameters are a guess from its code (types too)
-    virtual void vf18(u32 a1, u32 a2);  // slot 18, BattleSpot:000096D8; the parameters are a guess from its code (types too)
-    virtual void vf19();  // slot 19, BattleSpot:0000EBDC
-    virtual void vf20(u32 a1);  // slot 20, BattleSpot:0000EB30; the parameters are a guess from its code (types too)
+    virtual void IEventHandler_vf2(u32 a1, u32 a2);  // overrides NetApp::BattleSpot::LowerView_Card::IEventHandler's slot 2, through the base at +0x3c (its thunk BattleSpot:00017140)  // slot 18, BattleSpot:000096D8
+    virtual void GameSyncConfirmPlayStatusResponseListener_vf0();  // overrides NetAppLib::GameSync::GameSyncConfirmPlayStatusResponseListener's slot 0, through the base at +0x24 (its thunk BattleSpot:00015444)  // slot 19, BattleSpot:0000EBDC
+    virtual void GameSyncConfirmPlayStatusResponseListener_vf1(u32 a1);  // overrides NetAppLib::GameSync::GameSyncConfirmPlayStatusResponseListener's slot 1, through the base at +0x24 (its thunk BattleSpot:000153A4)  // slot 20, BattleSpot:0000EB30
     virtual void vf21();  // slot 21, BattleSpot:0000EBCC
-    virtual void vf22();  // slot 22, BattleSpot:000096CC
+    virtual void GameSyncSaveDataSyncResponseListener_vf0();  // overrides NetAppLib::GameSync::GameSyncSaveDataSyncResponseListener's slot 0, through the base at +0x28 (its thunk BattleSpot:00015AA4)  // slot 22, BattleSpot:000096CC
     virtual void vf23();  // slot 23, BattleSpot:00009618
     virtual void vf24();  // slot 24, BattleSpot:00009640
     virtual void vf25(u32 a1, u32 a2, u32 a3);  // slot 25, BattleSpot:0000EDC8; the parameters are a guess from its code (types too)
-    virtual void vf26();  // slot 26, BattleSpot:0000EE44
-    virtual void vf27();  // slot 27, BattleSpot:0000ED9C
-    virtual void vf28(u32 a1, u32 a2);  // slot 28, BattleSpot:00009440; the parameters are a guess from its code (types too)
-    virtual void vf29(u32 a1, u32 a2);  // slot 29, BattleSpot:00009388; the parameters are a guess from its code (types too)
-    virtual void vf30(u32 a1, u32 a2, u32 a3);  // slot 30, BattleSpot:000093E4; the parameters are a guess from its code (types too)
-    virtual void vf31(u32 a1, u32 a2);  // slot 31, BattleSpot:00009644; the parameters are a guess from its code (types too)
-    virtual void vf32();  // slot 32, BattleSpot:0000EBD0
+    virtual void PGLConnectorListener_vf5();  // overrides NetLib::Pgl::PGLConnectorListener's slot 5, through the base at +0x2c (its thunk BattleSpot:00016444)  // slot 26, BattleSpot:0000EE44
+    virtual void PGLConnectorListener_vf6();  // overrides NetLib::Pgl::PGLConnectorListener's slot 6, through the base at +0x2c (its thunk BattleSpot:0001639C)  // slot 27, BattleSpot:0000ED9C
+    virtual void PGLConnectorListener_vf11(u32 a1, u32 a2);  // overrides NetLib::Pgl::PGLConnectorListener's slot 11, through the base at +0x2c (its thunk BattleSpot:00016340)  // slot 28, BattleSpot:00009440
+    virtual void PGLConnectorListener_vf12(u32 a1, u32 a2);  // overrides NetLib::Pgl::PGLConnectorListener's slot 12, through the base at +0x2c (its thunk BattleSpot:00016288)  // slot 29, BattleSpot:00009388
+    virtual void PGLConnectorListener_vf13(u32 a1, u32 a2, u32 a3);  // overrides NetLib::Pgl::PGLConnectorListener's slot 13, through the base at +0x2c (its thunk BattleSpot:000162E4)  // slot 30, BattleSpot:000093E4
+    virtual void BossEventListener_vf2(u32 a1, u32 a2);  // overrides gflnet2::boss::BossEventListener's slot 2, through the base at +0x30 (its thunk BattleSpot:000168B4)  // slot 31, BattleSpot:00009644
+    virtual void BossEventListener_vf3();  // overrides gflnet2::boss::BossEventListener's slot 3, through the base at +0x30 (its thunk BattleSpot:00016984)  // slot 32, BattleSpot:0000EBD0
     virtual bool vf33(u32 a1, u32 a2, u32 a3);  // slot 33, BattleSpot:00008B54; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual void vf34(u32 a1, u32 a2, u32 a3);  // slot 34, BattleSpot:0000949C; the parameters are a guess from its code (types too)
-    virtual void vf35(u32 a1, u32 a2);  // slot 35, BattleSpot:0000E888; the parameters are a guess from its code (types too)
-    virtual void vf36(u32 a1);  // slot 36, BattleSpot:00008AE4; the parameters are a guess from its code (types too)
-    virtual void vf37(u32 a1, u32 a2);  // slot 37, BattleSpot:00009340; the parameters are a guess from its code (types too)
+    virtual void BossEventListener_vf6(u32 a1, u32 a2);  // overrides gflnet2::boss::BossEventListener's slot 6, through the base at +0x30 (its thunk BattleSpot:0001693C)  // slot 35, BattleSpot:0000E888
+    virtual void BossEventListener_vf7(u32 a1);  // overrides gflnet2::boss::BossEventListener's slot 7, through the base at +0x30 (its thunk BattleSpot:0001677C)  // slot 36, BattleSpot:00008AE4
+    virtual void BossEventListener_vf8(u32 a1, u32 a2);  // overrides gflnet2::boss::BossEventListener's slot 8, through the base at +0x30 (its thunk BattleSpot:000167C4)  // slot 37, BattleSpot:00009340
     virtual void vf38();  // slot 38, BattleSpot:0000E8D0
     virtual void vf39(u32 a1);  // slot 39, BattleSpot:0000E8DC; the parameters are a guess from its code (types too)
-    virtual void vf40();  // slot 40, BattleSpot:0000E870
-    virtual void vf41();  // slot 41, BattleSpot:0000E87C
-    virtual void vf42(u32 a1, u32 a2);  // slot 42, BattleSpot:00009544; the parameters are a guess from its code (types too)
+    virtual void NexCommunityListener_vf2();  // overrides gflnet2::nex::NexCommunityListener's slot 2, through the base at +0x34 (its thunk BattleSpot:00016D08)  // slot 40, BattleSpot:0000E870
+    virtual void NexCommunityListener_vf3();  // overrides gflnet2::nex::NexCommunityListener's slot 3, through the base at +0x34 (its thunk BattleSpot:00016D14)  // slot 41, BattleSpot:0000E87C
+    virtual void NexCommunityListener_vf5(u32 a1, u32 a2);  // overrides gflnet2::nex::NexCommunityListener's slot 5, through the base at +0x34 (its thunk BattleSpot:00016C34)  // slot 42, BattleSpot:00009544
 };
 
 }  // namespace BattleSpot

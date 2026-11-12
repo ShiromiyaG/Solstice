@@ -5,8 +5,6 @@
 #include "NetApp/JoinFestaSelectWord/Frame/JoinFestaSelectWordFrameBase.h"
 #include "app/tool/InfoWindowBookTypeListener.h"
 
-#include "types.h"
-
 namespace NetApp {
 namespace JoinFestaSelectWord {
 namespace Frame {
@@ -22,7 +20,7 @@ public:
     virtual void vf13();  // overrides  // slot 13, JoinFestaSelectWord:00001C30; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, JoinFestaSelectWord:00001C34; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf17();  // slot 17, JoinFestaSelectWord:00001C38
-    virtual void vf18(u32 a1);  // slot 18, JoinFestaSelectWord:00001BE4; the parameters are a guess from its code (types too)
+    virtual void InfoWindowBookTypeListener_vf3();  // overrides app::tool::InfoWindowBookTypeListener's slot 3, through the base at +0x30 (its thunk JoinFestaSelectWord:00003264)  // slot 18, JoinFestaSelectWord:00001BE4
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_34;  // +0x34, a guess: a pointer, from 8 functions

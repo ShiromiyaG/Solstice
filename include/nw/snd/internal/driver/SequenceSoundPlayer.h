@@ -24,7 +24,7 @@ public:
     virtual void vf4();  // overrides  // slot 4, code.bin:002C2F04
     virtual void vf5();  // overrides  // slot 5, code.bin:002C27C4
     virtual void vf6(u32 a1, u32 a2);  // overrides  // slot 6, code.bin:002C2DF8; the parameters are a guess from its code (types too)
-    virtual void vf7(u32 a1, u32 a2);  // slot 7, code.bin:002C2920; the parameters are a guess from its code (types too)
+    virtual void DisposeCallback_vf2(u32 a1, u32 a2);  // overrides nw::snd::internal::driver::DisposeCallback's slot 2, through the base at +0x44 (its thunk code.bin:004D14AC)  // slot 7, code.bin:002C2920
     virtual void vf8();  // slot 8, code.bin:002C29D8
     virtual void vf9();  // slot 9, code.bin:002C2F40
     virtual void vf10();  // slot 10, code.bin:002C2C7C

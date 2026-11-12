@@ -22,7 +22,7 @@ public:
     virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 4, TrainerPass:000025B8; as applib::frame::CellSuper declares it
     virtual s32 EndFunc();  // overrides  // slot 5, TrainerPass:0000255C; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, TrainerPass:00002A70; as applib::frame::CellSuper declares it
-    virtual void vf7(u32 a1);  // slot 7, TrainerPass:0000286C; the parameters are a guess from its code (types too)
+    virtual void DrawListener_vf0(u32 a1);  // overrides App::TrainerPass::TrainerPassDraw::DrawListener's slot 0, through the base at +0x18 (its thunk TrainerPass:00002B50)  // slot 7, TrainerPass:0000286C
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_1C;  // +0x1c, a guess: a pointer, from 5 functions

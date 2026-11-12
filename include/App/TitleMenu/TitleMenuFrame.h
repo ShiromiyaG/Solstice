@@ -24,9 +24,9 @@ public:
     virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 4, TitleMenu:00001184; as applib::frame::CellSuper declares it
     virtual s32 EndFunc();  // overrides  // slot 5, TitleMenu:0000104C; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, TitleMenu:00003514; as applib::frame::CellSuper declares it
-    virtual void vf7();  // slot 7, TitleMenu:00000ED0
-    virtual void vf8(u32 a1);  // slot 8, TitleMenu:00000D0C; the parameters are a guess from its code (types too)
-    virtual void vf9();  // slot 9, TitleMenu:0000102C
+    virtual void TitleMenuDrawListener_vf0();  // overrides App::TitleMenu::TitleMenuDrawListener's slot 0, through the base at +0x18 (its thunk TitleMenu:000035D4)  // slot 7, TitleMenu:00000ED0
+    virtual void TitleMenuDrawListener_vf1(u32 a1);  // overrides App::TitleMenu::TitleMenuDrawListener's slot 1, through the base at +0x18 (its thunk TitleMenu:000035C8)  // slot 8, TitleMenu:00000D0C
+    virtual void TitleMenuDrawListener_vf2();  // overrides App::TitleMenu::TitleMenuDrawListener's slot 2, through the base at +0x18 (its thunk TitleMenu:000035E0)  // slot 9, TitleMenu:0000102C
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_1C[0x8];  // +0x1c: nothing seen to use it

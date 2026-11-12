@@ -42,16 +42,16 @@ public:
     virtual void vf16();  // overrides  // slot 16, BattleSpot:000149E4; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf17(u32 a1, u32 a2);  // slot 17, BattleSpot:00011978; the parameters are a guess from its code (types too)
     virtual void vf18();  // slot 18, BattleSpot:00011A78
-    virtual void vf19();  // slot 19, BattleSpot:00011C68
+    virtual void GameSyncConfirmPlayStatusResponseListener_vf0();  // overrides NetAppLib::GameSync::GameSyncConfirmPlayStatusResponseListener's slot 0, through the base at +0x2c (its thunk BattleSpot:000164B8)  // slot 19, BattleSpot:00011C68
     virtual void vf20();  // slot 20, BattleSpot:00011C3C
     virtual void vf21();  // slot 21, BattleSpot:00011C64
-    virtual void vf22();  // slot 22, BattleSpot:00011D1C
-    virtual void vf23();  // slot 23, BattleSpot:00011CCC
-    virtual void vf24();  // slot 24, BattleSpot:00011D9C
+    virtual void NexRankingClientListener_vf0();  // overrides gflnet2::nex::NexRankingClientListener's slot 0, through the base at +0x30 (its thunk BattleSpot:00016B1C)  // slot 22, BattleSpot:00011D1C
+    virtual void NexRankingClientListener_vf1();  // overrides gflnet2::nex::NexRankingClientListener's slot 1, through the base at +0x30 (its thunk BattleSpot:00016ACC)  // slot 23, BattleSpot:00011CCC
+    virtual void NexRankingClientListener_vf2();  // overrides gflnet2::nex::NexRankingClientListener's slot 2, through the base at +0x30 (its thunk BattleSpot:00016B70)  // slot 24, BattleSpot:00011D9C
     virtual void vf25(u32 a1);  // slot 25, BattleSpot:00011D54; the parameters are a guess from its code (types too)
-    virtual void vf26(u32 a1, f32 f0, f32 f1, f32 f2, f32 f3);  // slot 26, BattleSpot:00011CD8; the parameters are a guess from its code (types too)
-    virtual void vf27(u32 a1);  // slot 27, BattleSpot:000119B4; the parameters are a guess from its code (types too)
-    virtual void vf28();  // slot 28, BattleSpot:00011D28
+    virtual void NexRankingClientListener_vf7();  // overrides gflnet2::nex::NexRankingClientListener's slot 7, through the base at +0x30 (its thunk BattleSpot:00016AD8)  // slot 26, BattleSpot:00011CD8
+    virtual void NexRankingClientListener_vf10(u32 a1);  // overrides gflnet2::nex::NexRankingClientListener's slot 10, through the base at +0x30 (its thunk BattleSpot:00016A10)  // slot 27, BattleSpot:000119B4
+    virtual bool SystemEventListener_vf7();  // overrides System::SystemEventListener's slot 7, through the base at +0x24 (its thunk BattleSpot:000154F8)  // slot 28, BattleSpot:00011D28
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_38;  // +0x38, a guess: a pointer, from 8 functions

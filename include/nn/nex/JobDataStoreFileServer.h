@@ -17,9 +17,9 @@ class JobDataStoreFileServer : public ::nn::nex::StepSequenceJob, public ::nn::n
 public:
     virtual ~JobDataStoreFileServer();
     virtual void vf13(u32 a1, u32 a2, u32 a3);  // slot 13, code.bin:001FADA0; the parameters are a guess from its code (types too)
-    virtual void vf14(u32 a1);  // slot 14, code.bin:001FAF84; the parameters are a guess from its code (types too)
-    virtual void vf15(u32 a1, u32 a2, u32 a3);  // slot 15, code.bin:001FB158; the parameters are a guess from its code (types too)
-    virtual void vf16(u32 a1, u32 a2);  // slot 16, code.bin:001FB4CC; the parameters are a guess from its code (types too)
+    virtual void HttpEventListener_vf2(u32 a1);  // overrides nn::nex::HttpEventListener's slot 2, through the base at +0x68 (its thunk code.bin:004CA93C)  // slot 14, code.bin:001FAF84
+    virtual void HttpEventListener_vf3(u32 a1, u32 a2, u32 a3);  // overrides nn::nex::HttpEventListener's slot 3, through the base at +0x68 (its thunk code.bin:004CAB10)  // slot 15, code.bin:001FB158
+    virtual void HttpEventListener_vf4(u32 a1, u32 a2);  // overrides nn::nex::HttpEventListener's slot 4, through the base at +0x68 (its thunk code.bin:004CABA8)  // slot 16, code.bin:001FB4CC
     virtual bool vf17(u32 a1, u32 a2);  // slot 17, code.bin:001FB068; the parameters are a guess from its code (types too); the return type is a guess from its code
 };
 

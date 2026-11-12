@@ -29,7 +29,7 @@ public:
     virtual void vf14();  // overrides  // slot 14, BattleSpot:00003FFC; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf15();  // overrides  // slot 15, BattleSpot:000149E0; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, BattleSpot:000149E4; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17(u32 a1, u32 a2);  // slot 17, BattleSpot:000040D4; the parameters are a guess from its code (types too)
+    virtual void IEventHandler_vf2();  // overrides NetApp::BattleSpot::LowerView_Selection::IEventHandler's slot 2, through the base at +0x24 (its thunk BattleSpot:000150C0)  // slot 17, BattleSpot:000040D4
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_28;  // +0x28, a guess: a pointer, from 6 functions

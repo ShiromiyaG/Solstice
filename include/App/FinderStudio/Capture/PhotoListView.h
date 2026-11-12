@@ -34,7 +34,7 @@ public:
     virtual bool vf31(u32 a1, u32 a2);  // slot 31, FinderStudioCapture:00005534; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual void MessageMenuViewListener_vf0(u32 a1);  // overrides App::FinderStudio::Static::MessageMenuViewListener's slot 0, through the base at +0xc4 (its thunk FinderStudioCapture:00015370)  // slot 32, FinderStudioCapture:00005E20
     virtual void MessageMenuViewListener_vf1();  // overrides App::FinderStudio::Static::MessageMenuViewListener's slot 1, through the base at +0xc4 (its thunk FinderStudioCapture:00015340)  // slot 33, FinderStudioCapture:0000563C
-    virtual void vf34();  // slot 34, FinderStudioCapture:00005DFC
+    virtual void InfoWindowBookTypeListener_vf2();  // overrides app::tool::InfoWindowBookTypeListener's slot 2, through the base at +0xc8 (its thunk FinderStudioCapture:00015600)  // slot 34, FinderStudioCapture:00005DFC
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_CC[0x64];  // +0xcc: nothing seen to use it

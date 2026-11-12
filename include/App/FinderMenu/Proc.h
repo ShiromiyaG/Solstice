@@ -20,9 +20,9 @@ public:
     virtual void AppFrameListener_vf0(u32 a1);  // overrides  // slot 0, FinderMenu:000062E8; the parameters are a guess from its code (types too)
     virtual ~Proc();
     virtual bool vf3();  // slot 3, FinderMenu:000063EC; the return type is a guess from its code
-    virtual bool vf4();  // slot 4, FinderMenu:000062BC; the return type is a guess from its code
-    virtual void vf5();  // slot 5, FinderMenu:000062D8
-    virtual void vf6(u32 a1, u32 a2);  // slot 6, FinderMenu:000063B4; the parameters are a guess from its code (types too)
+    virtual ::gfl2::proc::Result UpdateFunc(::gfl2::proc::Manager *pManager);  // overrides GameSys::GameProc's slot 3, through the base at +0x4 (its thunk FinderMenu:00006CFC)  // slot 4, FinderMenu:000062BC
+    virtual void PreDrawFunc(::gfl2::proc::Manager *pManager);  // overrides GameSys::GameProc's slot 4, through the base at +0x4 (its thunk FinderMenu:00006D18)  // slot 5, FinderMenu:000062D8
+    virtual void DrawFunc(::gfl2::proc::Manager *pManager, ::gfl2::gfx::CtrDisplayNo displayNo);  // overrides GameSys::GameProc's slot 5, through the base at +0x4 (its thunk FinderMenu:00006DD8)  // slot 6, FinderMenu:000063B4
     virtual bool vf7();  // slot 7, FinderMenu:000062FC; the return type is a guess from its code
     virtual bool vf8();  // slot 8, FinderMenu:00006304; the return type is a guess from its code
 

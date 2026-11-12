@@ -19,7 +19,7 @@ public:
     virtual void vf3(::GameSys::GameManager *pGameManager);  // overrides  // slot 3, code.bin:0039D9CC; the parameters are a guess from its code (types too); as GameSys::GameEvent declares it
     virtual ::GameSys::GameEventResult vf4(::GameSys::GameManager *pGameManager);  // overrides  // slot 4, code.bin:0039DA00; the parameters are a guess from its code (types too); as GameSys::GameEvent declares it
     virtual void vf5(::GameSys::GameManager *pGameManager);  // overrides  // slot 5, code.bin:0039D9C8; the parameters are a guess from its code (types too); as GameSys::GameEvent declares it
-    virtual void vf7(u32 a1);  // slot 7, code.bin:0039D9B8; the parameters are a guess from its code (types too)
+    virtual void TownMapEventListener_vf0(u32 a1);  // overrides App::Event::TownMapEventListener's slot 0, through the base at +0x18 (its thunk code.bin:004CEA08)  // slot 7, code.bin:0039D9B8
 
     // member functions the game names. static or not is not in a name, nor is the return type
     // (void until config/<version>/returns.csv has it)

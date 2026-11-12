@@ -30,8 +30,8 @@ public:
     virtual void vf28(u32 a1);  // overrides  // slot 28, MysteryGift:0000CDD4; the parameters are a guess from its code (types too)
     virtual void vf29(u32 a1);  // overrides  // slot 29, MysteryGift:0000CE80; the parameters are a guess from its code (types too)
     virtual void vf36(u32 a1);  // slot 36, MysteryGift:0000CEEC; the parameters are a guess from its code (types too)
-    virtual bool vf37();  // slot 37, MysteryGift:0000D030; the return type is a guess from its code
-    virtual bool vf38();  // slot 38, MysteryGift:0000D058; the return type is a guess from its code
+    virtual bool IValueProvider_vf0();  // overrides NetApp::Gift::GiftMessageMenu::IValueProvider's slot 0, through the base at +0x2b0 (its thunk MysteryGift:000104B0)  // slot 37, MysteryGift:0000D030
+    virtual u32 IValueProvider_vf1();  // overrides NetApp::Gift::GiftMessageMenu::IValueProvider's slot 1, through the base at +0x2b0 (its thunk MysteryGift:000104B8)  // slot 38, MysteryGift:0000D058
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_2B4;  // +0x2b4, a guess: a pointer, from 6 functions

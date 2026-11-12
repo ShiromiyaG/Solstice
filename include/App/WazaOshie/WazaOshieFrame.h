@@ -24,7 +24,7 @@ public:
     virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 4, WazaOshie:00000E30; as applib::frame::CellSuper declares it
     virtual s32 EndFunc();  // overrides  // slot 5, WazaOshie:00000D0C; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, WazaOshie:0000489C; as applib::frame::CellSuper declares it
-    virtual void vf7();  // slot 7, WazaOshie:00000CDC
+    virtual void WazaOshieDrawListener_vf0();  // overrides App::WazaOshie::WazaOshieDrawListener's slot 0, through the base at +0x18 (its thunk WazaOshie:000048EC)  // slot 7, WazaOshie:00000CDC
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_1C[0x8];  // +0x1c: nothing seen to use it

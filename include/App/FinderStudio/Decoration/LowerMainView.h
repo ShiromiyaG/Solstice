@@ -32,8 +32,8 @@ public:
     virtual bool vf31();  // slot 31, FinderStudioDecoration:000017CC; the return type is a guess from its code
     virtual bool vf32(u32 a1, u32 a2);  // slot 32, FinderStudioDecoration:00001628; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual bool vf33();  // slot 33, FinderStudioDecoration:00001564; the return type is a guess from its code
-    virtual void vf34();  // slot 34, FinderStudioDecoration:00001968
-    virtual void vf35(u32 a1);  // slot 35, FinderStudioDecoration:00001984; the parameters are a guess from its code (types too)
+    virtual void InfoWindowBookTypeListener_vf2();  // overrides app::tool::InfoWindowBookTypeListener's slot 2, through the base at +0xb0 (its thunk FinderStudioDecoration:00006FF8)  // slot 34, FinderStudioDecoration:00001968
+    virtual void MessageMenuViewListener_vf0(u32 a1);  // overrides App::FinderStudio::Static::MessageMenuViewListener's slot 0, through the base at +0xb4 (its thunk FinderStudioDecoration:000070EC)  // slot 35, FinderStudioDecoration:00001984
     virtual void vf36(u32 a1);  // slot 36, FinderStudioDecoration:0000156C; the parameters are a guess from its code (types too)
 
     // data members, from how the class's functions use this (tools/fields.py)

@@ -29,20 +29,20 @@ public:
     virtual void NextFrameMainFunc(::gfl2::proc::Manager*);  // overrides  // slot 8, imported
     virtual void EventCheckFunc(::GameSys::GameManager *pGameManager);  // overrides  // slot 9, imported; as GameSys::GameProc declares it
     virtual bool ViewListener_vf14();  // overrides App::FinderStudio::Capture::ViewListener's slot 14, through the base at +0x20 (its thunk FinderStudioCapture:00015864)  // slot 10, FinderStudioCapture:00011768
-    virtual bool vf11();  // slot 11, FinderStudioCapture:00012594; the return type is a guess from its code
+    virtual bool ViewListener_vf15();  // overrides App::FinderStudio::Capture::ViewListener's slot 15, through the base at +0x20 (its thunk FinderStudioCapture:000159A4)  // slot 11, FinderStudioCapture:00012594
     virtual void vf12();  // slot 12, FinderStudioCapture:0000C270
     virtual void vf13();  // slot 13, FinderStudioCapture:00012730
     virtual void vf14();  // slot 14, FinderStudioCapture:0000C1EC
     virtual void vf15(u32 a1);  // slot 15, FinderStudioCapture:000118E0; the parameters are a guess from its code (types too)
     virtual u8 vf16();  // slot 16, FinderStudioCapture:00011720; the return type is a guess from its code
-    virtual void vf17(u32 a1, u32 a2);  // slot 17, FinderStudioCapture:00011018; the parameters are a guess from its code (types too)
+    virtual void ViewListener_vf2(u32 a1, u32 a2);  // overrides App::FinderStudio::Capture::ViewListener's slot 2, through the base at +0x20 (its thunk FinderStudioCapture:00015734)  // slot 17, FinderStudioCapture:00011018
     virtual void ViewListener_vf4(u32 a1, u32 a2);  // overrides App::FinderStudio::Capture::ViewListener's slot 4, through the base at +0x20 (its thunk FinderStudioCapture:000157E8)  // slot 18, FinderStudioCapture:000112FC
     virtual void ViewListener_vf6(u32 a1);  // overrides App::FinderStudio::Capture::ViewListener's slot 6, through the base at +0x20 (its thunk FinderStudioCapture:000157BC)  // slot 19, FinderStudioCapture:000112DC
-    virtual u8 vf20();  // slot 20, FinderStudioCapture:000112C8; the return type is a guess from its code
+    virtual u8 ViewListener_vf7();  // overrides App::FinderStudio::Capture::ViewListener's slot 7, through the base at +0x20 (its thunk FinderStudioCapture:000157B0)  // slot 20, FinderStudioCapture:000112C8
     virtual void vf21(u32 a1, u32 a2, u32 a3);  // slot 21, FinderStudioCapture:000124F8; the parameters are a guess from its code (types too)
-    virtual void vf22();  // slot 22, FinderStudioCapture:00010FB4
+    virtual void ViewListener_vf9();  // overrides App::FinderStudio::Capture::ViewListener's slot 9, through the base at +0x20 (its thunk FinderStudioCapture:000156D0)  // slot 22, FinderStudioCapture:00010FB4
     virtual void ViewListener_vf11(u32 a1);  // overrides App::FinderStudio::Capture::ViewListener's slot 11, through the base at +0x20 (its thunk FinderStudioCapture:000158EC)  // slot 23, FinderStudioCapture:00011944
-    virtual u8 vf24();  // slot 24, FinderStudioCapture:0001175C; the return type is a guess from its code
+    virtual u8 ViewListener_vf12();  // overrides App::FinderStudio::Capture::ViewListener's slot 12, through the base at +0x20 (its thunk FinderStudioCapture:00015858)  // slot 24, FinderStudioCapture:0001175C
     virtual void vf25();  // slot 25, FinderStudioCapture:0000B944
     virtual void vf26();  // slot 26, FinderStudioCapture:0000BF7C
     virtual void vf27();  // slot 27, FinderStudioCapture:0000BDB8
@@ -98,8 +98,8 @@ public:
     virtual void vf77();  // slot 77, FinderStudioCapture:0000CDA0
     virtual void vf78();  // slot 78, FinderStudioCapture:0000CEB8
     virtual void vf79();  // slot 79, FinderStudioCapture:0000CE9C
-    virtual void vf80();  // slot 80, FinderStudioCapture:00011094
-    virtual void vf81();  // slot 81, FinderStudioCapture:00010FA8
+    virtual void FrameListener_vf0();  // overrides App::FinderStudio::Capture::FrameListener's slot 0, through the base at +0x3c (its thunk FinderStudioCapture:00015D68)  // slot 80, FinderStudioCapture:00011094
+    virtual void FrameListener_vf1();  // overrides App::FinderStudio::Capture::FrameListener's slot 1, through the base at +0x3c (its thunk FinderStudioCapture:00015D5C)  // slot 81, FinderStudioCapture:00010FA8
 };
 
 }  // namespace Capture

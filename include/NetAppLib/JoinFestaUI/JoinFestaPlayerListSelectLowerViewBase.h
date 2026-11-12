@@ -15,8 +15,6 @@ namespace app { namespace tool { class PaneListView; } }
 namespace app { namespace tool { class PokeIconToolEx; } }
 namespace app { namespace util { class Heap; } }
 namespace gfl2 { namespace math { class Vector3; } }
-namespace gfl2 { namespace ui { class Button; } }
-namespace gfl2 { namespace ui { class VectorDevice; } }
 
 namespace NetAppLib {
 namespace JoinFestaUI {
@@ -41,12 +39,12 @@ public:
     virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 14, code.bin:004707D0; as app::ui::UIView declares it
     virtual bool IsDrawing() const;  // overrides  // slot 17, code.bin:004C90F0; as app::ui::UIView declares it
     virtual bool OnLayoutPaneEvent(unsigned int);  // slot 22, code.bin:0046FFAC; the return type is a guess from its code
-    virtual void OnKeyAction(::gfl2::ui::Button*, ::gfl2::ui::VectorDevice*, ::gfl2::ui::VectorDevice*);  // slot 23, code.bin:0046F3AC
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0xc4 (its thunk code.bin:004CD9D0)  // slot 23, code.bin:0046F3AC
     virtual void CallBack_CursorMove(void*, ::app::tool::PaneList::PANE_DATA const*, unsigned int, unsigned int);  // slot 24, code.bin:0046D004
     virtual void CallBack_CursorOff(void*, ::app::tool::PaneList::PANE_DATA const*, unsigned int, unsigned int);  // slot 25, code.bin:00470248
     virtual void CallBack_ListWrite(void*, ::app::tool::PaneList::PANE_DATA const*, unsigned int, unsigned int);  // slot 26, code.bin:0047024C
     virtual void CallBack_ItemChange(void*, unsigned int, unsigned int);  // slot 27, code.bin:00470588
-    virtual void PaneListItemSelectListener(unsigned int);  // slot 28, code.bin:004706E0
+    virtual void Listener_vf0(u32 a1);  // overrides app::tool::PaneListView::Listener's slot 0, through the base at +0xcc (its thunk code.bin:004CE538)  // slot 28, code.bin:004706E0
 
     // member functions the game names. static or not is not in a name, nor is the return type
     // (void until config/<version>/returns.csv has it)

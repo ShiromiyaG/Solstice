@@ -1,2 +1,3 @@
 # compilers and flags a whole library is built with, beside the defaults of tools/config.py:
 # <compiler> <flags>   # which library, and the evidence
+4.1/b1049 --cpu=MPCore --thumb --fpmode=fast --apcs=/interwork -O3 -Otime --split_sections --data_reorder --signed_chars --wchar16 --multibyte_chars --no_allow_fpreg_for_nonfpdata   # Thumb code (mode thumb in functions.csv): the defaults with --thumb for --arm; _is_digit 0x2FED70 gives its bytes (the owner, 2026-11-12)

@@ -42,8 +42,8 @@ public:
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
     virtual void Create2DOneLayout(::NetAppLib::System::ApplicationWorkBase*, int, unsigned int, unsigned int, ::app::util::G2DUtil::SETUP_DISPLAY_TYPE, ::NetAppLib::Message::MessageUtility*, unsigned int);  // overrides  // slot 21, imported; as NetAppLib::System::NetApplicationViewBase declares it
     virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0xa4 (its thunk BattleTree:000037BC)  // slot 22, BattleTree:000017CC
-    virtual bool vf23(u32 a1);  // slot 23, BattleTree:000016DC; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf24(u32 a1, u32 a2);  // slot 24, BattleTree:00001718; the parameters are a guess from its code (types too)
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0xa4 (its thunk BattleTree:00003780)  // slot 23, BattleTree:000016DC
+    virtual void Listener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::tool::ScrollPaneManager::Listener's slot 6, through the base at +0xa0 (its thunk BattleTree:00003678)  // slot 24, BattleTree:00001718
     virtual void Listener_vf1(u32 a1, u32 a2);  // overrides app::tool::ScrollPaneManager::Listener's slot 1, through the base at +0xa0 (its thunk BattleTree:0000372C)  // slot 25, BattleTree:00001C84
     virtual void vf26(u32 a1, u32 a2);  // slot 26, BattleTree:00001D00; the parameters are a guess from its code (types too)
 

@@ -21,9 +21,9 @@ public:
     virtual void vf12();  // overrides  // slot 12, JoinFestaSubScreen:00004F90; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf13();  // overrides  // slot 13, JoinFestaSubScreen:00004FCC; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, JoinFestaSubScreen:0000503C; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17();  // slot 17, JoinFestaSubScreen:00005104
+    virtual void JoinFestaSubScreenSelectLowerInputListener_vf1();  // overrides NetApp::JoinFestaSubScreen::View::JoinFestaSubScreenSelectLowerInputListener's slot 1, through the base at +0x34 (its thunk JoinFestaSubScreen:0000708C)  // slot 17, JoinFestaSubScreen:00005104
     virtual void JoinFestaSubScreenSelectLowerInputListener_vf0();  // overrides NetApp::JoinFestaSubScreen::View::JoinFestaSubScreenSelectLowerInputListener's slot 0, through the base at +0x34 (its thunk JoinFestaSubScreen:00007070)  // slot 18, JoinFestaSubScreen:00004FB4
-    virtual void vf19();  // slot 19, JoinFestaSubScreen:00005070
+    virtual void JoinFestaSubScreenAttractionLowerInputListener_vf0();  // overrides NetApp::JoinFestaSubScreen::View::JoinFestaSubScreenAttractionLowerInputListener's slot 0, through the base at +0x30 (its thunk JoinFestaSubScreen:00006E34)  // slot 19, JoinFestaSubScreen:00005070
 };
 
 }  // namespace Frame

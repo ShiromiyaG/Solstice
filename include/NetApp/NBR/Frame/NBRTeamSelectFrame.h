@@ -25,14 +25,14 @@ public:
     virtual void vf12();  // overrides  // slot 12, NBR:00003FFC; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf13();  // overrides  // slot 13, NBR:00004044; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, NBR:00004074; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17();  // slot 17, NBR:00004210
-    virtual void vf18();  // slot 18, NBR:0000481C
-    virtual void vf19();  // slot 19, NBR:00004594
-    virtual bool vf20();  // slot 20, NBR:000047E8; the return type is a guess from its code
+    virtual void NBRNetRecvListener_vf0();  // overrides NetApp::NBR::NBRNetRecvListener's slot 0, through the base at +0x6c (its thunk NBR:00009CCC)  // slot 17, NBR:00004210
+    virtual void NBRNetRecvListener_vf10();  // overrides NetApp::NBR::NBRNetRecvListener's slot 10, through the base at +0x6c (its thunk NBR:00009D14)  // slot 18, NBR:0000481C
+    virtual void NBRLowerViewTeamSelectListener_vf0();  // overrides NetApp::NBR::View::NBRLowerViewTeamSelectListener's slot 0, through the base at +0x70 (its thunk NBR:0000A728)  // slot 19, NBR:00004594
+    virtual bool NBRLowerViewTeamSelectListener_vf1();  // overrides NetApp::NBR::View::NBRLowerViewTeamSelectListener's slot 1, through the base at +0x70 (its thunk NBR:0000A764)  // slot 20, NBR:000047E8
     virtual void vf21();  // slot 21, NBR:000045D8
     virtual void vf22();  // slot 22, NBR:00004398
-    virtual void vf23();  // slot 23, NBR:00004494
-    virtual bool vf24();  // slot 24, NBR:00004338; the return type is a guess from its code
+    virtual void NBRLowerViewTeamSelectListener_vf4();  // overrides NetApp::NBR::View::NBRLowerViewTeamSelectListener's slot 4, through the base at +0x70 (its thunk NBR:0000A628)  // slot 23, NBR:00004494
+    virtual bool NBRLowerViewTeamSelectListener_vf5();  // overrides NetApp::NBR::View::NBRLowerViewTeamSelectListener's slot 5, through the base at +0x70 (its thunk NBR:0000A4CC)  // slot 24, NBR:00004338
     virtual void vf25();  // slot 25, NBR:000042B4
     virtual void vf26();  // slot 26, NBR:00004258
 

@@ -26,8 +26,8 @@ public:
     virtual void NextFrameMainFunc(::gfl2::proc::Manager*);  // overrides  // slot 8, imported
     virtual void EventCheckFunc(::GameSys::GameManager *pGameManager);  // overrides  // slot 9, imported; as GameSys::GameProc declares it
     virtual void vf10();  // slot 10, AppDemo:00001258
-    virtual u32 vf11(u32 a1);  // slot 11, AppDemo:0000036C; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf12();  // slot 12, AppDemo:00000378
+    virtual u32 IEventHandler_vf2();  // overrides App::AppDemo::AppDemoUtility::IEventHandler's slot 2, through the base at +0x20 (its thunk AppDemo:0000129C)  // slot 11, AppDemo:0000036C
+    virtual void IEventHandler_vf3();  // overrides App::AppDemo::AppDemoUtility::IEventHandler's slot 3, through the base at +0x20 (its thunk AppDemo:000012A4)  // slot 12, AppDemo:00000378
     virtual void vf13();  // slot 13, AppDemo:00000374
 
     // data members, from how the class's functions use this (tools/fields.py)

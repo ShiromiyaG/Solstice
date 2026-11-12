@@ -20,7 +20,7 @@ public:
     virtual s32 EndFunc();  // overrides  // slot 5, Battle:000578A8; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, Battle:000E1568; as applib::frame::CellSuper declares it
     virtual bool vf7(u32 a1, u32 a2, f32 f0, f32 f1, f32 f2, f32 f3, f32 f4, f32 f5, f32 f6, f32 f7);  // slot 7, Battle:00057308; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual bool vf8(u32 a1, u32 a2);  // slot 8, Battle:00057148; the parameters are a guess from its code (types too); the return type is a guess from its code
+    virtual bool BattleUITargetSelectLowerDrawDelegate_vf3(u32 a1, u32 a2);  // overrides btl::app::BattleUITargetSelectLowerDrawDelegate's slot 3, through the base at +0x18 (its thunk Battle:000E70AC)  // slot 8, Battle:00057148
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_1C;  // +0x1c, a guess: a pointer, from 7 functions

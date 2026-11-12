@@ -26,10 +26,10 @@ public:
     BoxTeamNameState();  // a constructor, Box:0001CF60: it reads nothing but this (ctors.csv)
     virtual ~BoxTeamNameState();
     virtual void vf2();  // overrides  // slot 2, Box:0001CDFC
-    virtual s32 vf3();  // slot 3, Box:0001CDE0; the return type is a guess from its code
+    virtual s32 InitFunc();  // overrides applib::frame::CellSuper's slot 2, through the base at +0x3c (its thunk Box:00028224)  // slot 3, Box:0001CDE0
     virtual void vf4();  // slot 4, Box:0001CD0C
-    virtual void vf5();  // slot 5, Box:0001CDD8
-    virtual void vf6();  // slot 6, Box:0001CDC8
+    virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides applib::frame::CellSuper's slot 4, through the base at +0x3c (its thunk Box:0002821C)  // slot 5, Box:0001CDD8
+    virtual s32 EndFunc();  // overrides applib::frame::CellSuper's slot 5, through the base at +0x3c (its thunk Box:00028208)  // slot 6, Box:0001CDC8
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_54[0x4];  // +0x54: nothing seen to use it

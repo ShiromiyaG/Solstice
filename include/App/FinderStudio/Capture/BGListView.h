@@ -32,7 +32,7 @@ public:
     virtual void vf32();  // slot 32, FinderStudioCapture:000011A0
     virtual void vf33(u32 a1, u32 a2, u32 a3);  // slot 33, FinderStudioCapture:000011A4; the parameters are a guess from its code (types too)
     virtual void vf34();  // slot 34, FinderStudioCapture:0000126C
-    virtual void vf35(u32 a1);  // slot 35, FinderStudioCapture:00001270; the parameters are a guess from its code (types too)
+    virtual void Listener_vf0(u32 a1);  // overrides app::tool::PaneListView::Listener's slot 0, through the base at +0xc8 (its thunk FinderStudioCapture:00015534)  // slot 35, FinderStudioCapture:00001270
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_CC[0x4];  // +0xcc: nothing seen to use it

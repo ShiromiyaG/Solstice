@@ -26,9 +26,9 @@ public:
     virtual void CellSuper_vf6();  // overrides  // slot 6, Config:000041B0; as applib::frame::CellSuper declares it
     virtual void UIInputListener_vf4();  // overrides app::ui::UIInputListener's slot 4, through the base at +0x18 (its thunk Config:000042B4)  // slot 7, Config:00001730
     virtual bool vf8(u32 a1);  // slot 8, Config:000014E4; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf9(u32 a1);  // slot 9, Config:0000163C; the parameters are a guess from its code (types too)
+    virtual void UIInputListener_vf5(u32 a1);  // overrides app::ui::UIInputListener's slot 5, through the base at +0x18 (its thunk Config:000041C0)  // slot 9, Config:0000163C
     virtual bool vf10(u32 a1, u32 a2);  // slot 10, Config:00001288; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf11(u32 a1);  // slot 11, Config:00001634; the parameters are a guess from its code (types too)
+    virtual void IEventHandler_vf2(u32 a1);  // overrides App::Tool::MessageMenuView::IEventHandler's slot 2, through the base at +0x1c (its thunk Config:00004330)  // slot 11, Config:00001634
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_20;  // +0x20, a guess: a pointer, from 13 functions

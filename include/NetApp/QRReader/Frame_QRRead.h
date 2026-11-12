@@ -39,7 +39,7 @@ public:
     virtual void vf17();  // slot 17, QRReader:00001A98
     virtual u8 IQRScanPowerProvider_vf0();  // overrides NetApp::QRReader::UpperView_Main::IQRScanPowerProvider's slot 0, through the base at +0x28 (its thunk QRReader:00009800)  // slot 18, QRReader:00001B74
     virtual void vf19();  // slot 19, QRReader:00001864
-    virtual void vf20(u32 a1, u32 a2);  // slot 20, QRReader:00001B84; the parameters are a guess from its code (types too)
+    virtual void IFieldScanPowerProvider_vf0(u32 a1, u32 a2);  // overrides NetApp::QRReader::LowerView_Main::IFieldScanPowerProvider's slot 0, through the base at +0x30 (its thunk QRReader:00009A6C)  // slot 20, QRReader:00001B84
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_34;  // +0x34, a guess: a pointer, from 2 functions

@@ -46,10 +46,10 @@ public:
     BoxExitState();  // a constructor, Box:00001298: it reads nothing but this (ctors.csv)
     virtual ~BoxExitState();
     virtual void vf2();  // overrides  // slot 2, Box:0000110C
-    virtual s32 vf3();  // slot 3, Box:000010F8; the return type is a guess from its code
+    virtual s32 InitFunc();  // overrides applib::frame::CellSuper's slot 2, through the base at +0x3c (its thunk Box:000279D4)  // slot 3, Box:000010F8
     virtual void vf4();  // slot 4, Box:00000EA4
-    virtual void vf5();  // slot 5, Box:000010F0
-    virtual void vf6();  // slot 6, Box:000010E0
+    virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides applib::frame::CellSuper's slot 4, through the base at +0x3c (its thunk Box:000279CC)  // slot 5, Box:000010F0
+    virtual s32 EndFunc();  // overrides applib::frame::CellSuper's slot 5, through the base at +0x3c (its thunk Box:000279B8)  // slot 6, Box:000010E0
 };
 
 }  // namespace Box

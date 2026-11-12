@@ -20,10 +20,10 @@ public:
     virtual void RequestSequenceBase_vf2();  // overrides  // slot 2, code.bin:003DD14C
     virtual bool RequestSequenceBase_vf3();  // overrides  // slot 3, code.bin:003DC414; the return type is a guess from its code
     virtual void RequestSequenceBase_vf4();  // overrides  // slot 4, code.bin:003DC41C
-    virtual void vf5(u32 a1);  // slot 5, code.bin:003DC668; the parameters are a guess from its code (types too)
+    virtual void NexDataStoreClientListener_vf7();  // overrides gflnet2::nex::NexDataStoreClientListener's slot 7, through the base at +0x18 (its thunk code.bin:004CEB10)  // slot 5, code.bin:003DC668
     virtual void vf6();  // slot 6, code.bin:003DCC94
     virtual void vf7(u32 a1);  // slot 7, code.bin:003DC738; the parameters are a guess from its code (types too)
-    virtual void vf8(u32 a1, u32 a2);  // slot 8, code.bin:003DC620; the parameters are a guess from its code (types too)
+    virtual void NexDataStoreClientListener_vf12(u32 a1, u32 a2);  // overrides gflnet2::nex::NexDataStoreClientListener's slot 12, through the base at +0x18 (its thunk code.bin:004CEAC8)  // slot 8, code.bin:003DC620
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_1C;  // +0x1c, a guess: a pointer, from 3 functions

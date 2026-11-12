@@ -33,10 +33,10 @@ public:
     virtual s32 EndFunc();  // overrides  // slot 5, FieldMenu:000041BC; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, FieldMenu:000122F0; as applib::frame::CellSuper declares it
     virtual void vf7();  // slot 7, FieldMenu:00009524
-    virtual void vf8(u32 a1);  // slot 8, FieldMenu:0000244C; the parameters are a guess from its code (types too)
-    virtual bool vf9(u32 a1);  // slot 9, FieldMenu:00003110; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf10();  // slot 10, FieldMenu:000036E4
-    virtual void vf11();  // slot 11, FieldMenu:00003748
+    virtual void RideDrawListener_vf0(u32 a1);  // overrides App::FieldMenu::RideDrawListener's slot 0, through the base at +0x1c (its thunk FieldMenu:000127EC)  // slot 8, FieldMenu:0000244C
+    virtual bool RideDrawListener_vf1(u32 a1);  // overrides App::FieldMenu::RideDrawListener's slot 1, through the base at +0x1c (its thunk FieldMenu:0001289C)  // slot 9, FieldMenu:00003110
+    virtual void QuickMatchDrawListener_vf0();  // overrides App::FieldMenu::QuickMatchDrawListener's slot 0, through the base at +0x20 (its thunk FieldMenu:000128D4)  // slot 10, FieldMenu:000036E4
+    virtual void QuickMatchDrawListener_vf1();  // overrides App::FieldMenu::QuickMatchDrawListener's slot 1, through the base at +0x20 (its thunk FieldMenu:00012938)  // slot 11, FieldMenu:00003748
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_24;  // +0x24, a guess: a pointer, from 2 functions

@@ -20,10 +20,10 @@ public:
     virtual void AppFrameListener_vf0(u32 a1);  // overrides  // slot 0, code.bin:002EC63C; the parameters are a guess from its code (types too)
     virtual ~Proc();
     virtual bool vf3();  // slot 3, code.bin:002EC74C; the return type is a guess from its code
-    virtual bool vf4();  // slot 4, code.bin:002EC608; the return type is a guess from its code
-    virtual void vf5(u32 a1, u32 a2);  // slot 5, code.bin:00312948; the parameters are a guess from its code (types too)
+    virtual ::gfl2::proc::Result UpdateFunc(::gfl2::proc::Manager *pManager);  // overrides GameSys::GameProc's slot 3, through the base at +0x4 (its thunk code.bin:004D0884)  // slot 4, code.bin:002EC608
+    virtual void DrawFunc(::gfl2::proc::Manager *pManager, ::gfl2::gfx::CtrDisplayNo displayNo);  // overrides GameSys::GameProc's slot 5, through the base at +0x4 (its thunk code.bin:004D0964)  // slot 5, code.bin:00312948
     virtual bool vf6();  // slot 6, code.bin:002EC680; the return type is a guess from its code
-    virtual bool vf7();  // slot 7, code.bin:002EC688; the return type is a guess from its code
+    virtual ::gfl2::proc::Result EndFunc(::gfl2::proc::Manager *pManager);  // overrides GameSys::GameProc's slot 6, through the base at +0x4 (its thunk code.bin:004D08A8)  // slot 7, code.bin:002EC688
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_24;  // +0x24, a guess: a pointer, from 4 functions

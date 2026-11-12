@@ -31,14 +31,14 @@ public:
     virtual void vf13();  // slot 13, P2PTrade:00000538
     virtual void vf14();  // slot 14, P2PTrade:0000053C
     virtual void vf15();  // slot 15, P2PTrade:000004C4
-    virtual void vf16(u32 a1);  // slot 16, P2PTrade:000004E0; the parameters are a guess from its code (types too)
-    virtual void vf17(u32 a1);  // slot 17, P2PTrade:00000500; the parameters are a guess from its code (types too)
+    virtual void P2PTradeResponseListener_vf8(u32 a1);  // overrides NetAppLib::P2PTrade::P2PTradeResponseListener's slot 8, through the base at +0x20 (its thunk P2PTrade:000021E8)  // slot 16, P2PTrade:000004E0
+    virtual void P2PTradeResponseListener_vf9(u32 a1);  // overrides NetAppLib::P2PTrade::P2PTradeResponseListener's slot 9, through the base at +0x20 (its thunk P2PTrade:00002208)  // slot 17, P2PTrade:00000500
     virtual void vf18();  // slot 18, P2PTrade:000004C0
     virtual void vf19();  // slot 19, P2PTrade:00000514
     virtual void vf20();  // slot 20, P2PTrade:000004FC
     virtual void vf21();  // slot 21, P2PTrade:000004C8
-    virtual void vf22(u32 a1);  // slot 22, P2PTrade:000004CC; the parameters are a guess from its code (types too)
-    virtual void vf23(u32 a1);  // slot 23, P2PTrade:00000524; the parameters are a guess from its code (types too)
+    virtual void P2PTradeResponseListener_vf14(u32 a1);  // overrides NetAppLib::P2PTrade::P2PTradeResponseListener's slot 14, through the base at +0x20 (its thunk P2PTrade:000021D4)  // slot 22, P2PTrade:000004CC
+    virtual void P2PTradeResponseListener_vf15(u32 a1);  // overrides NetAppLib::P2PTrade::P2PTradeResponseListener's slot 15, through the base at +0x20 (its thunk P2PTrade:00002224)  // slot 23, P2PTrade:00000524
 
     // data members, from how the class's functions use this (tools/fields.py)
     u32 field_24;  // +0x24, a guess: from 1 function

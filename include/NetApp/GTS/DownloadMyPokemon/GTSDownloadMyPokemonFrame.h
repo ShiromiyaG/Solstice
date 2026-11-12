@@ -27,15 +27,15 @@ public:
     virtual void vf13();  // overrides  // slot 13, GTS:0000EE7C; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, GTS:0000EEA0; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf17();  // slot 17, GTS:0000EFDC
-    virtual void vf18();  // slot 18, GTS:00012898
-    virtual void vf19();  // slot 19, GTS:0000F1BC
-    virtual void vf20();  // slot 20, GTS:0000F184
+    virtual void GTSDownloadStateConfirmResponseListener_vf0();  // overrides NetApp::GTS::RequestSequence::GTSDownloadStateConfirmResponseListener's slot 0, through the base at +0x34 (its thunk GTS:0001AF24)  // slot 18, GTS:00012898
+    virtual void GTSDownloadStateConfirmResponseListener_vf1();  // overrides NetApp::GTS::RequestSequence::GTSDownloadStateConfirmResponseListener's slot 1, through the base at +0x34 (its thunk GTS:0001AF8C)  // slot 19, GTS:0000F1BC
+    virtual void GTSDownloadStateConfirmResponseListener_vf2();  // overrides NetApp::GTS::RequestSequence::GTSDownloadStateConfirmResponseListener's slot 2, through the base at +0x34 (its thunk GTS:0001AF54)  // slot 20, GTS:0000F184
     virtual void GTSDownloadStateConfirmResponseListener_vf3();  // overrides NetApp::GTS::RequestSequence::GTSDownloadStateConfirmResponseListener's slot 3, through the base at +0x34 (its thunk GTS:0001AEFC)  // slot 21, GTS:0000F148
-    virtual void vf22();  // slot 22, GTS:0000F178
-    virtual void vf23();  // slot 23, GTS:0000F16C
-    virtual void vf24();  // slot 24, GTS:0000F13C
-    virtual void vf25();  // slot 25, GTS:0000F124
-    virtual void vf26();  // slot 26, GTS:0000F130
+    virtual void GTSDownloadTradePokemonResponseListener_vf0();  // overrides NetApp::GTS::RequestSequence::GTSDownloadTradePokemonResponseListener's slot 0, through the base at +0x38 (its thunk GTS:0001B1CC)  // slot 22, GTS:0000F178
+    virtual void GTSDownloadTradePokemonResponseListener_vf1();  // overrides NetApp::GTS::RequestSequence::GTSDownloadTradePokemonResponseListener's slot 1, through the base at +0x38 (its thunk GTS:0001B1C0)  // slot 23, GTS:0000F16C
+    virtual void GTSDownloadPokemonResponseListener_vf0();  // overrides NetApp::GTS::RequestSequence::GTSDownloadPokemonResponseListener's slot 0, through the base at +0x3c (its thunk GTS:0001B208)  // slot 24, GTS:0000F13C
+    virtual void GTSDownloadPokemonResponseListener_vf1();  // overrides NetApp::GTS::RequestSequence::GTSDownloadPokemonResponseListener's slot 1, through the base at +0x3c (its thunk GTS:0001B1FC)  // slot 25, GTS:0000F124
+    virtual void GTSRestorePokemonResponseListener_vf0();  // overrides NetApp::GTS::RequestSequence::GTSRestorePokemonResponseListener's slot 0, through the base at +0x40 (its thunk GTS:0001B214)  // slot 26, GTS:0000F130
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_44;  // +0x44, a guess: a pointer, from 3 functions

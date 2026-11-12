@@ -27,7 +27,7 @@ public:
     virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 14, MysteryGift:00007C9C; as NetAppLib::UI::NetAppCursorView declares it
     virtual bool vf25(u32 a1);  // slot 25, MysteryGift:00007B2C; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual void IEventHandler_vf2(u32 a1);  // overrides App::Tool::MessageMenuView::IEventHandler's slot 2, through the base at +0x178 (its thunk MysteryGift:0000FB34)  // slot 26, MysteryGift:00007B5C
-    virtual u32 vf27();  // slot 27, MysteryGift:00007B84; the return type is a guess from its code
+    virtual bool IValueProvider_vf0();  // overrides NetApp::Gift::GiftMessageMenu::IValueProvider's slot 0, through the base at +0x17c (its thunk MysteryGift:0000FBB0)  // slot 27, MysteryGift:00007B84
     virtual u32 IValueProvider_vf1();  // overrides NetApp::Gift::GiftMessageMenu::IValueProvider's slot 1, through the base at +0x17c (its thunk MysteryGift:0000FBB8)  // slot 28, MysteryGift:00007C94
 
     // data members, from how the class's functions use this (tools/fields.py)

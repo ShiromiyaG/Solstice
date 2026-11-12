@@ -29,11 +29,11 @@ public:
     virtual void GameProc_vf7();  // overrides  // slot 7, Resort:0002251C
     virtual void NextFrameMainFunc(::gfl2::proc::Manager*);  // overrides  // slot 8, imported
     virtual void EventCheckFunc(::GameSys::GameManager *pGameManager);  // overrides  // slot 9, imported; as GameSys::GameProc declares it
-    virtual bool vf10(u32 a1, u32 a2);  // slot 10, Resort:00005944; the parameters are a guess from its code (types too); the return type is a guess from its code
+    virtual bool ResortChangeIslandListener_vf0(u32 a1, u32 a2);  // overrides App::Resort::ResortChangeIslandListener's slot 0, through the base at +0x20 (its thunk Resort:00022AEC)  // slot 10, Resort:00005944
     virtual void vf11(u32 a1);  // slot 11, Resort:000157C8; the parameters are a guess from its code (types too)
-    virtual void vf12(u32 a1);  // slot 12, Resort:00005B00; the parameters are a guess from its code (types too)
-    virtual void vf13();  // slot 13, Resort:00019958
-    virtual void vf14();  // slot 14, Resort:00005C90
+    virtual void ResortSequenceListener_vf0(u32 a1);  // overrides App::Resort::ResortSequenceListener's slot 0, through the base at +0x24 (its thunk Resort:00022D88)  // slot 12, Resort:00005B00
+    virtual void ResortSequenceListener_vf1();  // overrides App::Resort::ResortSequenceListener's slot 1, through the base at +0x24 (its thunk Resort:00022DAC)  // slot 13, Resort:00019958
+    virtual void ResortSequenceListener_vf2();  // overrides App::Resort::ResortSequenceListener's slot 2, through the base at +0x24 (its thunk Resort:00022D98)  // slot 14, Resort:00005C90
 
     // data members, from how the class's functions use this (tools/fields.py)
     u32 field_28;  // +0x28, a guess: from 1 function

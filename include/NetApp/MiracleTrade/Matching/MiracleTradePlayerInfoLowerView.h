@@ -38,8 +38,8 @@ public:
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
     virtual void Create2DOneLayout(::NetAppLib::System::ApplicationWorkBase*, int, unsigned int, unsigned int, ::app::util::G2DUtil::SETUP_DISPLAY_TYPE, ::NetAppLib::Message::MessageUtility*, unsigned int);  // overrides  // slot 21, imported; as NetAppLib::System::NetApplicationViewBase declares it
-    virtual bool vf22(u32 a1, u32 a2);  // slot 22, MiracleTrade:000032CC; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf23(u32 a1);  // slot 23, MiracleTrade:00003268; the parameters are a guess from its code (types too)
+    virtual bool UIInputListener_vf0(u32 a1);  // overrides app::ui::UIInputListener's slot 0, through the base at +0xa0 (its thunk MiracleTrade:00004220)  // slot 22, MiracleTrade:000032CC
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0xa0 (its thunk MiracleTrade:000041BC)  // slot 23, MiracleTrade:00003268
     virtual void vf24();  // slot 24, MiracleTrade:000033E4
 
     // data members, from how the class's functions use this (tools/fields.py)

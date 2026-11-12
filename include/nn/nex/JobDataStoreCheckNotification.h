@@ -18,8 +18,8 @@ public:
     JobDataStoreCheckNotification();  // a constructor, code.bin:002251C8: it reads nothing but this (ctors.csv)
     virtual ~JobDataStoreCheckNotification();
     virtual void vf13(u32 a1, u32 a2, u32 a3);  // slot 13, code.bin:00224754; the parameters are a guess from its code (types too)
-    virtual void vf14(u32 a1);  // slot 14, code.bin:00224A00; the parameters are a guess from its code (types too)
-    virtual void vf15(u32 a1, u32 a2);  // slot 15, code.bin:00224B38; the parameters are a guess from its code (types too)
+    virtual void HttpEventListener_vf2(u32 a1);  // overrides nn::nex::HttpEventListener's slot 2, through the base at +0x68 (its thunk code.bin:004CAD38)  // slot 14, code.bin:00224A00
+    virtual void HttpEventListener_vf4(u32 a1, u32 a2);  // overrides nn::nex::HttpEventListener's slot 4, through the base at +0x68 (its thunk code.bin:004CAE74)  // slot 15, code.bin:00224B38
     virtual bool vf16(u32 a1, u32 a2);  // slot 16, code.bin:00224A88; the parameters are a guess from its code (types too); the return type is a guess from its code
 };
 

@@ -22,7 +22,7 @@ public:
     virtual ~Proc();
     virtual bool vf3();  // slot 3, HeroSelect:000027F4; the return type is a guess from its code
     virtual void vf4();  // slot 4, HeroSelect:0000253C
-    virtual void vf5(u32 a1, u32 a2);  // slot 5, HeroSelect:000027BC; the parameters are a guess from its code (types too)
+    virtual void DrawFunc(::gfl2::proc::Manager *pManager, ::gfl2::gfx::CtrDisplayNo displayNo);  // overrides GameSys::GameProc's slot 5, through the base at +0x4 (its thunk HeroSelect:00002CA4)  // slot 5, HeroSelect:000027BC
     virtual bool vf6();  // slot 6, HeroSelect:000026E0; the return type is a guess from its code
     virtual bool vf7();  // slot 7, HeroSelect:000026F0; the return type is a guess from its code
 

@@ -20,10 +20,10 @@ public:
     virtual void vf16();  // overrides  // slot 16, FieldRo:00034D08
     virtual void vf17();  // overrides  // slot 17, FieldRo:00034D3C
     virtual void vf18();  // overrides  // slot 18, FieldRo:0006610C
-    virtual u32 vf19();  // slot 19, FieldRo:0008C37C; the return type is a guess from its code
-    virtual u32 vf20();  // slot 20, FieldRo:0008C384; the return type is a guess from its code
-    virtual void vf21();  // slot 21, FieldRo:00034F10
-    virtual u32 vf22();  // slot 22, FieldRo:0008C374; the return type is a guess from its code
+    virtual u32 IFieldGimmickEncountActorBase_vf0();  // overrides Field::IFieldGimmickEncountActorBase's slot 0, through the base at +0xcc (its thunk FieldRo:000967DC)  // slot 19, FieldRo:0008C37C
+    virtual u32 IFieldGimmickEncountActorBase_vf1();  // overrides Field::IFieldGimmickEncountActorBase's slot 1, through the base at +0xcc (its thunk FieldRo:000967E4)  // slot 20, FieldRo:0008C384
+    virtual void IFieldGimmickEncountActorBase_vf2();  // overrides Field::IFieldGimmickEncountActorBase's slot 2, through the base at +0xcc (its thunk FieldRo:0009679C)  // slot 21, FieldRo:00034F10
+    virtual u32 IFieldGimmickEncountActorBase_vf3();  // overrides Field::IFieldGimmickEncountActorBase's slot 3, through the base at +0xcc (its thunk FieldRo:000967D4)  // slot 22, FieldRo:0008C374
 
     // data members, from how the class's functions use this (tools/fields.py)
     u32 field_D0;  // +0xd0, a guess: from 2 functions

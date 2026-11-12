@@ -38,8 +38,8 @@ public:
     virtual void vf21(u32 a1);  // slot 21, BoxSearch:000033E8; the parameters are a guess from its code (types too)
     virtual void UIInputListener_vf4();  // overrides app::ui::UIInputListener's slot 4, through the base at +0x80 (its thunk BoxSearch:00006BDC)  // slot 22, BoxSearch:000036C0
     virtual bool vf23(u32 a1);  // slot 23, BoxSearch:00002F18; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf24();  // slot 24, BoxSearch:000030A0
-    virtual void vf25(u32 a1);  // slot 25, BoxSearch:00003348; the parameters are a guess from its code (types too)
+    virtual void SearchListListener_vf0();  // overrides App::BoxSearch::SearchListListener's slot 0, through the base at +0x84 (its thunk BoxSearch:00006C44)  // slot 24, BoxSearch:000030A0
+    virtual void SearchListListener_vf1(u32 a1);  // overrides App::BoxSearch::SearchListListener's slot 1, through the base at +0x84 (its thunk BoxSearch:00006CE4)  // slot 25, BoxSearch:00003348
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_88;  // +0x88, a guess: a pointer, from 2 functions

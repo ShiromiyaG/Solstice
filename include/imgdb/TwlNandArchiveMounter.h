@@ -15,8 +15,8 @@ public:
     TwlNandArchiveMounter();  // a constructor, code.bin:003C7B00: it reads nothing but this (ctors.csv)
     virtual void vf0();  // slot 0, code.bin:003C7B2C
     virtual void vf1();  // slot 1, code.bin:003C7B1C
-    virtual void vf2();  // slot 2, code.bin:003C7A7C
-    virtual bool vf3();  // slot 3, code.bin:003C7ABC; the return type is a guess from its code
+    virtual s8 ArchiveMounter_vf0();  // overrides imgdb::ArchiveMounter's slot 0, through the base at +0x4 (its thunk code.bin:004D0B54)  // slot 2, code.bin:003C7A7C
+    virtual bool ArchiveMounter_vf1();  // overrides imgdb::ArchiveMounter's slot 1, through the base at +0x4 (its thunk code.bin:004D0B94)  // slot 3, code.bin:003C7ABC
     virtual s8 vf4();  // slot 4, code.bin:004BF148; the return type is a guess from its code
     virtual void vf5();  // slot 5, code.bin:004BF0F4
 };

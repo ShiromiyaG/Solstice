@@ -38,7 +38,7 @@ public:
     virtual bool vf21(u32 a1, u32 a2);  // slot 21, Box:0001AA60; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x80 (its thunk Box:00027718)  // slot 22, Box:0001B0FC
     virtual bool vf23(u32 a1);  // slot 23, Box:0001108C; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf24(u32 a1);  // slot 24, Box:00011058; the parameters are a guess from its code (types too)
+    virtual void SelectMenu(unsigned int);  // overrides app::tool::MenuWindowListener's slot 0, through the base at +0x84 (its thunk Box:00027954)  // slot 24, Box:00011058
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 field_88;  // +0x88, a guess: from 1 function

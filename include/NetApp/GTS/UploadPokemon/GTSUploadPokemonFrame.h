@@ -23,10 +23,10 @@ public:
     virtual void vf13();  // overrides  // slot 13, GTS:000056B8; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, GTS:000056F4; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf17();  // slot 17, GTS:000057C4
-    virtual void vf18();  // slot 18, GTS:00005E34
+    virtual void GTSUploadPokemonVerifyResponseListener_vf0();  // overrides NetApp::GTS::RequestSequence::GTSUploadPokemonVerifyResponseListener's slot 0, through the base at +0x34 (its thunk GTS:0001AE94)  // slot 18, GTS:00005E34
     virtual void vf19();  // slot 19, GTS:00005E04
-    virtual void vf20();  // slot 20, GTS:00005DF8
-    virtual void vf21();  // slot 21, GTS:00005DEC
+    virtual void GTSUploadPokemonResponseListener_vf0();  // overrides NetApp::GTS::RequestSequence::GTSUploadPokemonResponseListener's slot 0, through the base at +0x38 (its thunk GTS:0001B1B4)  // slot 20, GTS:00005DF8
+    virtual void GTSUploadPokemonResponseListener_vf1();  // overrides NetApp::GTS::RequestSequence::GTSUploadPokemonResponseListener's slot 1, through the base at +0x38 (its thunk GTS:0001B1A8)  // slot 21, GTS:00005DEC
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_3C;  // +0x3c, a guess: a pointer, from 11 functions

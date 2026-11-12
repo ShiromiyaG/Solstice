@@ -18,7 +18,7 @@ public:
     virtual ~JoinFestaAlertLowerView();
     virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 14, code.bin:004638FC; as app::ui::UIView declares it
     virtual void vf22(u32 a1);  // slot 22, code.bin:00463824; the parameters are a guess from its code (types too)
-    virtual void vf23(u32 a1, u32 a2);  // slot 23, code.bin:00463768; the parameters are a guess from its code (types too)
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0xa0 (its thunk code.bin:004CC1BC)  // slot 23, code.bin:00463768
 
     // member functions the game names. static or not is not in a name, nor is the return type
     // (void until config/<version>/returns.csv has it)

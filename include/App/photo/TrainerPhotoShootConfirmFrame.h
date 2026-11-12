@@ -20,7 +20,7 @@ public:
     virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 4, TrainerPhoto:00003A94; as applib::frame::CellSuper declares it
     virtual s32 EndFunc();  // overrides  // slot 5, TrainerPhoto:00003A5C; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, TrainerPhoto:00003F10; as applib::frame::CellSuper declares it
-    virtual void vf7(u32 a1);  // slot 7, TrainerPhoto:00003888; the parameters are a guess from its code (types too)
+    virtual void SelectMenu(unsigned int);  // overrides app::tool::MenuWindowListener's slot 0, through the base at +0x18 (its thunk TrainerPhoto:00004254)  // slot 7, TrainerPhoto:00003888
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 field_1C;  // +0x1c, a guess: from 3 functions

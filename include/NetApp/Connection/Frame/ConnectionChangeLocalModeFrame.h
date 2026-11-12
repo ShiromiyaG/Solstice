@@ -21,7 +21,7 @@ public:
     virtual void vf12();  // overrides  // slot 12, Connection:000014EC; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf13();  // overrides  // slot 13, Connection:0000150C; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, Connection:00001520; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17();  // slot 17, Connection:000015F8
+    virtual void DisconnectionResponseListener_vf0();  // overrides NetApp::Connection::RequestSequence::DisconnectionResponseListener's slot 0, through the base at +0x30 (its thunk Connection:00002FA8)  // slot 17, Connection:000015F8
     virtual void vf18();  // slot 18, Connection:000015E0
 
     // data members, from how the class's functions use this (tools/fields.py)

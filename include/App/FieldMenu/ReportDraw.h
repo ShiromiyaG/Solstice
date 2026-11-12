@@ -35,7 +35,7 @@ public:
     virtual void UIView_vf18();  // overrides  // slot 18, FieldMenu:00011A98; as app::ui::UIView declares it
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
-    virtual void vf21(u32 a1);  // slot 21, FieldMenu:000011CC; the parameters are a guess from its code (types too)
+    virtual void SelectMenu(unsigned int);  // overrides app::tool::MenuWindowListener's slot 0, through the base at +0x84 (its thunk FieldMenu:000127C8)  // slot 21, FieldMenu:000011CC
     virtual bool UIInputListener_vf0(u32 a1);  // overrides app::ui::UIInputListener's slot 0, through the base at +0x80 (its thunk FieldMenu:000123DC)  // slot 22, FieldMenu:00001508
     virtual bool vf23(u32 a1);  // slot 23, FieldMenu:000011D4; the parameters are a guess from its code (types too); the return type is a guess from its code
 

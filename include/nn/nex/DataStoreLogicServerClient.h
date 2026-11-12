@@ -30,7 +30,7 @@ public:
     virtual void vf18(u32 a1, u32 a2);  // slot 18, code.bin:00203F1C; the parameters are a guess from its code (types too)
     virtual void vf19(u32 a1, u32 a2, u32 a3);  // slot 19, code.bin:0020052C; the parameters are a guess from its code (types too)
     virtual void vf20();  // slot 20, code.bin:0021A7D8
-    virtual void vf21(u32 a1, u32 a2, u32 a3);  // slot 21, code.bin:0021A7F4; the parameters are a guess from its code (types too)
+    virtual void DataStoreLogicServerClientInterface_vf33(u32 a1, u32 a2, u32 a3);  // overrides nn::nex::DataStoreLogicServerClientInterface's slot 33, through the base at +0x10 (its thunk code.bin:004CCC0C)  // slot 21, code.bin:0021A7F4
     virtual void vf22(u32 a1, u32 a2);  // slot 22, code.bin:0021A89C; the parameters are a guess from its code (types too)
     virtual void vf23(u32 a1, u32 a2, u32 a3);  // slot 23, code.bin:00204544; the parameters are a guess from its code (types too)
     virtual void vf24(u32 a1, u32 a2);  // slot 24, code.bin:00205A3C; the parameters are a guess from its code (types too)
@@ -61,7 +61,7 @@ public:
     virtual void vf49(u32 a1, u32 a2, u32 a3);  // slot 49, code.bin:0021A5D8; the parameters are a guess from its code (types too)
     virtual void vf50(u32 a1, u32 a2);  // slot 50, code.bin:0021A558; the parameters are a guess from its code (types too)
     virtual void vf51(u32 a1, u32 a2);  // slot 51, code.bin:001FEF14; the parameters are a guess from its code (types too)
-    virtual void vf52(u32 a1);  // slot 52, code.bin:0021A23C; the parameters are a guess from its code (types too)
+    virtual void DataStoreLogicServerClientInterface_vf27(u32 a1);  // overrides nn::nex::DataStoreLogicServerClientInterface's slot 27, through the base at +0x10 (its thunk code.bin:004CC918)  // slot 52, code.bin:0021A23C
     virtual void vf53();  // slot 53, code.bin:0021A218
     virtual void vf54();  // slot 54, code.bin:002007F8
     virtual void vf55(u32 a1, u32 a2);  // slot 55, code.bin:002020B0; the parameters are a guess from its code (types too)
@@ -82,7 +82,7 @@ public:
     virtual void vf70(u32 a1, u32 a2);  // slot 70, code.bin:00205C58; the parameters are a guess from its code (types too)
     virtual void vf71(u32 a1, u32 a2);  // slot 71, code.bin:00201EA0; the parameters are a guess from its code (types too)
     virtual void vf72(u32 a1, u32 a2);  // slot 72, code.bin:001FFDDC; the parameters are a guess from its code (types too)
-    virtual void vf73();  // slot 73, code.bin:0049D7D0
+    virtual void DataStoreLogicServerClientInterface_vf52();  // overrides nn::nex::DataStoreLogicServerClientInterface's slot 52, through the base at +0x10 (its thunk code.bin:004CD448)  // slot 73, code.bin:0049D7D0
     virtual bool DataStoreLogicServerClientInterface_vf53();  // overrides nn::nex::DataStoreLogicServerClientInterface's slot 53, through the base at +0x10 (its thunk code.bin:004CD458)  // slot 74, code.bin:0049D7E0
 
     // data members, from how the class's functions use this (tools/fields.py)

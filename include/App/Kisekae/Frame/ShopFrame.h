@@ -34,8 +34,8 @@ public:
     virtual void vf14();  // overrides  // slot 14, Kisekae:00004318; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf15();  // overrides  // slot 15, Kisekae:00009D54; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, Kisekae:00009D58; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17(u32 a1);  // slot 17, Kisekae:000045FC; the parameters are a guess from its code (types too)
-    virtual void vf18();  // slot 18, Kisekae:00004604
+    virtual void IEventHandler_vf2(u32 a1);  // overrides App::Tool::MessageMenuView::IEventHandler's slot 2, through the base at +0x24 (its thunk Kisekae:0000A144)  // slot 17, Kisekae:000045FC
+    virtual void CharaModelViewerDelegate_vf0();  // overrides app::tool::CharaModelViewerDelegate's slot 0, through the base at +0x2c (its thunk Kisekae:0000A614)  // slot 18, Kisekae:00004604
     virtual void vf19(u32 a1, f32 f0, f32 f1, f32 f2, f32 f3, f32 f4, f32 f5, f32 f6, f32 f7);  // slot 19, Kisekae:00004688; the parameters are a guess from its code (types too)
     virtual void vf20(u32 a1, u32 a2, u32 a3);  // slot 20, Kisekae:0000463C; the parameters are a guess from its code (types too)
 

@@ -34,10 +34,10 @@ public:
     virtual void vf14();  // overrides  // slot 14, QRReader:000040A4; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf15();  // overrides  // slot 15, QRReader:000091C0; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, QRReader:000091C4; as NetAppLib::System::NetAppFrameBase declares it
-    virtual u32 vf17();  // slot 17, QRReader:0000446C; the return type is a guess from its code
-    virtual u32 vf18();  // slot 18, QRReader:00004474; the return type is a guess from its code
+    virtual u32 IRemainingTimeProvider_vf2();  // overrides NetApp::QRReader::UpperView_Pokemon::IRemainingTimeProvider's slot 2, through the base at +0x24 (its thunk QRReader:00009754)  // slot 17, QRReader:0000446C
+    virtual u32 IRemainingTimeProvider_vf3();  // overrides NetApp::QRReader::UpperView_Pokemon::IRemainingTimeProvider's slot 3, through the base at +0x24 (its thunk QRReader:0000975C)  // slot 18, QRReader:00004474
     virtual void vf19();  // slot 19, QRReader:0000427C
-    virtual void vf20(u32 a1, u32 a2);  // slot 20, QRReader:0000441C; the parameters are a guess from its code (types too)
+    virtual void IFieldScanPowerProvider_vf0(u32 a1, u32 a2);  // overrides NetApp::QRReader::LowerView_Main::IFieldScanPowerProvider's slot 0, through the base at +0x2c (its thunk QRReader:00009994)  // slot 20, QRReader:0000441C
     virtual void IEventHandler_vf0(u32 a1, u32 a2);  // overrides NetAppLib::Util::NetAppPokeModelUtility::IEventHandler's slot 0, through the base at +0x30 (its thunk QRReader:00009AD8)  // slot 21, QRReader:000043D0
 
     // data members, from how the class's functions use this (tools/fields.py)

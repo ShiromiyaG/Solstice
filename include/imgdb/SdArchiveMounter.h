@@ -15,8 +15,8 @@ public:
     SdArchiveMounter();  // a constructor, code.bin:003C7070: it reads nothing but this (ctors.csv)
     virtual void vf0();  // slot 0, code.bin:003C70A0
     virtual void vf1();  // slot 1, code.bin:003C7090
-    virtual s8 vf2();  // slot 2, code.bin:003C6FF8; the return type is a guess from its code
-    virtual bool vf3();  // slot 3, code.bin:003C7040; the return type is a guess from its code
+    virtual s8 ArchiveMounter_vf0();  // overrides imgdb::ArchiveMounter's slot 0, through the base at +0x4 (its thunk code.bin:004D0A08)  // slot 2, code.bin:003C6FF8
+    virtual bool ArchiveMounter_vf1();  // overrides imgdb::ArchiveMounter's slot 1, through the base at +0x4 (its thunk code.bin:004D0A50)  // slot 3, code.bin:003C7040
     virtual s8 vf4();  // slot 4, code.bin:004BED20; the return type is a guess from its code
     virtual void vf5();  // slot 5, code.bin:004BECC0
 };

@@ -38,7 +38,7 @@ public:
     virtual void UIView_vf18();  // overrides  // slot 18, BattleSpot:00000D68; as app::ui::UIView declares it
     virtual void vf22();  // slot 22, BattleSpot:00003DFC
     virtual void vf23(u32 a1);  // slot 23, BattleSpot:00003D3C; the parameters are a guess from its code (types too)
-    virtual void vf24();  // slot 24, BattleSpot:00003EBC
+    virtual void IResourceProvider_OnResourceRequest(unsigned int, unsigned int);  // overrides app::tool::IResourceProvider's slot 2, through the base at +0xa8 (its thunk BattleSpot:00015044)  // slot 24, BattleSpot:00003EBC
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_AC;  // +0xac, a guess: a pointer, from 2 functions

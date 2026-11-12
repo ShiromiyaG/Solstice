@@ -31,7 +31,7 @@ public:
     virtual void vf14();  // overrides  // slot 14, Live:00000DC8; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf15();  // overrides  // slot 15, Live:000083D4; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, Live:000083D8; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17(u32 a1);  // slot 17, Live:0000130C; the parameters are a guess from its code (types too)
+    virtual void IEventHandler_vf2();  // overrides NetApp::Live::LowerView_Selection::IEventHandler's slot 2, through the base at +0x24 (its thunk Live:000087C0)  // slot 17, Live:0000130C
     virtual void vf18();  // slot 18, Live:00000F40
     virtual void vf19(u32 a1, u32 a2, u32 a3);  // slot 19, Live:00001178; the parameters are a guess from its code (types too)
 

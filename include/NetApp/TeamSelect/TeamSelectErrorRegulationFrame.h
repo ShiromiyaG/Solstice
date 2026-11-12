@@ -19,9 +19,9 @@ public:
     virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 4, TeamSelect:000038FC; as applib::frame::CellSuper declares it
     virtual s32 EndFunc();  // overrides  // slot 5, TeamSelect:00003838; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, TeamSelect:00007BC0; as applib::frame::CellSuper declares it
-    virtual void vf7();  // slot 7, TeamSelect:000038DC
-    virtual void vf8(u32 a1);  // slot 8, TeamSelect:000037A8; the parameters are a guess from its code (types too)
-    virtual void vf9();  // slot 9, TeamSelect:00003A1C
+    virtual void InfoWindowBookTypeListener_vf2();  // overrides app::tool::InfoWindowBookTypeListener's slot 2, through the base at +0x18 (its thunk TeamSelect:00007FF4)  // slot 7, TeamSelect:000038DC
+    virtual void InfoWindowBookTypeListener_vf3();  // overrides app::tool::InfoWindowBookTypeListener's slot 3, through the base at +0x18 (its thunk TeamSelect:00007F64)  // slot 8, TeamSelect:000037A8
+    virtual void InfoWindowBookTypeListener_vf4();  // overrides app::tool::InfoWindowBookTypeListener's slot 4, through the base at +0x18 (its thunk TeamSelect:00008014)  // slot 9, TeamSelect:00003A1C
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_1C;  // +0x1c, a guess: a pointer, from 10 functions

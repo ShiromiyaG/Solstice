@@ -29,7 +29,7 @@ public:
     virtual void Update();  // overrides  // slot 13, code.bin:002F1830; as app::ui::UIView declares it
     virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 14, code.bin:002F15C0; as app::ui::UIView declares it
     virtual void vf21();  // slot 21, code.bin:002F1C1C
-    virtual bool vf22();  // slot 22, code.bin:002F1504; the return type is a guess from its code
+    virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x80 (its thunk code.bin:004CB72C)  // slot 22, code.bin:002F1504
     virtual bool vf23(u32 a1, u32 a2);  // slot 23, code.bin:002F10C0; the parameters are a guess from its code (types too); the return type is a guess from its code
 
     // member functions the game names. static or not is not in a name, nor is the return type

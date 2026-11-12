@@ -24,10 +24,10 @@ public:
     virtual void vf2();  // slot 2, code.bin:004872C4
     virtual void vf3(u32 a1, u32 a2, u32 a3);  // slot 3, code.bin:00487130; the parameters are a guess from its code (types too)
     virtual void vf4(u32 a1, u32 a2, u32 a3);  // slot 4, code.bin:00487064; the parameters are a guess from its code (types too)
-    virtual void vf5(u32 a1, u32 a2, u32 a3);  // slot 5, code.bin:00487BEC; the parameters are a guess from its code (types too)
+    virtual void SubscriptionPacketListener_vf0(u32 a1, u32 a2, u32 a3);  // overrides NetLib::Wifi::SubscriptionPacketListener's slot 0, through the base at +0x4 (its thunk code.bin:004D101C)  // slot 5, code.bin:00487BEC
     virtual void vf6(u32 a1, u32 a2);  // slot 6, code.bin:00487F74; the parameters are a guess from its code (types too)
     virtual void vf7(u32 a1);  // slot 7, code.bin:00487B18; the parameters are a guess from its code (types too)
-    virtual void vf8(u32 a1);  // slot 8, code.bin:00488270; the parameters are a guess from its code (types too)
+    virtual void JoinFestaPersonalListener_vf2(u32 a1);  // overrides NetAppLib::JoinFesta::JoinFestaPersonalListener's slot 2, through the base at +0x8 (its thunk code.bin:004D2D34)  // slot 8, code.bin:00488270
 
     // member functions the game names. static or not is not in a name, nor is the return type
     // (void until config/<version>/returns.csv has it)

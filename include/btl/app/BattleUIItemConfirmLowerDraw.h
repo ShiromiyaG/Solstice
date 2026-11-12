@@ -39,7 +39,7 @@ public:
     virtual void UIView_vf18();  // overrides  // slot 18, Battle:00002090; as app::ui::UIView declares it
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
-    virtual bool vf21(u32 a1);  // slot 21, Battle:000A3260; the parameters are a guess from its code (types too); the return type is a guess from its code
+    virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x80 (its thunk Battle:000E5E10)  // slot 21, Battle:000A3260
     virtual bool vf22(u32 a1, u32 a2, u32 a3);  // slot 22, Battle:000A3010; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual void CommonMessageWindowManipulator_OnEvent();  // overrides App::Tool::CommonMessageWindowManipulator::IEventHandler's slot 2, through the base at +0x84 (its thunk Battle:000E61B8)  // slot 23, Battle:000A32CC
 

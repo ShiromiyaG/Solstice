@@ -25,11 +25,11 @@ public:
     virtual void vf12();  // overrides  // slot 12, GameSync:000017EC; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf13();  // overrides  // slot 13, GameSync:000018C4; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, GameSync:000018F0; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17();  // slot 17, GameSync:00001EE4
-    virtual void vf18();  // slot 18, GameSync:00003344
-    virtual void vf19();  // slot 19, GameSync:00001F4C
+    virtual void GameSyncCreateSaveDataResponseListener_vf0();  // overrides NetAppLib::GameSync::GameSyncCreateSaveDataResponseListener's slot 0, through the base at +0x30 (its thunk GameSync:00003FB0)  // slot 17, GameSync:00001EE4
+    virtual void GameSyncCreateSaveDataResponseListener_vf1();  // overrides NetAppLib::GameSync::GameSyncCreateSaveDataResponseListener's slot 1, through the base at +0x30 (its thunk GameSync:00003FA8)  // slot 18, GameSync:00003344
+    virtual void GameSyncConfirmPlayStatusResponseListener_vf0();  // overrides NetAppLib::GameSync::GameSyncConfirmPlayStatusResponseListener's slot 0, through the base at +0x34 (its thunk GameSync:000041C4)  // slot 19, GameSync:00001F4C
     virtual bool vf20();  // slot 20, GameSync:00001F34; the return type is a guess from its code
-    virtual bool vf21();  // slot 21, GameSync:00001EBC; the return type is a guess from its code
+    virtual void GameSyncSaveDataSyncResponseListener_vf0();  // overrides NetAppLib::GameSync::GameSyncSaveDataSyncResponseListener's slot 0, through the base at +0x38 (its thunk GameSync:00004288)  // slot 21, GameSync:00001EBC
     virtual bool vf22();  // slot 22, GameSync:00001EA4; the return type is a guess from its code
 
     // data members, from how the class's functions use this (tools/fields.py)

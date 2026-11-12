@@ -48,9 +48,9 @@ public:
     BoxEscapeState();  // a constructor, Box:0000CB4C: it reads nothing but this (ctors.csv)
     virtual ~BoxEscapeState();
     virtual void vf2();  // overrides  // slot 2, Box:0000C720
-    virtual void vf3();  // slot 3, Box:0000C69C
+    virtual s32 InitFunc();  // overrides applib::frame::CellSuper's slot 2, through the base at +0x3c (its thunk Box:00027D9C)  // slot 3, Box:0000C69C
     virtual void vf4();  // slot 4, Box:0000C394
-    virtual void vf5();  // slot 5, Box:0000C694
+    virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides applib::frame::CellSuper's slot 4, through the base at +0x3c (its thunk Box:00027D94)  // slot 5, Box:0000C694
     virtual void vf6();  // slot 6, Box:0000C648
 
     // data members, from how the class's functions use this (tools/fields.py)

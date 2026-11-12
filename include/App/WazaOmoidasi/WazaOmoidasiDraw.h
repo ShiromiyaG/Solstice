@@ -52,7 +52,7 @@ public:
     virtual void vf24();  // slot 24, WazaOmoidasi:00001764
     virtual void vf25();  // slot 25, WazaOmoidasi:00001950
     virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x80 (its thunk WazaOmoidasi:00004168)  // slot 26, WazaOmoidasi:00001668
-    virtual bool vf27(u32 a1);  // slot 27, WazaOmoidasi:00000884; the parameters are a guess from its code (types too); the return type is a guess from its code
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0x80 (its thunk WazaOmoidasi:00004128)  // slot 27, WazaOmoidasi:00000884
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_8C[0x4];  // +0x8c: nothing seen to use it

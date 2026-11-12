@@ -21,10 +21,10 @@ public:
     virtual void RequestSequenceBase_vf2();  // overrides  // slot 2, TeamSelect:00006C28
     virtual bool RequestSequenceBase_vf3();  // overrides  // slot 3, TeamSelect:00006A94; the return type is a guess from its code
     virtual void RequestSequenceBase_vf4();  // overrides  // slot 4, TeamSelect:00006B08
-    virtual void vf5(u32 a1, u32 a2, u32 a3);  // slot 5, TeamSelect:00006BB4; the parameters are a guess from its code (types too)
-    virtual void vf6(u32 a1);  // slot 6, TeamSelect:00006B6C; the parameters are a guess from its code (types too)
-    virtual void vf7(u32 a1, u32 a2);  // slot 7, TeamSelect:00006B24; the parameters are a guess from its code (types too)
-    virtual void vf8();  // slot 8, TeamSelect:00006C1C
+    virtual void PokemonValidationListener_vf0(u32 a1, u32 a2, u32 a3);  // overrides NetLib::Validation::PokemonValidationListener's slot 0, through the base at +0x18 (its thunk TeamSelect:000080DC)  // slot 5, TeamSelect:00006BB4
+    virtual void PokemonValidationListener_vf1(u32 a1);  // overrides NetLib::Validation::PokemonValidationListener's slot 1, through the base at +0x18 (its thunk TeamSelect:00008094)  // slot 6, TeamSelect:00006B6C
+    virtual void PokemonValidationListener_vf2(u32 a1, u32 a2);  // overrides NetLib::Validation::PokemonValidationListener's slot 2, through the base at +0x18 (its thunk TeamSelect:0000804C)  // slot 7, TeamSelect:00006B24
+    virtual void PokemonValidationListener_vf3();  // overrides NetLib::Validation::PokemonValidationListener's slot 3, through the base at +0x18 (its thunk TeamSelect:00008144)  // slot 8, TeamSelect:00006C1C
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_1C;  // +0x1c, a guess: a pointer, from 4 functions

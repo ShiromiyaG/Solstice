@@ -23,13 +23,13 @@ public:
     virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 4, FinderMenu:000010B8; as applib::frame::CellSuper declares it
     virtual s32 EndFunc();  // overrides  // slot 5, FinderMenu:00000E50; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, FinderMenu:00006760; as applib::frame::CellSuper declares it
-    virtual bool vf7();  // slot 7, FinderMenu:00000C04; the return type is a guess from its code
-    virtual void vf8(u32 a1);  // slot 8, FinderMenu:00000DD4; the parameters are a guess from its code (types too)
-    virtual void vf9();  // slot 9, FinderMenu:00000D94
-    virtual void vf10(u32 a1);  // slot 10, FinderMenu:00000DE0; the parameters are a guess from its code (types too)
-    virtual void vf11();  // slot 11, FinderMenu:00000DA8
-    virtual void vf12();  // slot 12, FinderMenu:0000150C
-    virtual void vf13();  // slot 13, FinderMenu:00000C24
+    virtual bool FinderMenuDrawListener_vf0();  // overrides App::FinderMenu::FinderMenuDrawListener's slot 0, through the base at +0x18 (its thunk FinderMenu:00006BD4)  // slot 7, FinderMenu:00000C04
+    virtual void FinderMenuDrawListener_vf1(u32 a1);  // overrides App::FinderMenu::FinderMenuDrawListener's slot 1, through the base at +0x18 (its thunk FinderMenu:00006C60)  // slot 8, FinderMenu:00000DD4
+    virtual void FinderMenuDrawListener_vf2();  // overrides App::FinderMenu::FinderMenuDrawListener's slot 2, through the base at +0x18 (its thunk FinderMenu:00006C20)  // slot 9, FinderMenu:00000D94
+    virtual void FinderMenuDrawListener_vf3(u32 a1);  // overrides App::FinderMenu::FinderMenuDrawListener's slot 3, through the base at +0x18 (its thunk FinderMenu:00006C6C)  // slot 10, FinderMenu:00000DE0
+    virtual void FinderMenuDrawListener_vf4();  // overrides App::FinderMenu::FinderMenuDrawListener's slot 4, through the base at +0x18 (its thunk FinderMenu:00006C34)  // slot 11, FinderMenu:00000DA8
+    virtual void FinderMenuDrawListener_vf5();  // overrides App::FinderMenu::FinderMenuDrawListener's slot 5, through the base at +0x18 (its thunk FinderMenu:00006CD0)  // slot 12, FinderMenu:0000150C
+    virtual void FinderMenuDrawListener_vf6();  // overrides App::FinderMenu::FinderMenuDrawListener's slot 6, through the base at +0x18 (its thunk FinderMenu:00006BF4)  // slot 13, FinderMenu:00000C24
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_1C[0x8];  // +0x1c: nothing seen to use it

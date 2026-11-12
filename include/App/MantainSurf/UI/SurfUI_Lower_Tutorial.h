@@ -41,7 +41,7 @@ public:
     virtual void UIView_vf18();  // overrides  // slot 18, MantainSurf:0001ED5C; as app::ui::UIView declares it
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
-    virtual void vf21();  // slot 21, MantainSurf:000073E0
+    virtual void InfoWindowBookTypeListener_vf2();  // overrides app::tool::InfoWindowBookTypeListener's slot 2, through the base at +0x80 (its thunk MantainSurf:0001F428)  // slot 21, MantainSurf:000073E0
     virtual void vf22(u32 a1);  // slot 22, MantainSurf:000070DC; the parameters are a guess from its code (types too)
     virtual void vf23();  // slot 23, MantainSurf:00007404
 

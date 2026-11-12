@@ -137,7 +137,7 @@ public:
 
     virtual ~BoxP2pTradeState();
     virtual void vf2();  // overrides  // slot 2, Box:0001C530
-    virtual void vf3();  // slot 3, Box:0001C4A0
+    virtual s32 InitFunc();  // overrides applib::frame::CellSuper's slot 2, through the base at +0x3c (its thunk Box:00028144)  // slot 3, Box:0001C4A0
     virtual void vf4();  // slot 4, Box:0001B7D4
     virtual void vf5();  // slot 5, Box:0001C484
     virtual void vf6();  // slot 6, Box:0001C3F8

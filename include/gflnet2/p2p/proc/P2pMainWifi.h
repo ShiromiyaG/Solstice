@@ -22,8 +22,8 @@ public:
     virtual void DrawFunc(::gfl2::proc::Manager *pManager, ::gfl2::gfx::CtrDisplayNo displayNo);  // slot 5, code.bin:00363D0C; as gfl2::proc::BaseProcess declares it
     virtual ::gfl2::proc::Result EndFunc(::gfl2::proc::Manager *pManager);  // slot 6, code.bin:004181AC; as gfl2::proc::BaseProcess declares it
     virtual void vf7();  // slot 7, code.bin:004173A8
-    virtual void vf8();  // slot 8, code.bin:00414278
-    virtual void vf9(u32 a1);  // slot 9, code.bin:00418170; the parameters are a guess from its code (types too)
+    virtual void NexMatchmakeListener_vf8();  // overrides gflnet2::nex::NexMatchmakeListener's slot 8, through the base at +0x24 (its thunk code.bin:004CFC88)  // slot 8, code.bin:00414278
+    virtual void NexMatchmakeListener_vf5(u32 a1);  // overrides gflnet2::nex::NexMatchmakeListener's slot 5, through the base at +0x24 (its thunk code.bin:004CFCB0)  // slot 9, code.bin:00418170
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 field_28;  // +0x28, a guess: from 2 functions

@@ -24,14 +24,14 @@ public:
     virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 4, BoxSearch:00002A3C; as applib::frame::CellSuper declares it
     virtual s32 EndFunc();  // overrides  // slot 5, BoxSearch:0000285C; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, BoxSearch:00006B68; as applib::frame::CellSuper declares it
-    virtual void vf7();  // slot 7, BoxSearch:00002674
-    virtual void vf8(u32 a1);  // slot 8, BoxSearch:00002470; the parameters are a guess from its code (types too)
-    virtual void vf9();  // slot 9, BoxSearch:0000283C
-    virtual void vf10();  // slot 10, BoxSearch:00002800
-    virtual void vf11();  // slot 11, BoxSearch:000027EC
-    virtual void vf12();  // slot 12, BoxSearch:000027D8
-    virtual void vf13();  // slot 13, BoxSearch:00002828
-    virtual void vf14();  // slot 14, BoxSearch:00002814
+    virtual void BoxSearchDrawListener_vf0();  // overrides App::BoxSearch::BoxSearchDrawListener's slot 0, through the base at +0x18 (its thunk BoxSearch:00006D88)  // slot 7, BoxSearch:00002674
+    virtual void BoxSearchDrawListener_vf1(u32 a1);  // overrides App::BoxSearch::BoxSearchDrawListener's slot 1, through the base at +0x18 (its thunk BoxSearch:00006D7C)  // slot 8, BoxSearch:00002470
+    virtual void BoxSearchDrawListener_vf2();  // overrides App::BoxSearch::BoxSearchDrawListener's slot 2, through the base at +0x18 (its thunk BoxSearch:00006DF8)  // slot 9, BoxSearch:0000283C
+    virtual void BoxSearchDrawListener_vf3();  // overrides App::BoxSearch::BoxSearchDrawListener's slot 3, through the base at +0x18 (its thunk BoxSearch:00006DBC)  // slot 10, BoxSearch:00002800
+    virtual void BoxSearchDrawListener_vf4();  // overrides App::BoxSearch::BoxSearchDrawListener's slot 4, through the base at +0x18 (its thunk BoxSearch:00006DA8)  // slot 11, BoxSearch:000027EC
+    virtual void BoxSearchDrawListener_vf5();  // overrides App::BoxSearch::BoxSearchDrawListener's slot 5, through the base at +0x18 (its thunk BoxSearch:00006D94)  // slot 12, BoxSearch:000027D8
+    virtual void BoxSearchDrawListener_vf6();  // overrides App::BoxSearch::BoxSearchDrawListener's slot 6, through the base at +0x18 (its thunk BoxSearch:00006DE4)  // slot 13, BoxSearch:00002828
+    virtual void BoxSearchDrawListener_vf7();  // overrides App::BoxSearch::BoxSearchDrawListener's slot 7, through the base at +0x18 (its thunk BoxSearch:00006DD0)  // slot 14, BoxSearch:00002814
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_1C[0x8];  // +0x1c: nothing seen to use it

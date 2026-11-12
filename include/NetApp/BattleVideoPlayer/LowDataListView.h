@@ -42,7 +42,7 @@ public:
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
     virtual void CallBack_vf0(f32 f0, f32 f1, f32 f2, f32 f3, f32 f4, f32 f5);  // overrides app::tool::PaneList::CallBack's slot 0, through the base at +0x80 (its thunk BattleVideoPlayer:0000B20C)  // slot 21, BattleVideoPlayer:00006BA0
     virtual void vf22();  // slot 22, BattleVideoPlayer:0000398C
-    virtual void vf23(u32 a1, u32 a2, u32 a3);  // slot 23, BattleVideoPlayer:00003990; the parameters are a guess from its code (types too)
+    virtual void CallBack_vf2(u32 a1, u32 a2, u32 a3);  // overrides app::tool::PaneList::CallBack's slot 2, through the base at +0x80 (its thunk BattleVideoPlayer:0000B154)  // slot 23, BattleVideoPlayer:00003990
     virtual void vf24();  // slot 24, BattleVideoPlayer:00003A48
     virtual void vf25(u32 a1);  // slot 25, BattleVideoPlayer:00003A54; the parameters are a guess from its code (types too)
     virtual bool vf26(u32 a1);  // slot 26, BattleVideoPlayer:00003938; the parameters are a guess from its code (types too); the return type is a guess from its code

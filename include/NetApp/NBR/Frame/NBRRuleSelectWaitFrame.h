@@ -23,11 +23,11 @@ public:
     virtual void vf12();  // overrides  // slot 12, NBR:0000512C; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf13();  // overrides  // slot 13, NBR:000051A4; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, NBR:000051D4; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17();  // slot 17, NBR:000054F4
-    virtual void vf18();  // slot 18, NBR:000055A4
-    virtual void vf19(u32 a1);  // slot 19, NBR:00005760; the parameters are a guess from its code (types too)
-    virtual bool vf20(u32 a1);  // slot 20, NBR:000055FC; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf21(u32 a1, u32 a2, u32 a3);  // slot 21, NBR:00005670; the parameters are a guess from its code (types too)
+    virtual void NBRNetRecvListener_vf0();  // overrides NetApp::NBR::NBRNetRecvListener's slot 0, through the base at +0x6c (its thunk NBR:00009D90)  // slot 17, NBR:000054F4
+    virtual void NBRNetRecvListener_vf3();  // overrides NetApp::NBR::NBRNetRecvListener's slot 3, through the base at +0x6c (its thunk NBR:00009DD8)  // slot 18, NBR:000055A4
+    virtual void NBRNetRecvListener_vf5();  // overrides NetApp::NBR::NBRNetRecvListener's slot 5, through the base at +0x6c (its thunk NBR:00009F98)  // slot 19, NBR:00005760
+    virtual void NBRNetRecvListener_vf6();  // overrides NetApp::NBR::NBRNetRecvListener's slot 6, through the base at +0x6c (its thunk NBR:00009E30)  // slot 20, NBR:000055FC
+    virtual void NBRNetRecvListener_vf7();  // overrides NetApp::NBR::NBRNetRecvListener's slot 7, through the base at +0x6c (its thunk NBR:00009EA4)  // slot 21, NBR:00005670
     virtual void NBRNetRecvListener_vf8();  // overrides NetApp::NBR::NBRNetRecvListener's slot 8, through the base at +0x6c (its thunk NBR:00009F7C)  // slot 22, NBR:00005748
     virtual void NBRLowerViewReturnButtonListener_vf0();  // overrides NetApp::NBR::View::NBRLowerViewReturnButtonListener's slot 0, through the base at +0x70 (its thunk NBR:0000A7AC)  // slot 23, NBR:0000557C
     virtual void vf24();  // slot 24, NBR:0000553C

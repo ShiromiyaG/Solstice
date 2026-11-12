@@ -21,9 +21,9 @@ public:
     virtual void AppFrameListener_vf0(u32 a1);  // overrides  // slot 0, Status:00009298; the parameters are a guess from its code (types too)
     virtual ~Proc();
     virtual bool vf3();  // slot 3, Status:000093C0; the return type is a guess from its code
-    virtual bool vf4();  // slot 4, Status:0000926C; the return type is a guess from its code
-    virtual void vf5();  // slot 5, Status:00009288
-    virtual void vf6(u32 a1, u32 a2);  // slot 6, Status:00009388; the parameters are a guess from its code (types too)
+    virtual ::gfl2::proc::Result UpdateFunc(::gfl2::proc::Manager *pManager);  // overrides GameSys::GameProc's slot 3, through the base at +0x4 (its thunk Status:0000BAE4)  // slot 4, Status:0000926C
+    virtual void PreDrawFunc(::gfl2::proc::Manager *pManager);  // overrides GameSys::GameProc's slot 4, through the base at +0x4 (its thunk Status:0000BB00)  // slot 5, Status:00009288
+    virtual void DrawFunc(::gfl2::proc::Manager *pManager, ::gfl2::gfx::CtrDisplayNo displayNo);  // overrides GameSys::GameProc's slot 5, through the base at +0x4 (its thunk Status:0000BB10)  // slot 6, Status:00009388
     virtual bool vf7();  // slot 7, Status:000092AC; the return type is a guess from its code
     virtual bool vf8();  // slot 8, Status:000092BC; the return type is a guess from its code
 

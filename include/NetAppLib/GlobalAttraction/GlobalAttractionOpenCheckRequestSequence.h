@@ -23,8 +23,8 @@ public:
     virtual void BossEventListener_vf7(u32 a1);  // overrides  // slot 7, code.bin:00472334; the parameters are a guess from its code (types too)
     virtual void BossEventListener_vf8(u32 a1, u32 a2);  // overrides  // slot 8, code.bin:00472504; the parameters are a guess from its code (types too)
     virtual void vf9();  // slot 9, code.bin:00472730
-    virtual void vf10();  // slot 10, code.bin:00472340
-    virtual void vf11();  // slot 11, code.bin:004724F8
+    virtual bool RequestSequenceBase_vf3();  // overrides gflnet2::ServerClient::RequestSequenceBase's slot 3, through the base at +0x8 (its thunk code.bin:004D2C44)  // slot 10, code.bin:00472340
+    virtual void RequestSequenceBase_vf4();  // overrides gflnet2::ServerClient::RequestSequenceBase's slot 4, through the base at +0x8 (its thunk code.bin:004D2D18)  // slot 11, code.bin:004724F8
 
     // data members, from how the class's functions use this (tools/fields.py)
     u32 field_20;  // +0x20, a guess: from 1 function

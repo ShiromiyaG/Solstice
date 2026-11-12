@@ -33,8 +33,8 @@ public:
     virtual void vf7();  // slot 7, MyAlbum:00007E2C
     virtual void MessageMenuViewListener_vf0(u32 a1);  // overrides App::FinderStudio::Static::MessageMenuViewListener's slot 0, through the base at +0x1c (its thunk MyAlbum:00009D68)  // slot 8, MyAlbum:00007AB0
     virtual void vf9();  // slot 9, MyAlbum:00005CF4
-    virtual void vf10();  // slot 10, MyAlbum:00007A5C
-    virtual void vf11(u32 a1);  // slot 11, MyAlbum:00005CAC; the parameters are a guess from its code (types too)
+    virtual void InfoWindowBookTypeListener_vf2();  // overrides app::tool::InfoWindowBookTypeListener's slot 2, through the base at +0x20 (its thunk MyAlbum:00009DBC)  // slot 10, MyAlbum:00007A5C
+    virtual void InfoWindowBookTypeListener_vf3();  // overrides app::tool::InfoWindowBookTypeListener's slot 3, through the base at +0x20 (its thunk MyAlbum:00009D7C)  // slot 11, MyAlbum:00005CAC
     virtual void vf12();  // slot 12, MyAlbum:00007520
 
     // data members, from how the class's functions use this (tools/fields.py)

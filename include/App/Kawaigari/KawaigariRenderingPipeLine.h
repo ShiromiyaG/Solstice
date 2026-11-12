@@ -19,15 +19,15 @@ public:
     virtual void vf2();  // overrides  // slot 2, Kawaigari:0001FEA0
     virtual u32 vf3();  // overrides  // slot 3, Kawaigari:0001F880; the return type is a guess from its code
     virtual void vf4();  // overrides  // slot 4, Kawaigari:0001FCA4
-    virtual u32 vf5();  // slot 5, Kawaigari:0001F878; the return type is a guess from its code
-    virtual void vf6(u32 a1, u32 a2);  // slot 6, Kawaigari:0001FCE8; the parameters are a guess from its code (types too)
-    virtual void vf7(u32 a1, u32 a2);  // slot 7, Kawaigari:0001FFB8; the parameters are a guess from its code (types too)
+    virtual bool ObjectRenderPipeLine_vf8();  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 8, through the base at +0x80 (its thunk Kawaigari:00022208)  // slot 5, Kawaigari:0001F878
+    virtual void ObjectRenderPipeLine_vf0();  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 0, through the base at +0x80 (its thunk Kawaigari:00022220)  // slot 6, Kawaigari:0001FCE8
+    virtual void ObjectRenderPipeLine_vf1();  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 1, through the base at +0x80 (its thunk Kawaigari:000223B8)  // slot 7, Kawaigari:0001FFB8
     virtual void vf8(u32 a1, u32 a2);  // slot 8, Kawaigari:0001FB90; the parameters are a guess from its code (types too)
     virtual void vf9(u32 a1);  // slot 9, Kawaigari:0001FED4; the parameters are a guess from its code (types too)
-    virtual void vf10(u32 a1);  // slot 10, Kawaigari:0001FD44; the parameters are a guess from its code (types too)
-    virtual void vf11(u32 a1);  // slot 11, Kawaigari:00020014; the parameters are a guess from its code (types too)
+    virtual void ObjectRenderPipeLine_vf10();  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 10, through the base at +0x80 (its thunk Kawaigari:0002227C)  // slot 10, Kawaigari:0001FD44
+    virtual void ObjectRenderPipeLine_vf11();  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 11, through the base at +0x80 (its thunk Kawaigari:00022414)  // slot 11, Kawaigari:00020014
     virtual void vf12();  // slot 12, Kawaigari:0001FB38
-    virtual void *vf13();  // slot 13, Kawaigari:0001FC9C; the return type is a guess from its code
+    virtual bool ObjectRenderPipeLine_vf14();  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 14, through the base at +0x80 (its thunk Kawaigari:00022218)  // slot 13, Kawaigari:0001FC9C
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_84;  // +0x84, a guess: a pointer, from 2 functions

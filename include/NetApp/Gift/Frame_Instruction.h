@@ -31,7 +31,7 @@ public:
     virtual void vf14();  // overrides  // slot 14, MysteryGift:000063B0; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf15();  // overrides  // slot 15, MysteryGift:0000EA00; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, MysteryGift:0000EA04; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17(u32 a1);  // slot 17, MysteryGift:00006428; the parameters are a guess from its code (types too)
+    virtual void IEventHandler_vf0(u32 a1);  // overrides NetApp::Gift::LowerView_SelectInstruction::IEventHandler's slot 0, through the base at +0x24 (its thunk MysteryGift:0000F6DC)  // slot 17, MysteryGift:00006428
     virtual bool vf18(u32 a1);  // slot 18, MysteryGift:000063E8; the parameters are a guess from its code (types too); the return type is a guess from its code
 
     // data members, from how the class's functions use this (tools/fields.py)

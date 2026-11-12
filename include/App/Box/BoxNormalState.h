@@ -119,9 +119,9 @@ public:
     BoxNormalState();  // a constructor, Box:0000E370: it reads nothing but this (ctors.csv)
     virtual ~BoxNormalState();
     virtual void vf2();  // overrides  // slot 2, Box:0000DAD8
-    virtual bool vf3();  // slot 3, Box:0000DA64; the return type is a guess from its code
+    virtual s32 InitFunc();  // overrides applib::frame::CellSuper's slot 2, through the base at +0x3c (its thunk Box:00027EC8)  // slot 3, Box:0000DA64
     virtual bool vf4();  // slot 4, Box:0000CCFC; the return type is a guess from its code
-    virtual void vf5();  // slot 5, Box:0000DA5C
+    virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides applib::frame::CellSuper's slot 4, through the base at +0x3c (its thunk Box:00027EC0)  // slot 5, Box:0000DA5C
     virtual void vf6();  // slot 6, Box:0000DA00
 
     // data members, from how the class's functions use this (tools/fields.py)

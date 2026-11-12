@@ -35,7 +35,7 @@ public:
     virtual void UIView_vf18();  // overrides  // slot 18, Battle:00002090; as app::ui::UIView declares it
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
-    virtual bool vf21();  // slot 21, Battle:0009E458; the return type is a guess from its code
+    virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x80 (its thunk Battle:000E5BAC)  // slot 21, Battle:0009E458
     virtual void vf22();  // slot 22, Battle:000695F0
     virtual bool vf23(u32 a1, u32 a2, u32 a3);  // slot 23, Battle:0009E3E8; the parameters are a guess from its code (types too); the return type is a guess from its code
 

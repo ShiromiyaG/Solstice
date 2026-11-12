@@ -31,7 +31,7 @@ public:
     virtual bool vf30(u32 a1);  // slot 30, FinderStudioCapture:000027C0; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual void vf31(u32 a1, u32 a2, f32 f0, f32 f1, f32 f2, f32 f3, f32 f4, f32 f5);  // slot 31, FinderStudioCapture:00002354; the parameters are a guess from its code (types too)
     virtual void vf32(f32 f0, f32 f1, f32 f2, f32 f3, f32 f4, f32 f5);  // slot 32, FinderStudioCapture:000022F0; the parameters are a guess from its code (types too)
-    virtual void vf33();  // slot 33, FinderStudioCapture:0000372C
+    virtual void InfoWindowBookTypeListener_vf2();  // overrides app::tool::InfoWindowBookTypeListener's slot 2, through the base at +0xc4 (its thunk FinderStudioCapture:000152D8)  // slot 33, FinderStudioCapture:0000372C
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_C8[0x4];  // +0xc8: nothing seen to use it

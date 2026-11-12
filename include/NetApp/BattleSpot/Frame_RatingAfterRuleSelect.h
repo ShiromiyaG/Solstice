@@ -35,10 +35,10 @@ public:
     virtual void vf14();  // overrides  // slot 14, BattleSpot:00011FEC; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf15();  // overrides  // slot 15, BattleSpot:000149E0; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, BattleSpot:000149E4; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17(u32 a1, u32 a2);  // slot 17, BattleSpot:000124D8; the parameters are a guess from its code (types too)
-    virtual void vf18();  // slot 18, BattleSpot:00012580
+    virtual void IEventHandler_vf2();  // overrides NetApp::BattleSpot::LowerView_Selection::IEventHandler's slot 2, through the base at +0x2c (its thunk BattleSpot:0001651C)  // slot 17, BattleSpot:000124D8
+    virtual void NexRankingClientListener_vf1();  // overrides gflnet2::nex::NexRankingClientListener's slot 1, through the base at +0x28 (its thunk BattleSpot:00015CDC)  // slot 18, BattleSpot:00012580
     virtual void vf19(u32 a1);  // slot 19, BattleSpot:0001239C; the parameters are a guess from its code (types too)
-    virtual void vf20();  // slot 20, BattleSpot:00012604
+    virtual bool SystemEventListener_vf7();  // overrides System::SystemEventListener's slot 7, through the base at +0x24 (its thunk BattleSpot:00015524)  // slot 20, BattleSpot:00012604
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_30;  // +0x30, a guess: a pointer, from 4 functions

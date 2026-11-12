@@ -37,7 +37,7 @@ public:
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
     virtual bool vf21();  // slot 21, WazaOshie:00002A74; the return type is a guess from its code
     virtual bool vf22(u32 a1, u32 a2);  // slot 22, WazaOshie:00002348; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf23();  // slot 23, WazaOshie:00003A14
+    virtual void InfoWindowSheetTypeListener_vf2();  // overrides App::WazaOshie::WazaOshieInfoWindowListener's slot 2, through the base at +0x84 (its thunk WazaOshie:000048AC)  // slot 23, WazaOshie:00003A14
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_88;  // +0x88, a guess: a pointer, from 2 functions

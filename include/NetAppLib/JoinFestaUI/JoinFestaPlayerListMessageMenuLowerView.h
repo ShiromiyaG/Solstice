@@ -22,7 +22,7 @@ public:
     virtual ~JoinFestaPlayerListMessageMenuLowerView();
     virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 14, code.bin:00471270; as app::ui::UIView declares it
     virtual void vf22(u32 a1);  // slot 22, code.bin:00470C28; the parameters are a guess from its code (types too)
-    virtual void vf23(u32 a1);  // slot 23, code.bin:00470D44; the parameters are a guess from its code (types too)
+    virtual void IAddItemHandler_vf2(u32 a1);  // overrides App::Tool::MessageMenuView::IAddItemHandler's slot 2, through the base at +0xa4 (its thunk code.bin:004CC514)  // slot 23, code.bin:00470D44
 
     // member functions the game names. static or not is not in a name, nor is the return type
     // (void until config/<version>/returns.csv has it)

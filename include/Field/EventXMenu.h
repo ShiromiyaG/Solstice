@@ -21,8 +21,8 @@ public:
     virtual void vf3(::GameSys::GameManager *pGameManager);  // overrides  // slot 3, code.bin:0037D7B4; the parameters are a guess from its code (types too); as GameSys::GameEvent declares it
     virtual ::GameSys::GameEventResult vf4(::GameSys::GameManager *pGameManager);  // overrides  // slot 4, code.bin:0037D820; the parameters are a guess from its code (types too); as GameSys::GameEvent declares it
     virtual void vf5(::GameSys::GameManager *pGameManager);  // overrides  // slot 5, code.bin:003B8E14; the parameters are a guess from its code (types too); as GameSys::GameEvent declares it
-    virtual void vf7();  // slot 7, code.bin:0037D784
-    virtual void vf8(u32 a1);  // slot 8, code.bin:0037D790; the parameters are a guess from its code (types too)
+    virtual void EventXMenuListener_vf0();  // overrides Field::EventXMenuListener's slot 0, through the base at +0x18 (its thunk code.bin:004CE9F4)  // slot 7, code.bin:0037D784
+    virtual void EventXMenuListener_vf1(u32 a1);  // overrides Field::EventXMenuListener's slot 1, through the base at +0x18 (its thunk code.bin:004CEA00)  // slot 8, code.bin:0037D790
 
     // member functions the game names. static or not is not in a name, nor is the return type
     // (void until config/<version>/returns.csv has it)

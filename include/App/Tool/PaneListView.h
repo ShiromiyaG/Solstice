@@ -30,9 +30,9 @@ public:
     virtual void Update();  // overrides  // slot 13, code.bin:002F2FCC; as app::ui::UIView declares it
     virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 14, code.bin:002F2FC8; as app::ui::UIView declares it
     virtual bool vf21(u32 a1, u32 a2);  // slot 21, code.bin:002F2DC4; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual bool vf22();  // slot 22, code.bin:002F2FB0; the return type is a guess from its code
-    virtual bool vf23();  // slot 23, code.bin:002F2FA8; the return type is a guess from its code
-    virtual bool vf24();  // slot 24, code.bin:002F2FB8; the return type is a guess from its code
+    virtual bool UIInputListener_vf1();  // overrides app::ui::UIInputListener's slot 1, through the base at +0x80 (its thunk code.bin:004CB794)  // slot 22, code.bin:002F2FB0
+    virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x80 (its thunk code.bin:004CB78C)  // slot 23, code.bin:002F2FA8
+    virtual bool UIInputListener_vf3();  // overrides app::ui::UIInputListener's slot 3, through the base at +0x80 (its thunk code.bin:004CB79C)  // slot 24, code.bin:002F2FB8
     virtual void vf25();  // slot 25, code.bin:002F2FC4
     virtual void vf26();  // slot 26, code.bin:002F2FC0
     virtual void vf27();  // slot 27, code.bin:002F2DA0

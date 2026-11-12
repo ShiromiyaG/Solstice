@@ -56,10 +56,10 @@ public:
     BoxWallpaperState();  // a constructor, Box:0001F234: it reads nothing but this (ctors.csv)
     virtual ~BoxWallpaperState();
     virtual void vf2();  // overrides  // slot 2, Box:0001F18C
-    virtual void vf3();  // slot 3, Box:0001F134
+    virtual s32 InitFunc();  // overrides applib::frame::CellSuper's slot 2, through the base at +0x3c (its thunk Box:000282D4)  // slot 3, Box:0001F134
     virtual void vf4();  // slot 4, Box:0001EB54
-    virtual void vf5();  // slot 5, Box:0001F12C
-    virtual void vf6();  // slot 6, Box:0001F0E0
+    virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides applib::frame::CellSuper's slot 4, through the base at +0x3c (its thunk Box:000282CC)  // slot 5, Box:0001F12C
+    virtual s32 EndFunc();  // overrides applib::frame::CellSuper's slot 5, through the base at +0x3c (its thunk Box:00028280)  // slot 6, Box:0001F0E0
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_54[0x30];  // +0x54: nothing seen to use it

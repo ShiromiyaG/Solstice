@@ -28,12 +28,12 @@ public:
     virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 14, code.bin:0046E158; as app::ui::UIView declares it
     virtual bool IsDrawing() const;  // overrides  // slot 17, code.bin:004C90EC; as app::ui::UIView declares it
     virtual bool vf22(u32 a1);  // slot 22, code.bin:0046DBEC; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf23(u32 a1, u32 a2);  // slot 23, code.bin:0046D60C; the parameters are a guess from its code (types too)
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0xc4 (its thunk code.bin:004CD8E0)  // slot 23, code.bin:0046D60C
     virtual void vf24();  // slot 24, code.bin:0046DF94
     virtual void vf25();  // slot 25, code.bin:0046DE38
     virtual void vf26(u32 a1, u32 a2, u32 a3);  // slot 26, code.bin:0046DE3C; the parameters are a guess from its code (types too)
     virtual void vf27();  // slot 27, code.bin:0046DFC4
-    virtual void vf28(u32 a1);  // slot 28, code.bin:0046E050; the parameters are a guess from its code (types too)
+    virtual void Listener_vf0(u32 a1);  // overrides app::tool::PaneListView::Listener's slot 0, through the base at +0xcc (its thunk code.bin:004CE47C)  // slot 28, code.bin:0046E050
 
     // member functions the game names. static or not is not in a name, nor is the return type
     // (void until config/<version>/returns.csv has it)

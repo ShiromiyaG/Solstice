@@ -34,8 +34,8 @@ public:
     virtual void vf12();  // slot 12, code.bin:00103E62
     virtual void vf13(u32 a1);  // slot 13, code.bin:00103E62; the parameters are a guess from its code (types too)
     virtual void vf14(u32 a1);  // slot 14, code.bin:002E999C; the parameters are a guess from its code (types too)
-    virtual void vf15(u32 a1);  // slot 15, code.bin:002E9B00; the parameters are a guess from its code (types too)
-    virtual void vf16(u32 a1);  // slot 16, code.bin:002E9948; the parameters are a guess from its code (types too)
+    virtual void PokeListDrawListener_vf3(u32 a1);  // overrides App::PokeList::PokeListDrawListener's slot 3, through the base at +0x18 (its thunk code.bin:004CE8B4)  // slot 15, code.bin:002E9B00
+    virtual void PokeListDrawListener_vf4(u32 a1);  // overrides App::PokeList::PokeListDrawListener's slot 4, through the base at +0x18 (its thunk code.bin:004CE798)  // slot 16, code.bin:002E9948
     virtual bool vf17();  // slot 17, code.bin:002E9A5C; the return type is a guess from its code
 
     // member functions the game names. static or not is not in a name, nor is the return type

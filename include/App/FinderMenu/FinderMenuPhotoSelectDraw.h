@@ -40,12 +40,12 @@ public:
     virtual void UIView_vf18();  // overrides  // slot 18, FinderMenu:000066AC; as app::ui::UIView declares it
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
-    virtual bool vf21(u32 a1);  // slot 21, FinderMenu:0000576C; the parameters are a guess from its code (types too); the return type is a guess from its code
+    virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x80 (its thunk FinderMenu:000068C4)  // slot 21, FinderMenu:0000576C
     virtual bool vf22(u32 a1, u32 a2);  // slot 22, FinderMenu:000051B8; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual bool vf23(u32 a1);  // slot 23, FinderMenu:00005660; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf24(u32 a1);  // slot 24, FinderMenu:00004FEC; the parameters are a guess from its code (types too)
-    virtual void vf25();  // slot 25, FinderMenu:00005C54
-    virtual void vf26(u32 a1);  // slot 26, FinderMenu:00005718; the parameters are a guess from its code (types too)
+    virtual void SelectMenu(unsigned int);  // overrides app::tool::MenuWindowListener's slot 0, through the base at +0x84 (its thunk FinderMenu:00006A2C)  // slot 24, FinderMenu:00004FEC
+    virtual void MessageWindowListener_vf0();  // overrides App::FinderMenu::MessageWindowListener's slot 0, through the base at +0x88 (its thunk FinderMenu:00006B70)  // slot 25, FinderMenu:00005C54
+    virtual void MessageWindowListener_vf1();  // overrides App::FinderMenu::MessageWindowListener's slot 1, through the base at +0x88 (its thunk FinderMenu:00006B1C)  // slot 26, FinderMenu:00005718
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_8C[0x4];  // +0x8c: nothing seen to use it

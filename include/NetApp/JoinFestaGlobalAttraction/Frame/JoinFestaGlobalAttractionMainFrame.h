@@ -29,9 +29,9 @@ public:
     virtual void vf13();  // overrides  // slot 13, JoinFestaGlobalAttraction:00002254; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, JoinFestaGlobalAttraction:00002280; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf17();  // slot 17, JoinFestaGlobalAttraction:00002680
-    virtual void vf18();  // slot 18, JoinFestaGlobalAttraction:0000354C
+    virtual void JoinFestaGlobalAttractionDownloadResponseListener_vf1();  // overrides NetApp::JoinFestaGlobalAttraction::RequestSequence::JoinFestaGlobalAttractionDownloadResponseListener's slot 1, through the base at +0x54 (its thunk JoinFestaGlobalAttraction:00004A64)  // slot 18, JoinFestaGlobalAttraction:0000354C
     virtual void vf19();  // slot 19, JoinFestaGlobalAttraction:00002668
-    virtual void vf20();  // slot 20, JoinFestaGlobalAttraction:000032D0
+    virtual void GameSyncSaveDataSyncResponseListener_vf0();  // overrides NetAppLib::GameSync::GameSyncSaveDataSyncResponseListener's slot 0, through the base at +0x58 (its thunk JoinFestaGlobalAttraction:00004AA0)  // slot 20, JoinFestaGlobalAttraction:000032D0
     virtual void vf21();  // slot 21, JoinFestaGlobalAttraction:000028F0
 
     // data members, from how the class's functions use this (tools/fields.py)

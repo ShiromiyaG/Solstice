@@ -30,9 +30,9 @@ public:
     virtual s32 EndFunc();  // overrides  // slot 5, WazaOmoidasi:00003860; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, WazaOmoidasi:00004118; as applib::frame::CellSuper declares it
     virtual void vf7(u32 a1);  // slot 7, WazaOmoidasi:00003DC8; the parameters are a guess from its code (types too)
-    virtual void vf8();  // slot 8, WazaOmoidasi:00003E28
-    virtual void vf9(u32 a1);  // slot 9, WazaOmoidasi:000037E0; the parameters are a guess from its code (types too)
-    virtual void vf10(u32 a1);  // slot 10, WazaOmoidasi:00002D08; the parameters are a guess from its code (types too)
+    virtual void InputListener_vf1();  // overrides App::WazaOmoidasi::WazaOmoidasiDraw::InputListener's slot 1, through the base at +0x20 (its thunk WazaOmoidasi:00004568)  // slot 8, WazaOmoidasi:00003E28
+    virtual void Listener_vf0(u32 a1);  // overrides app::tool::PaneListView::Listener's slot 0, through the base at +0x1c (its thunk WazaOmoidasi:00004494)  // slot 9, WazaOmoidasi:000037E0
+    virtual void SelectMenu(unsigned int);  // overrides app::tool::MenuWindowListener's slot 0, through the base at +0x18 (its thunk WazaOmoidasi:00004468)  // slot 10, WazaOmoidasi:00002D08
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_24;  // +0x24, a guess: a pointer, from 3 functions

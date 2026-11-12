@@ -51,17 +51,17 @@ public:
     virtual void vf20();  // slot 20, BattleSpot:00010764
     virtual void vf21();  // slot 21, BattleSpot:00010730
     virtual void vf22();  // slot 22, BattleSpot:00010758
-    virtual void vf23();  // slot 23, BattleSpot:00010D2C
-    virtual void vf24();  // slot 24, BattleSpot:00010B8C
-    virtual void vf25();  // slot 25, BattleSpot:00010DAC
+    virtual void NexRankingClientListener_vf0();  // overrides gflnet2::nex::NexRankingClientListener's slot 0, through the base at +0x30 (its thunk BattleSpot:000169B0)  // slot 23, BattleSpot:00010D2C
+    virtual void NexRankingClientListener_vf1();  // overrides gflnet2::nex::NexRankingClientListener's slot 1, through the base at +0x30 (its thunk BattleSpot:000169A4)  // slot 24, BattleSpot:00010B8C
+    virtual void NexRankingClientListener_vf2();  // overrides gflnet2::nex::NexRankingClientListener's slot 2, through the base at +0x30 (its thunk BattleSpot:00016A04)  // slot 25, BattleSpot:00010DAC
     virtual void vf26(u32 a1);  // slot 26, BattleSpot:00010D64; the parameters are a guess from its code (types too)
     virtual void vf27(u32 a1);  // slot 27, BattleSpot:00010BA0; the parameters are a guess from its code (types too)
     virtual void vf28(u32 a1);  // slot 28, BattleSpot:0001036C; the parameters are a guess from its code (types too)
     virtual void vf29(u32 a1, u32 a2);  // slot 29, BattleSpot:00010A0C; the parameters are a guess from its code (types too)
-    virtual void vf30(u32 a1, u32 a2);  // slot 30, BattleSpot:000102B8; the parameters are a guess from its code (types too)
-    virtual void vf31(u32 a1, u32 a2);  // slot 31, BattleSpot:000101D8; the parameters are a guess from its code (types too)
-    virtual void vf32(u32 a1, u32 a2, u32 a3);  // slot 32, BattleSpot:00010248; the parameters are a guess from its code (types too)
-    virtual void vf33();  // slot 33, BattleSpot:00010D38
+    virtual void PGLConnectorListener_vf11(u32 a1, u32 a2);  // overrides NetLib::Pgl::PGLConnectorListener's slot 11, through the base at +0x34 (its thunk BattleSpot:00016E04)  // slot 30, BattleSpot:000102B8
+    virtual void PGLConnectorListener_vf12(u32 a1, u32 a2);  // overrides NetLib::Pgl::PGLConnectorListener's slot 12, through the base at +0x34 (its thunk BattleSpot:00016D24)  // slot 31, BattleSpot:000101D8
+    virtual void PGLConnectorListener_vf13(u32 a1, u32 a2, u32 a3);  // overrides NetLib::Pgl::PGLConnectorListener's slot 13, through the base at +0x34 (its thunk BattleSpot:00016D94)  // slot 32, BattleSpot:00010248
+    virtual bool SystemEventListener_vf7();  // overrides System::SystemEventListener's slot 7, through the base at +0x24 (its thunk BattleSpot:000154CC)  // slot 33, BattleSpot:00010D38
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_40;  // +0x40, a guess: a pointer, from 12 functions

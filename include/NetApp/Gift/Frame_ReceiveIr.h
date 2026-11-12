@@ -33,14 +33,14 @@ public:
     virtual void vf14();  // overrides  // slot 14, MysteryGift:000035D4; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf15();  // overrides  // slot 15, MysteryGift:0000EA00; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, MysteryGift:0000EA04; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17();  // slot 17, MysteryGift:00003724
+    virtual void IEventHandler_vf2(u32 a1);  // overrides NetApp::Gift::LowerView_Back::IEventHandler's slot 2, through the base at +0x28 (its thunk MysteryGift:0000FD6C)  // slot 17, MysteryGift:00003724
     virtual bool vf18(u32 a1, u32 a2, u32 a3);  // slot 18, MysteryGift:000038B0; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf19(u32 a1);  // slot 19, MysteryGift:00003980; the parameters are a guess from its code (types too)
-    virtual void vf20();  // slot 20, MysteryGift:000039A0
-    virtual void vf21();  // slot 21, MysteryGift:00003884
-    virtual void vf22();  // slot 22, MysteryGift:00003838
+    virtual void IRecvListener_vf1(u32 a1);  // overrides NetApp::Gift::DeliveryUtil::IRecvListener's slot 1, through the base at +0x24 (its thunk MysteryGift:0000F654)  // slot 19, MysteryGift:00003980
+    virtual void IRecvListener_vf2();  // overrides NetApp::Gift::DeliveryUtil::IRecvListener's slot 2, through the base at +0x24 (its thunk MysteryGift:0000F674)  // slot 20, MysteryGift:000039A0
+    virtual void IRecvListener_vf3();  // overrides NetApp::Gift::DeliveryUtil::IRecvListener's slot 3, through the base at +0x24 (its thunk MysteryGift:0000F55C)  // slot 21, MysteryGift:00003884
+    virtual void IRecvListener_vf4();  // overrides NetApp::Gift::DeliveryUtil::IRecvListener's slot 4, through the base at +0x24 (its thunk MysteryGift:0000F510)  // slot 22, MysteryGift:00003838
     virtual bool IValueProvider_vf0();  // overrides NetApp::Gift::GiftMessageMenu::IValueProvider's slot 0, through the base at +0x2c (its thunk MysteryGift:00010118)  // slot 23, MysteryGift:00003828
-    virtual u32 vf24();  // slot 24, MysteryGift:00003830; the return type is a guess from its code
+    virtual u32 IValueProvider_vf1();  // overrides NetApp::Gift::GiftMessageMenu::IValueProvider's slot 1, through the base at +0x2c (its thunk MysteryGift:00010120)  // slot 24, MysteryGift:00003830
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_30;  // +0x30, a guess: a pointer, from 4 functions

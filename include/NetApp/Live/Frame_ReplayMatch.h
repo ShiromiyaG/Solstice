@@ -29,7 +29,7 @@ public:
     virtual void vf14();  // overrides  // slot 14, Live:000032DC; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf15();  // overrides  // slot 15, Live:000083D4; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, Live:000083D8; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17(u32 a1);  // slot 17, Live:00003350; the parameters are a guess from its code (types too)
+    virtual void IEventHandler_vf2();  // overrides NetApp::Live::LowerView_Selection::IEventHandler's slot 2, through the base at +0x24 (its thunk Live:00008A18)  // slot 17, Live:00003350
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_28;  // +0x28, a guess: a pointer, from 2 functions

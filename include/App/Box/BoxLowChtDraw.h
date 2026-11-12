@@ -41,7 +41,7 @@ public:
     virtual void vf22();  // slot 22, Box:0000A738
     virtual void vf23(u32 a1, u32 a2, u32 a3);  // slot 23, Box:0000A73C; the parameters are a guess from its code (types too)
     virtual void vf24();  // slot 24, Box:0000A914
-    virtual void vf25();  // slot 25, Box:0000AA10
+    virtual void Listener_vf0(u32 a1);  // overrides app::tool::PaneListView::Listener's slot 0, through the base at +0x88 (its thunk Box:00027968)  // slot 25, Box:0000AA10
     virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x80 (its thunk Box:000276E8)  // slot 26, Box:0000A70C
 
     // data members, from how the class's functions use this (tools/fields.py)

@@ -28,7 +28,7 @@ public:
     virtual void vf3();  // slot 3, MantainSurf:000083BC
     virtual void vf4(u32 a1);  // slot 4, MantainSurf:0000834C; the parameters are a guess from its code (types too)
     virtual void vf5();  // slot 5, MantainSurf:0001F258
-    virtual void vf6();  // slot 6, MantainSurf:000082E4
+    virtual void IEventHandler_vf2();  // overrides App::MantainSurf::UI::SurfUI_Upper_Result::IEventHandler's slot 2, through the base at +0x4 (its thunk MantainSurf:0001F8A4)  // slot 6, MantainSurf:000082E4
     virtual void vf7();  // slot 7, MantainSurf:00008308
 
     // data members, from how the class's functions use this (tools/fields.py)

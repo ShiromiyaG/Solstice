@@ -20,9 +20,9 @@ public:
     virtual void vf13();  // overrides  // slot 13, JoinFestaPlayerListSelectMulti:00000AD0; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, JoinFestaPlayerListSelectMulti:00000B04; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, JoinFestaPlayerListSelectMulti:00000FB8; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17();  // slot 17, JoinFestaPlayerListSelectMulti:00000FC8
-    virtual void vf18();  // slot 18, JoinFestaPlayerListSelectMulti:00001010
-    virtual void vf19();  // slot 19, JoinFestaPlayerListSelectMulti:00000FEC
+    virtual void JoinFestaPersonalListener_vf0(u32 a1);  // overrides NetAppLib::JoinFesta::JoinFestaPersonalListener's slot 0, through the base at +0x30 (its thunk JoinFestaPlayerListSelectMulti:00002490)  // slot 17, JoinFestaPlayerListSelectMulti:00000FC8
+    virtual void JoinFestaPersonalListener_vf1();  // overrides NetAppLib::JoinFesta::JoinFestaPersonalListener's slot 1, through the base at +0x30 (its thunk JoinFestaPlayerListSelectMulti:000024D8)  // slot 18, JoinFestaPlayerListSelectMulti:00001010
+    virtual void JoinFestaPersonalListener_vf2(u32 a1);  // overrides NetAppLib::JoinFesta::JoinFestaPersonalListener's slot 2, through the base at +0x30 (its thunk JoinFestaPlayerListSelectMulti:000024B4)  // slot 19, JoinFestaPlayerListSelectMulti:00000FEC
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_34[0x4];  // +0x34: nothing seen to use it

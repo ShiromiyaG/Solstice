@@ -30,7 +30,7 @@ public:
     virtual void vf31();  // slot 31, MysteryGift:0000DEA8
     virtual void vf32(u32 a1, u32 a2, u32 a3);  // slot 32, MysteryGift:0000DEAC; the parameters are a guess from its code (types too)
     virtual void vf33();  // slot 33, MysteryGift:0000DEE0
-    virtual void vf34();  // slot 34, MysteryGift:0000DEE8
+    virtual void Listener_vf0(u32 a1);  // overrides app::tool::PaneListView::Listener's slot 0, through the base at +0x17c (its thunk MysteryGift:0000FBE0)  // slot 34, MysteryGift:0000DEE8
     virtual void vf35();  // slot 35, MysteryGift:0000DEE4
 
     // data members, from how the class's functions use this (tools/fields.py)

@@ -38,15 +38,15 @@ public:
     virtual void vf16();  // slot 16, MysteryGift:0000EAF0
     virtual void vf17();  // slot 17, MysteryGift:0000EAF8
     virtual void vf18();  // slot 18, MysteryGift:00005088
-    virtual void vf19();  // slot 19, MysteryGift:000050D0
+    virtual void DeliverySendListener_vf0();  // overrides NetLib::Delivery::DeliverySendListener's slot 0, through the base at +0x4 (its thunk MysteryGift:0001043C)  // slot 19, MysteryGift:000050D0
     virtual void vf20(u32 a1, u32 a2);  // slot 20, MysteryGift:000051DC; the parameters are a guess from its code (types too)
-    virtual void vf21();  // slot 21, MysteryGift:000057D4
-    virtual void vf22();  // slot 22, MysteryGift:00005810
-    virtual void vf23(u32 a1, u32 a2);  // slot 23, MysteryGift:000050FC; the parameters are a guess from its code (types too)
-    virtual void vf24(u32 a1);  // slot 24, MysteryGift:00004F28; the parameters are a guess from its code (types too)
-    virtual void vf25(u32 a1, u32 a2);  // slot 25, MysteryGift:00004F94; the parameters are a guess from its code (types too)
-    virtual void vf26();  // slot 26, MysteryGift:00005098
-    virtual void vf27();  // slot 27, MysteryGift:000050B4
+    virtual void DeliveryRecvListener_vf1();  // overrides NetLib::Delivery::DeliveryRecvListener's slot 1, through the base at +0x8 (its thunk MysteryGift:00010634)  // slot 21, MysteryGift:000057D4
+    virtual void DeliveryRecvListener_vf2();  // overrides NetLib::Delivery::DeliveryRecvListener's slot 2, through the base at +0x8 (its thunk MysteryGift:00010650)  // slot 22, MysteryGift:00005810
+    virtual void DeliveryRecvListener_vf3(u32 a1, u32 a2);  // overrides NetLib::Delivery::DeliveryRecvListener's slot 3, through the base at +0x8 (its thunk MysteryGift:00010544)  // slot 23, MysteryGift:000050FC
+    virtual void DeliveryRecvListener_vf4(u32 a1);  // overrides NetLib::Delivery::DeliveryRecvListener's slot 4, through the base at +0x8 (its thunk MysteryGift:000104DC)  // slot 24, MysteryGift:00004F28
+    virtual void DeliveryFileListFilter_vf0(u32 a1, u32 a2);  // overrides NetLib::Delivery::DeliveryFileListFilter's slot 0, through the base at +0xc (its thunk MysteryGift:0000EC4C)  // slot 25, MysteryGift:00004F94
+    virtual void DeliveryFileListFilter_vf1();  // overrides NetLib::Delivery::DeliveryFileListFilter's slot 1, through the base at +0xc (its thunk MysteryGift:0000ED40)  // slot 26, MysteryGift:00005098
+    virtual void DeliveryFileListFilter_vf2();  // overrides NetLib::Delivery::DeliveryFileListFilter's slot 2, through the base at +0xc (its thunk MysteryGift:0000ED5C)  // slot 27, MysteryGift:000050B4
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_10;  // +0x10, a guess: a pointer, from 2 functions

@@ -35,10 +35,10 @@ public:
     virtual void vf14();  // overrides  // slot 14, Evolution:00000FE4; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf15();  // overrides  // slot 15, Evolution:000023AC; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, Evolution:000023B0; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17();  // slot 17, Evolution:00001230
+    virtual u32 IEventHandler_vf2();  // overrides App::AppDemo::AppDemoUtility::IEventHandler's slot 2, through the base at +0x24 (its thunk Evolution:0000271C)  // slot 17, Evolution:00001230
     virtual void vf18();  // slot 18, Evolution:0000127C
     virtual void SequenceCallBack_vf2(u32 a1, u32 a2);  // overrides DemoLib::Sequence::SequenceCallBack's slot 2, through the base at +0x28 (its thunk Evolution:0000280C)  // slot 19, Evolution:00001210
-    virtual void IEventHandler_vf2(u32 a1);  // overrides NetApp::Evolution::UpperView_Demo::IEventHandler's slot 2, through the base at +0x2c (its thunk Evolution:00002BF4)  // slot 20, Evolution:0000296C
+    virtual void vf20(u32 a1);  // slot 20, Evolution:0000296C; the parameters are a guess from its code (types too)
     virtual void vf21(u32 a1);  // slot 21, Evolution:00002870; the parameters are a guess from its code (types too)
 
     // data members, from how the class's functions use this (tools/fields.py)

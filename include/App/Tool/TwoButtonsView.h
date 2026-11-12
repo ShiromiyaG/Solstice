@@ -58,7 +58,7 @@ public:
     virtual void Update();  // overrides  // slot 13, code.bin:002FA750; as app::ui::UIView declares it
     virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 14, code.bin:002FA69C; as app::ui::UIView declares it
     virtual void UIInputListener_vf5(u32 a1);  // overrides app::ui::UIInputListener's slot 5, through the base at +0x80 (its thunk code.bin:004CB934)  // slot 21, code.bin:002F7D68
-    virtual bool vf22(u32 a1);  // slot 22, code.bin:002F7A48; the parameters are a guess from its code (types too); the return type is a guess from its code
+    virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x80 (its thunk code.bin:004CB8E0)  // slot 22, code.bin:002F7A48
     virtual void vf23(u32 a1, u32 a2, u32 a3);  // slot 23, code.bin:002F78C0; the parameters are a guess from its code (types too)
     virtual void IEventHandler_vf2(u32 a1, u32 a2);  // overrides app::tool::CursorController::IEventHandler's slot 2, through the base at +0x84 (its thunk code.bin:004CBF48)  // slot 24, code.bin:002F356C
 

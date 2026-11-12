@@ -6,6 +6,8 @@
 #include "applib/frame/CellSuper.h"
 #include "App/Box/BoxLowBgDrawListener.h"
 
+#include "types.h"
+
 namespace App {
 namespace Box {
 
@@ -56,9 +58,9 @@ public:
     BoxMarkState();  // a constructor, Box:00007714: it reads nothing but this (ctors.csv)
     virtual ~BoxMarkState();
     virtual void vf2();  // overrides  // slot 2, Box:000075DC
-    virtual void vf3();  // slot 3, Box:00007584
+    virtual s32 InitFunc();  // overrides applib::frame::CellSuper's slot 2, through the base at +0x3c (its thunk Box:00027B9C)  // slot 3, Box:00007584
     virtual void vf4();  // slot 4, Box:000071D8
-    virtual void vf5();  // slot 5, Box:0000757C
+    virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides applib::frame::CellSuper's slot 4, through the base at +0x3c (its thunk Box:00027B94)  // slot 5, Box:0000757C
     virtual void vf6();  // slot 6, Box:00007548
 
     // data members, from how the class's functions use this (tools/fields.py)

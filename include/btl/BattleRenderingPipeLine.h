@@ -21,12 +21,12 @@ public:
     virtual void vf7(u32 a1);  // slot 7, Battle:00050164; the parameters are a guess from its code (types too)
     virtual void vf8();  // slot 8, Battle:0004F5A8
     virtual void vf9();  // slot 9, Battle:0004F8C4
-    virtual void vf10(u32 a1);  // slot 10, Battle:0004F43C; the parameters are a guess from its code (types too)
-    virtual void vf11(u32 a1);  // slot 11, Battle:0004F794; the parameters are a guess from its code (types too)
+    virtual void ObjectRenderPipeLine_vf2(u32 a1);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 2, through the base at +0x80 (its thunk Battle:000E57A8)  // slot 10, Battle:0004F43C
+    virtual void ObjectRenderPipeLine_vf3(u32 a1);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 3, through the base at +0x80 (its thunk Battle:000E58B8)  // slot 11, Battle:0004F794
     virtual void vf12(u32 a1, u32 a2);  // slot 12, Battle:0004F55C; the parameters are a guess from its code (types too)
     virtual void vf13(u32 a1, u32 a2);  // slot 13, Battle:0004F878; the parameters are a guess from its code (types too)
-    virtual void vf14(u32 a1);  // slot 14, Battle:0004FD10; the parameters are a guess from its code (types too)
-    virtual void vf15(u32 a1);  // slot 15, Battle:00050104; the parameters are a guess from its code (types too)
+    virtual void ObjectRenderPipeLine_vf6(u32 a1);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 6, through the base at +0x80 (its thunk Battle:000E59E0)  // slot 14, Battle:0004FD10
+    virtual void ObjectRenderPipeLine_vf7(u32 a1);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 7, through the base at +0x80 (its thunk Battle:000E5A40)  // slot 15, Battle:00050104
     virtual void vf16();  // slot 16, Battle:0004F434
 
     // data members, from how the class's functions use this (tools/fields.py)

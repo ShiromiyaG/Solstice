@@ -18,7 +18,7 @@ public:
     virtual void RequestSequenceBase_vf2();  // overrides  // slot 2, code.bin:003DD56C
     virtual bool RequestSequenceBase_vf3();  // overrides  // slot 3, code.bin:003DD490; the return type is a guess from its code
     virtual void RequestSequenceBase_vf4();  // overrides  // slot 4, code.bin:003DD498
-    virtual void vf5();  // slot 5, code.bin:003DD560
+    virtual void NexDataStoreClientListener_vf9();  // overrides gflnet2::nex::NexDataStoreClientListener's slot 9, through the base at +0x18 (its thunk code.bin:004CEC84)  // slot 5, code.bin:003DD560
     virtual void vf6(u32 a1, u32 a2);  // slot 6, code.bin:003DD4B4; the parameters are a guess from its code (types too)
 
     // data members, from how the class's functions use this (tools/fields.py)

@@ -31,14 +31,14 @@ public:
     virtual void vf14();  // overrides  // slot 14, Connection:000017C4; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void ConnectionResponseListener_vf0();  // overrides NetApp::Connection::RequestSequence::ConnectionResponseListener's slot 0, through the base at +0x30 (its thunk Connection:00002FFC)  // slot 17, Connection:00001D60
     virtual void vf18();  // slot 18, Connection:00001CE0
-    virtual void vf19();  // slot 19, Connection:00001E38
-    virtual void vf20();  // slot 20, Connection:00001E04
+    virtual void GameSyncConfirmPlayStatusResponseListener_vf0();  // overrides NetAppLib::GameSync::GameSyncConfirmPlayStatusResponseListener's slot 0, through the base at +0x34 (its thunk Connection:000035D8)  // slot 19, Connection:00001E38
+    virtual void GameSyncConfirmPlayStatusResponseListener_vf1(u32 a1);  // overrides NetAppLib::GameSync::GameSyncConfirmPlayStatusResponseListener's slot 1, through the base at +0x34 (its thunk Connection:000035A4)  // slot 20, Connection:00001E04
     virtual void vf21(u32 a1, u32 a2);  // slot 21, Connection:00001E14; the parameters are a guess from its code (types too)
-    virtual void vf22();  // slot 22, Connection:00001DC4
-    virtual void vf23();  // slot 23, Connection:00003264
+    virtual void GameSyncCreateSaveDataResponseListener_vf1();  // overrides NetAppLib::GameSync::GameSyncCreateSaveDataResponseListener's slot 1, through the base at +0x3c (its thunk Connection:000036B4)  // slot 22, Connection:00001DC4
+    virtual void GameSyncSaveDataSyncResponseListener_vf1();  // overrides NetAppLib::GameSync::GameSyncSaveDataSyncResponseListener's slot 1, through the base at +0x38 (its thunk Connection:00003674)  // slot 23, Connection:00003264
     virtual void vf24(u32 a1, u32 a2);  // slot 24, Connection:00001D94; the parameters are a guess from its code (types too)
-    virtual void vf25();  // slot 25, Connection:00001DD0
-    virtual void vf26();  // slot 26, Connection:00001DB8
+    virtual void GameSyncCreateSaveDataResponseListener_vf0();  // overrides NetAppLib::GameSync::GameSyncCreateSaveDataResponseListener's slot 0, through the base at +0x3c (its thunk Connection:000036C0)  // slot 25, Connection:00001DD0
+    virtual void GameSyncSaveDataSyncResponseListener_vf0();  // overrides NetAppLib::GameSync::GameSyncSaveDataSyncResponseListener's slot 0, through the base at +0x38 (its thunk Connection:000036A8)  // slot 26, Connection:00001DB8
     virtual bool vf27(u32 a1);  // slot 27, Connection:00001D0C; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual void vf28();  // slot 28, Connection:000019F4
     virtual void vf29();  // slot 29, Connection:00001CFC

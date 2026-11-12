@@ -20,12 +20,12 @@ public:
     virtual void vf4();  // overrides  // slot 4, FinderStudioViewer:0000CE00
     virtual void vf5();  // slot 5, FinderStudioViewer:0000CE64
     virtual void vf6();  // slot 6, FinderStudioViewer:0000CF74
-    virtual void vf7(u32 a1);  // slot 7, FinderStudioViewer:0000CD84; the parameters are a guess from its code (types too)
-    virtual void vf8(u32 a1);  // slot 8, FinderStudioViewer:0000CE98; the parameters are a guess from its code (types too)
-    virtual void vf9(u32 a1);  // slot 9, FinderStudioViewer:0000CE30; the parameters are a guess from its code (types too)
-    virtual void vf10(u32 a1);  // slot 10, FinderStudioViewer:0000CF40; the parameters are a guess from its code (types too)
-    virtual void vf11(u32 a1);  // slot 11, FinderStudioViewer:0000D1D0; the parameters are a guess from its code (types too)
-    virtual void vf12(u32 a1);  // slot 12, FinderStudioViewer:0000D3E8; the parameters are a guess from its code (types too)
+    virtual void ObjectRenderPipeLine_vf2(u32 a1);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 2, through the base at +0x80 (its thunk FinderStudioViewer:0000FBC4)  // slot 7, FinderStudioViewer:0000CD84
+    virtual void ObjectRenderPipeLine_vf3(u32 a1);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 3, through the base at +0x80 (its thunk FinderStudioViewer:0000FC78)  // slot 8, FinderStudioViewer:0000CE98
+    virtual void ObjectRenderPipeLine_vf4(u32 a1, u32 a2);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 4, through the base at +0x80 (its thunk FinderStudioViewer:0000FC40)  // slot 9, FinderStudioViewer:0000CE30
+    virtual void ObjectRenderPipeLine_vf5(u32 a1, u32 a2);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 5, through the base at +0x80 (its thunk FinderStudioViewer:0000FD0C)  // slot 10, FinderStudioViewer:0000CF40
+    virtual void ObjectRenderPipeLine_vf6(u32 a1);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 6, through the base at +0x80 (its thunk FinderStudioViewer:0000FD44)  // slot 11, FinderStudioViewer:0000D1D0
+    virtual void ObjectRenderPipeLine_vf7(u32 a1);  // overrides DemoLib::Obj::ObjectRenderPipeLine's slot 7, through the base at +0x80 (its thunk FinderStudioViewer:0000FDA8)  // slot 12, FinderStudioViewer:0000D3E8
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_84[0xc];  // +0x84: nothing seen to use it

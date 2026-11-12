@@ -20,7 +20,7 @@ public:
     virtual void vf12();  // overrides  // slot 12, NBR:0000953C; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf13();  // overrides  // slot 13, NBR:0000956C; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, NBR:00009594; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17();  // slot 17, NBR:000095E8
+    virtual void NBRNetRecvListener_vf0();  // overrides NetApp::NBR::NBRNetRecvListener's slot 0, through the base at +0x6c (its thunk NBR:0000A3E0)  // slot 17, NBR:000095E8
     virtual bool vf18();  // slot 18, NBR:00009638; the return type is a guess from its code
     virtual void vf19();  // slot 19, NBR:00009624
 

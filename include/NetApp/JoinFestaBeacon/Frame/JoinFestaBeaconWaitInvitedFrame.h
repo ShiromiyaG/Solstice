@@ -31,11 +31,11 @@ public:
     virtual void vf14();  // overrides  // slot 14, JoinFestaBeacon:000027F4; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf15();  // overrides  // slot 15, JoinFestaBeacon:000038A8; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, JoinFestaBeacon:000038AC; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17();  // slot 17, JoinFestaBeacon:00003068
-    virtual void vf18();  // slot 18, JoinFestaBeacon:00003044
-    virtual void vf19();  // slot 19, JoinFestaBeacon:00003050
-    virtual void vf20();  // slot 20, JoinFestaBeacon:0000305C
-    virtual void vf21();  // slot 21, JoinFestaBeacon:00003038
+    virtual void JoinFestaBeaconResponseListener_vf0();  // overrides NetApp::JoinFestaBeacon::JoinFestaBeaconResponseListener's slot 0, through the base at +0x24 (its thunk JoinFestaBeacon:00003ABC)  // slot 17, JoinFestaBeacon:00003068
+    virtual void JoinFestaBeaconResponseListener_vf1();  // overrides NetApp::JoinFestaBeacon::JoinFestaBeaconResponseListener's slot 1, through the base at +0x24 (its thunk JoinFestaBeacon:00003A98)  // slot 18, JoinFestaBeacon:00003044
+    virtual bool JoinFestaBeaconResponseListener_vf2();  // overrides NetApp::JoinFestaBeacon::JoinFestaBeaconResponseListener's slot 2, through the base at +0x24 (its thunk JoinFestaBeacon:00003AA4)  // slot 19, JoinFestaBeacon:00003050
+    virtual void JoinFestaBeaconResponseListener_vf3(u32 a1);  // overrides NetApp::JoinFestaBeacon::JoinFestaBeaconResponseListener's slot 3, through the base at +0x24 (its thunk JoinFestaBeacon:00003AB0)  // slot 20, JoinFestaBeacon:0000305C
+    virtual void JoinFestaBeaconResponseListener_vf4();  // overrides NetApp::JoinFestaBeacon::JoinFestaBeaconResponseListener's slot 4, through the base at +0x24 (its thunk JoinFestaBeacon:00003A8C)  // slot 21, JoinFestaBeacon:00003038
     virtual void vf22();  // slot 22, JoinFestaBeacon:000027EC
 
     // data members, from how the class's functions use this (tools/fields.py)

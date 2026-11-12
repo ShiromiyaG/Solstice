@@ -21,9 +21,9 @@ public:
     virtual void vf13();  // overrides  // slot 13, JoinFestaPlayerListSelect:000006BC; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, JoinFestaPlayerListSelect:000006F0; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, JoinFestaPlayerListSelect:00000A88; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17();  // slot 17, JoinFestaPlayerListSelect:00000A98
-    virtual void vf18();  // slot 18, JoinFestaPlayerListSelect:00000AE0
-    virtual void vf19();  // slot 19, JoinFestaPlayerListSelect:00000ABC
+    virtual void JoinFestaPersonalListener_vf0(u32 a1);  // overrides NetAppLib::JoinFesta::JoinFestaPersonalListener's slot 0, through the base at +0x30 (its thunk JoinFestaPlayerListSelect:00001778)  // slot 17, JoinFestaPlayerListSelect:00000A98
+    virtual void JoinFestaPersonalListener_vf1();  // overrides NetAppLib::JoinFesta::JoinFestaPersonalListener's slot 1, through the base at +0x30 (its thunk JoinFestaPlayerListSelect:000017C0)  // slot 18, JoinFestaPlayerListSelect:00000AE0
+    virtual void JoinFestaPersonalListener_vf2(u32 a1);  // overrides NetAppLib::JoinFesta::JoinFestaPersonalListener's slot 2, through the base at +0x30 (its thunk JoinFestaPlayerListSelect:0000179C)  // slot 19, JoinFestaPlayerListSelect:00000ABC
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_34[0x4];  // +0x34: nothing seen to use it

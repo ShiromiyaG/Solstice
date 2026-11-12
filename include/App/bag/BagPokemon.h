@@ -36,7 +36,7 @@ public:
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
     virtual void vf21(u32 a1, u32 a2);  // slot 21, Bag:0000106C; the parameters are a guess from its code (types too)
-    virtual bool vf22();  // slot 22, Bag:000017B0; the return type is a guess from its code
+    virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x80 (its thunk Bag:00014B1C)  // slot 22, Bag:000017B0
     virtual bool vf23(u32 a1, u32 a2);  // slot 23, Bag:00000DE4; the parameters are a guess from its code (types too); the return type is a guess from its code
 
     // data members, from how the class's functions use this (tools/fields.py)

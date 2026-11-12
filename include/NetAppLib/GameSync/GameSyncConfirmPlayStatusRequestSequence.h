@@ -20,10 +20,10 @@ public:
     virtual void RequestSequenceBase_vf2();  // overrides  // slot 2, code.bin:00480228
     virtual bool RequestSequenceBase_vf3();  // overrides  // slot 3, code.bin:0047FFA0; the return type is a guess from its code
     virtual void RequestSequenceBase_vf4();  // overrides  // slot 4, code.bin:0048000C
-    virtual bool vf5(u32 a1);  // slot 5, code.bin:004801B8; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf6(u32 a1, u32 a2);  // slot 6, code.bin:00480118; the parameters are a guess from its code (types too)
+    virtual void PGLConnectorListener_vf3();  // overrides NetLib::Pgl::PGLConnectorListener's slot 3, through the base at +0x18 (its thunk code.bin:004CF540)  // slot 5, code.bin:004801B8
+    virtual void PGLConnectorListener_vf11(u32 a1, u32 a2);  // overrides NetLib::Pgl::PGLConnectorListener's slot 11, through the base at +0x18 (its thunk code.bin:004CF4A0)  // slot 6, code.bin:00480118
     virtual void vf7(u32 a1, u32 a2);  // slot 7, code.bin:00480018; the parameters are a guess from its code (types too)
-    virtual void vf8(u32 a1, u32 a2, u32 a3);  // slot 8, code.bin:004800B4; the parameters are a guess from its code (types too)
+    virtual void PGLConnectorListener_vf13(u32 a1, u32 a2, u32 a3);  // overrides NetLib::Pgl::PGLConnectorListener's slot 13, through the base at +0x18 (its thunk code.bin:004CF43C)  // slot 8, code.bin:004800B4
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_1C;  // +0x1c, a guess: a pointer, from 3 functions

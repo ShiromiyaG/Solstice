@@ -31,11 +31,11 @@ public:
     virtual void EventCheckFunc(::GameSys::GameManager *pGameManager);  // overrides  // slot 9, imported; as GameSys::GameProc declares it
     virtual void vf10(u32 a1, u32 a2, u32 a3);  // slot 10, FinderStudioDecoration:00005F50; the parameters are a guess from its code (types too)
     virtual void vf11(u32 a1, u32 a2, u32 a3);  // slot 11, FinderStudioDecoration:00005B3C; the parameters are a guess from its code (types too)
-    virtual void vf12();  // slot 12, FinderStudioDecoration:00003BB8
+    virtual void ViewListener_vf2();  // overrides App::FinderStudio::Decoration::ViewListener's slot 2, through the base at +0x20 (its thunk FinderStudioDecoration:0000723C)  // slot 12, FinderStudioDecoration:00003BB8
     virtual void vf13(u32 a1, u32 a2);  // slot 13, FinderStudioDecoration:00005C08; the parameters are a guess from its code (types too)
-    virtual void vf14(u32 a1);  // slot 14, FinderStudioDecoration:00003CF0; the parameters are a guess from its code (types too)
-    virtual void vf15(u32 a1);  // slot 15, FinderStudioDecoration:000039F8; the parameters are a guess from its code (types too)
-    virtual void vf16();  // slot 16, FinderStudioDecoration:00005824
+    virtual void ViewListener_vf4(u32 a1);  // overrides App::FinderStudio::Decoration::ViewListener's slot 4, through the base at +0x20 (its thunk FinderStudioDecoration:000071C4)  // slot 14, FinderStudioDecoration:00003CF0
+    virtual void ViewListener_vf5(u32 a1);  // overrides App::FinderStudio::Decoration::ViewListener's slot 5, through the base at +0x20 (its thunk FinderStudioDecoration:00007244)  // slot 15, FinderStudioDecoration:000039F8
+    virtual void ViewListener_vf6();  // overrides App::FinderStudio::Decoration::ViewListener's slot 6, through the base at +0x20 (its thunk FinderStudioDecoration:000071B0)  // slot 16, FinderStudioDecoration:00005824
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_24[0x18];  // +0x24: nothing seen to use it

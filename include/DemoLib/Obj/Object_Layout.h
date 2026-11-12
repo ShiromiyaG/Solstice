@@ -25,7 +25,7 @@ public:
     virtual bool vf54(u32 a1);  // slot 54, Object:00007524; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual void vf55();  // slot 55, Object:00007658
     virtual s8 vf56();  // slot 56, Object:000075F0; the return type is a guess from its code
-    virtual void vf57(u32 a1);  // slot 57, Object:000076AC; the parameters are a guess from its code (types too)
+    virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides app::ui::UIView's slot 14, through the base at +0x94 (its thunk Object:0000E70C)  // slot 57, Object:000076AC
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_114[0x4];  // +0x114: nothing seen to use it

@@ -21,16 +21,16 @@ public:
     virtual void vf4();  // overrides  // slot 4, code.bin:003F4E5C
     virtual bool vf5();  // overrides  // slot 5, code.bin:003F514C; the return type is a guess from its code
     virtual void vf6();  // slot 6, code.bin:003F50FC
-    virtual void vf7(u32 a1, u32 a2);  // slot 7, code.bin:003F4FF0; the parameters are a guess from its code (types too)
+    virtual void WifiConnectListener_vf1(u32 a1, u32 a2);  // overrides gflnet2::wifi::WifiConnectListener's slot 1, through the base at +0x14 (its thunk code.bin:004CE6F4)  // slot 7, code.bin:003F4FF0
     virtual void WifiConnectListener_vf2();  // overrides gflnet2::wifi::WifiConnectListener's slot 2, through the base at +0x14 (its thunk code.bin:004CE72C)  // slot 8, code.bin:003F5118
-    virtual void vf9(u32 a1, u32 a2);  // slot 9, code.bin:003F5104; the parameters are a guess from its code (types too)
-    virtual void vf10(u32 a1, u32 a2);  // slot 10, code.bin:003F5004; the parameters are a guess from its code (types too)
-    virtual void vf11();  // slot 11, code.bin:003F51B4
+    virtual void WifiConnectListener_vf3();  // overrides gflnet2::wifi::WifiConnectListener's slot 3, through the base at +0x14 (its thunk code.bin:004CE714)  // slot 9, code.bin:003F5104
+    virtual void BossEventListener_vf2(u32 a1, u32 a2);  // overrides gflnet2::boss::BossEventListener's slot 2, through the base at +0x10 (its thunk code.bin:004CD1F0)  // slot 10, code.bin:003F5004
+    virtual void BossEventListener_vf3();  // overrides gflnet2::boss::BossEventListener's slot 3, through the base at +0x10 (its thunk code.bin:004CD30C)  // slot 11, code.bin:003F51B4
     virtual bool vf12(u32 a1, u32 a2, u32 a3);  // slot 12, code.bin:003F4D74; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual void vf13(u32 a1, u32 a2, u32 a3, f32 f0, f32 f1, f32 f2, f32 f3, f32 f4, f32 f5, f32 f6);  // slot 13, code.bin:003F4EA4; the parameters are a guess from its code (types too)
     virtual void vf14(u32 a1, u32 a2);  // slot 14, code.bin:003F5128; the parameters are a guess from its code (types too)
-    virtual void vf15();  // slot 15, code.bin:003F4D48
-    virtual void vf16();  // slot 16, code.bin:003F4E20
+    virtual void BossEventListener_vf7(u32 a1);  // overrides gflnet2::boss::BossEventListener's slot 7, through the base at +0x10 (its thunk code.bin:004CD0E4)  // slot 15, code.bin:003F4D48
+    virtual void BossEventListener_vf8(u32 a1, u32 a2);  // overrides gflnet2::boss::BossEventListener's slot 8, through the base at +0x10 (its thunk code.bin:004CD1B4)  // slot 16, code.bin:003F4E20
 };
 
 }  // namespace Delivery

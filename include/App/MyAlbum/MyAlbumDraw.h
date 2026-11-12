@@ -43,7 +43,7 @@ public:
     virtual bool vf21();  // slot 21, MyAlbum:00001F50; the return type is a guess from its code
     virtual bool vf22(u32 a1, u32 a2);  // slot 22, MyAlbum:00000B74; the parameters are a guess from its code (types too); the return type is a guess from its code
     virtual void vf23();  // slot 23, MyAlbum:000024C0
-    virtual void vf24();  // slot 24, MyAlbum:00002118
+    virtual void CallBack_vf2(u32 a1, u32 a2, u32 a3);  // overrides app::tool::PaneList::CallBack's slot 2, through the base at +0x84 (its thunk MyAlbum:00009AF0)  // slot 24, MyAlbum:00002118
     virtual void vf25();  // slot 25, MyAlbum:00002114
     virtual void vf26();  // slot 26, MyAlbum:000024C4
 

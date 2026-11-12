@@ -23,12 +23,12 @@ public:
     virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 4, LangSelect:000011B4; as applib::frame::CellSuper declares it
     virtual s32 EndFunc();  // overrides  // slot 5, LangSelect:00001094; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, LangSelect:00003D88; as applib::frame::CellSuper declares it
-    virtual void vf7();  // slot 7, LangSelect:00000E0C
+    virtual void LangSelectDrawListener_vf0();  // overrides App::LangSelect::LangSelectDrawListener's slot 0, through the base at +0x18 (its thunk LangSelect:00003DE8)  // slot 7, LangSelect:00000E0C
     virtual void LangSelectDrawListener_vf1(u32 a1);  // overrides App::LangSelect::LangSelectDrawListener's slot 1, through the base at +0x18 (its thunk LangSelect:00003DA0)  // slot 8, LangSelect:00000DC8
-    virtual void vf9();  // slot 9, LangSelect:00000E00
+    virtual void LangSelectDrawListener_vf2();  // overrides App::LangSelect::LangSelectDrawListener's slot 2, through the base at +0x18 (its thunk LangSelect:00003DDC)  // slot 9, LangSelect:00000E00
     virtual void LangSelectDrawListener_vf3(u32 a1, u32 a2);  // overrides App::LangSelect::LangSelectDrawListener's slot 3, through the base at +0x18 (its thunk LangSelect:00003E1C)  // slot 10, LangSelect:000028DC
-    virtual void vf11();  // slot 11, LangSelect:0000107C
-    virtual void vf12(u32 a1);  // slot 12, LangSelect:00000C30; the parameters are a guess from its code (types too)
+    virtual void LangSelectDrawListener_vf4();  // overrides App::LangSelect::LangSelectDrawListener's slot 4, through the base at +0x18 (its thunk LangSelect:00003E10)  // slot 11, LangSelect:0000107C
+    virtual void LangSelectDrawListener_vf5(u32 a1);  // overrides App::LangSelect::LangSelectDrawListener's slot 5, through the base at +0x18 (its thunk LangSelect:00003D98)  // slot 12, LangSelect:00000C30
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_1C[0x8];  // +0x1c: nothing seen to use it

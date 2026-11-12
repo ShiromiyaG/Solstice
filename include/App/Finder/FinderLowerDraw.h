@@ -37,11 +37,11 @@ public:
     virtual void UIView_vf18();  // overrides  // slot 18, Finder:0000394C; as app::ui::UIView declares it
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
-    virtual void vf21(u32 a1);  // slot 21, Finder:00002430; the parameters are a guess from its code (types too)
+    virtual void UIInputListener_vf5(u32 a1);  // overrides app::ui::UIInputListener's slot 5, through the base at +0x80 (its thunk Finder:00008FB4)  // slot 21, Finder:00002430
     virtual bool vf22();  // slot 22, Finder:000020F8; the return type is a guess from its code
     virtual bool vf23();  // slot 23, Finder:000020B4; the return type is a guess from its code
-    virtual bool vf24(u32 a1);  // slot 24, Finder:00001C60; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual bool vf25(u32 a1, u32 a2, u32 a3);  // slot 25, Finder:00001BAC; the parameters are a guess from its code (types too); the return type is a guess from its code
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0x80 (its thunk Finder:00008E54)  // slot 24, Finder:00001C60
+    virtual bool FinerConfirmWindowListenr_vf0(u32 a1, u32 a2, u32 a3);  // overrides App::Finder::FinerConfirmWindowListenr's slot 0, through the base at +0x84 (its thunk Finder:00008FF0)  // slot 25, Finder:00001BAC
     virtual void InfoWindowSheetTypeListener_vf2();  // overrides app::tool::InfoWindowSheetTypeListener's slot 2, through the base at +0x88 (its thunk Finder:000090A4)  // slot 26, Finder:00002720
 
     // data members, from how the class's functions use this (tools/fields.py)

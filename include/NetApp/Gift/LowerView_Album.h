@@ -83,7 +83,7 @@ public:
     virtual void CursorController_OnEvent(::app::tool::CursorController*, ::app::tool::CursorController::IEventHandler::EventCode);  // overrides  // slot 24, MysteryGift:000045EC; as NetAppLib::UI::NetAppCursorView declares it
     virtual bool vf25();  // slot 25, MysteryGift:00003D10; the return type is a guess from its code
     virtual bool IValueProvider_vf0();  // overrides NetApp::Gift::GiftMessageMenu::IValueProvider's slot 0, through the base at +0x140 (its thunk MysteryGift:0000F3A0)  // slot 26, MysteryGift:00004644
-    virtual u32 vf27();  // slot 27, MysteryGift:0000464C; the return type is a guess from its code
+    virtual u32 IValueProvider_vf1();  // overrides NetApp::Gift::GiftMessageMenu::IValueProvider's slot 1, through the base at +0x140 (its thunk MysteryGift:0000F3A8)  // slot 27, MysteryGift:0000464C
     virtual void vf28();  // slot 28, MysteryGift:0000446C
 
     // data members, from how the class's functions use this (tools/fields.py)

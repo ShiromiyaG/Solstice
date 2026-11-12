@@ -22,10 +22,10 @@ public:
     virtual void DrawFunc(::gfl2::proc::Manager *pManager, ::gfl2::gfx::CtrDisplayNo displayNo);  // slot 5, code.bin:00363D0C; as gfl2::proc::BaseProcess declares it
     virtual ::gfl2::proc::Result EndFunc(::gfl2::proc::Manager *pManager);  // slot 6, code.bin:0041A6FC; the parameters are a guess from its code (types too); as gfl2::proc::BaseProcess declares it
     virtual void vf7();  // slot 7, code.bin:004173A8
-    virtual void vf8(u32 a1, u32 a2);  // slot 8, code.bin:0041A614; the parameters are a guess from its code (types too)
-    virtual void vf9();  // slot 9, code.bin:0041A6D8
-    virtual void vf10();  // slot 10, code.bin:0041A6E4
-    virtual void vf11();  // slot 11, code.bin:0041A6F0
+    virtual void NexMatchmakeListener_vf8();  // overrides gflnet2::nex::NexMatchmakeListener's slot 8, through the base at +0x2c (its thunk code.bin:004D046C)  // slot 8, code.bin:0041A614
+    virtual void NexMatchmakeListener_vf10();  // overrides gflnet2::nex::NexMatchmakeListener's slot 10, through the base at +0x2c (its thunk code.bin:004D0530)  // slot 9, code.bin:0041A6D8
+    virtual void NexMatchmakeListener_vf11();  // overrides gflnet2::nex::NexMatchmakeListener's slot 11, through the base at +0x2c (its thunk code.bin:004D053C)  // slot 10, code.bin:0041A6E4
+    virtual void NexMatchmakeListener_vf12();  // overrides gflnet2::nex::NexMatchmakeListener's slot 12, through the base at +0x2c (its thunk code.bin:004D0548)  // slot 11, code.bin:0041A6F0
 
     // data members, from how the class's functions use this (tools/fields.py)
     u32 field_30;  // +0x30, a guess: from 1 function

@@ -36,7 +36,7 @@ public:
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
     virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x80 (its thunk BattleVideoPlayer:0000B080)  // slot 21, BattleVideoPlayer:000014F0
-    virtual bool vf22(u32 a1);  // slot 22, BattleVideoPlayer:0000147C; the parameters are a guess from its code (types too); the return type is a guess from its code
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0x80 (its thunk BattleVideoPlayer:0000B00C)  // slot 22, BattleVideoPlayer:0000147C
     virtual void CommonMessageWindowManipulator_OnEvent();  // overrides App::Tool::CommonMessageWindowManipulator::IEventHandler's slot 2, through the base at +0x84 (its thunk BattleVideoPlayer:0000B21C)  // slot 23, BattleVideoPlayer:00001520
 
     // data members, from how the class's functions use this (tools/fields.py)

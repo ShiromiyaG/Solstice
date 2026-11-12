@@ -118,9 +118,9 @@ public:
     BoxBattleTeamState();  // a constructor, Box:000168D8: it reads nothing but this (ctors.csv)
     virtual ~BoxBattleTeamState();
     virtual void vf2();  // overrides  // slot 2, Box:000206D8
-    virtual void vf3();  // slot 3, Box:00020674
+    virtual s32 InitFunc();  // overrides applib::frame::CellSuper's slot 2, through the base at +0x3c (its thunk Box:000283F8)  // slot 3, Box:00020674
     virtual void vf4();  // slot 4, Box:0001F434
-    virtual void vf5();  // slot 5, Box:0002066C
+    virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides applib::frame::CellSuper's slot 4, through the base at +0x3c (its thunk Box:000283F0)  // slot 5, Box:0002066C
     virtual void vf6();  // slot 6, Box:000205EC
 
     // data members, from how the class's functions use this (tools/fields.py)

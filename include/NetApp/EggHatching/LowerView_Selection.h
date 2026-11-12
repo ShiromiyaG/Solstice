@@ -25,7 +25,7 @@ public:
     virtual void UIView_vf12();  // overrides  // slot 12, EggHatching:000003B0; as app::ui::UIView declares it
     virtual void Draw(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 14, EggHatching:000014C4; as app::ui::UIView declares it
     virtual void UIView_vf18();  // overrides  // slot 18, EggHatching:000003AC; as app::ui::UIView declares it
-    virtual void vf22();  // slot 22, EggHatching:00001070
+    virtual void IResourceProvider_OnResourceRequest(unsigned int, unsigned int);  // overrides app::tool::IResourceProvider's slot 2, through the base at +0xa4 (its thunk EggHatching:000017B0)  // slot 22, EggHatching:00001070
     virtual void IEventHandler_vf2(u32 a1, u32 a2);  // overrides app::tool::GeneralLowerView::IEventHandler's slot 2, through the base at +0xa0 (its thunk EggHatching:00001690)  // slot 23, EggHatching:0000101C
 
     // data members, from how the class's functions use this (tools/fields.py)

@@ -30,7 +30,7 @@ public:
     virtual void vf14();  // overrides  // slot 14, SuperTraining:0000184C; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf15();  // overrides  // slot 15, SuperTraining:0000349C; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf16();  // overrides  // slot 16, SuperTraining:000034A0; as NetAppLib::System::NetAppFrameBase declares it
-    virtual void vf17(u32 a1);  // slot 17, SuperTraining:00001AE4; the parameters are a guess from its code (types too)
+    virtual void IEventHandler_vf2(u32 a1);  // overrides App::Tool::MessageMenuView::IEventHandler's slot 2, through the base at +0x24 (its thunk SuperTraining:0000368C)  // slot 17, SuperTraining:00001AE4
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 field_28;  // +0x28, a guess: from 2 functions

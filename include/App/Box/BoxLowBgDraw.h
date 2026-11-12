@@ -43,7 +43,7 @@ public:
     virtual void BoxDrawPartsListener_vf0(u32 a1);  // overrides App::Box::BoxDrawPartsListener's slot 0, through the base at +0x84 (its thunk Box:000277A4)  // slot 24, Box:00002FDC
     virtual void BoxDrawPartsListener_vf1(u32 a1);  // overrides App::Box::BoxDrawPartsListener's slot 1, through the base at +0x84 (its thunk Box:000277DC)  // slot 25, Box:000040D4
     virtual void BoxDrawPartsListener_vf2(u32 a1);  // overrides App::Box::BoxDrawPartsListener's slot 2, through the base at +0x84 (its thunk Box:000277FC)  // slot 26, Box:00004FDC
-    virtual void vf27(u32 a1, u32 a2);  // slot 27, Box:00017C84; the parameters are a guess from its code (types too)
+    virtual void BoxDrawPartsListener_vf3(u32 a1, u32 a2);  // overrides App::Box::BoxDrawPartsListener's slot 3, through the base at +0x84 (its thunk Box:00027820)  // slot 27, Box:00017C84
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_88[0x4];  // +0x88: nothing seen to use it

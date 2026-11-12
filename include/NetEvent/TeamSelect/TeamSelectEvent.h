@@ -19,7 +19,7 @@ public:
     virtual ::GameSys::GameEventResult vf4(::GameSys::GameManager *pGameManager);  // overrides  // slot 4, code.bin:00434898; the parameters are a guess from its code (types too); as GameSys::GameEvent declares it
     virtual void vf5(::GameSys::GameManager *pGameManager);  // overrides  // slot 5, code.bin:00434804; the parameters are a guess from its code (types too); as GameSys::GameEvent declares it
     virtual void vf8();  // slot 8, code.bin:004347F8
-    virtual void vf9(u32 a1);  // slot 9, code.bin:004347F0; the parameters are a guess from its code (types too)
+    virtual void BoxEventListener_vf1(u32 a1);  // overrides App::Event::BoxEventListener's slot 1, through the base at +0x20 (its thunk code.bin:004CFA1C)  // slot 9, code.bin:004347F0
 
     // data members, from how the class's functions use this (tools/fields.py)
     u32 field_24;  // +0x24, a guess: from 1 function

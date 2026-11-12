@@ -17,7 +17,7 @@ public:
     BattleSpotWork();  // a constructor, BattleSpot:00001810: it reads nothing but this (ctors.csv)
     virtual ~BattleSpotWork();
     virtual bool vf2();  // slot 2, BattleSpot:0000172C; the return type is a guess from its code
-    virtual void vf3(u32 a1);  // slot 3, BattleSpot:0000173C; the parameters are a guess from its code (types too)
+    virtual void NexRatingClientListener_vf3(u32 a1, u32 a2);  // overrides NetLib::P2P::NexRatingClientListener's slot 3, through the base at +0x3c (its thunk BattleSpot:000170F0)  // slot 3, BattleSpot:0000173C
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_40[0x20];  // +0x40: nothing seen to use it

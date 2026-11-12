@@ -5,8 +5,6 @@
 #include "NetApp/GameSync/Frame/GameSyncFrameBase.h"
 #include "app/tool/InfoWindowBookTypeListener.h"
 
-#include "types.h"
-
 namespace NetApp {
 namespace GameSync {
 namespace Frame {
@@ -22,7 +20,7 @@ public:
     virtual void vf13();  // overrides  // slot 13, GameSync:000023E4; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf14();  // overrides  // slot 14, GameSync:000023E8; the parameters are a guess from its code (types too); as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf17();  // slot 17, GameSync:000023EC
-    virtual void vf18(u32 a1);  // slot 18, GameSync:00002304; the parameters are a guess from its code (types too)
+    virtual void InfoWindowBookTypeListener_vf3();  // overrides app::tool::InfoWindowBookTypeListener's slot 3, through the base at +0x30 (its thunk GameSync:00004000)  // slot 18, GameSync:00002304
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_34;  // +0x34, a guess: a pointer, from 8 functions

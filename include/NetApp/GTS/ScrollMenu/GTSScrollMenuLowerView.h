@@ -44,8 +44,8 @@ public:
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
     virtual void Create2DOneLayout(::NetAppLib::System::ApplicationWorkBase*, int, unsigned int, unsigned int, ::app::util::G2DUtil::SETUP_DISPLAY_TYPE, ::NetAppLib::Message::MessageUtility*, unsigned int);  // overrides  // slot 21, imported; as NetAppLib::System::NetApplicationViewBase declares it
-    virtual bool vf22(u32 a1);  // slot 22, GTS:00002190; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf23(u32 a1);  // slot 23, GTS:00001C28; the parameters are a guess from its code (types too)
+    virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0xa0 (its thunk GTS:0001999C)  // slot 22, GTS:00002190
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0xa0 (its thunk GTS:00019940)  // slot 23, GTS:00001C28
     virtual void vf24();  // slot 24, GTS:0000228C
     virtual void vf25();  // slot 25, GTS:00002288
     virtual void vf26(u32 a1, u32 a2, u32 a3);  // slot 26, GTS:00012FB8; the parameters are a guess from its code (types too)

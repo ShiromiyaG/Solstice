@@ -160,7 +160,7 @@ public:
     virtual s32 UpdateFunc();  // overrides  // slot 3, Box:0000787C; as applib::frame::CellSuper declares it
     virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 4, Box:00009F9C; as applib::frame::CellSuper declares it
     virtual s32 EndFunc();  // overrides  // slot 5, Box:00009D58; as applib::frame::CellSuper declares it
-    virtual void vf7();  // slot 7, Box:00016BE8
+    virtual void BoxLowDrawListener_vf0();  // overrides App::Box::BoxLowDrawListener's slot 0, through the base at +0x18 (its thunk Box:00027978)  // slot 7, Box:00016BE8
     virtual void vf8();  // slot 8, Box:00008FE4
 
     // data members, from how the class's functions use this (tools/fields.py)

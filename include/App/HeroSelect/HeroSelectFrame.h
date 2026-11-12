@@ -22,9 +22,9 @@ public:
     virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 4, HeroSelect:00000FF4; as applib::frame::CellSuper declares it
     virtual s32 EndFunc();  // overrides  // slot 5, HeroSelect:00000EDC; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, HeroSelect:00002C58; as applib::frame::CellSuper declares it
-    virtual void vf7();  // slot 7, HeroSelect:00000D8C
-    virtual void vf8();  // slot 8, HeroSelect:000020F4
-    virtual void vf9();  // slot 9, HeroSelect:000020E0
+    virtual void HeroSelectDrawListener_vf2();  // overrides App::HeroSelect::HeroSelectDrawListener's slot 2, through the base at +0x18 (its thunk HeroSelect:00002C80)  // slot 7, HeroSelect:00000D8C
+    virtual void HeroSelectDrawListener_vf1();  // overrides App::HeroSelect::HeroSelectDrawListener's slot 1, through the base at +0x18 (its thunk HeroSelect:00002C94)  // slot 8, HeroSelect:000020F4
+    virtual void HeroSelectDrawListener_vf0();  // overrides App::HeroSelect::HeroSelectDrawListener's slot 0, through the base at +0x18 (its thunk HeroSelect:00002C8C)  // slot 9, HeroSelect:000020E0
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_1C[0x8];  // +0x1c: nothing seen to use it

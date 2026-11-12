@@ -28,31 +28,31 @@ public:
     virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides  // slot 4, Status:00002970; as applib::frame::CellSuper declares it
     virtual s32 EndFunc();  // overrides  // slot 5, Status:00002658; as applib::frame::CellSuper declares it
     virtual void CellSuper_vf6();  // overrides  // slot 6, Status:0000B010; as applib::frame::CellSuper declares it
-    virtual void vf7();  // slot 7, Status:00003044
+    virtual void StatusDrawListener_vf0();  // overrides App::Status::StatusDrawListener's slot 0, through the base at +0x18 (its thunk Status:0000BAD8)  // slot 7, Status:00003044
     virtual void StatusDrawListener_vf1();  // overrides App::Status::StatusDrawListener's slot 1, through the base at +0x18 (its thunk Status:0000B52C)  // slot 8, Status:000079D8
-    virtual void vf9();  // slot 9, Status:00001E48
-    virtual void vf10();  // slot 10, Status:00001FB8
-    virtual void vf11(u32 a1);  // slot 11, Status:00001FB0; the parameters are a guess from its code (types too)
-    virtual u8 vf12();  // slot 12, Status:00001BF0; the return type is a guess from its code
-    virtual u8 vf13();  // slot 13, Status:00001A9C; the return type is a guess from its code
-    virtual void vf14();  // slot 14, Status:0000261C
-    virtual bool vf15();  // slot 15, Status:000020BC; the return type is a guess from its code
+    virtual void StatusDrawListener_vf2();  // overrides App::Status::StatusDrawListener's slot 2, through the base at +0x18 (its thunk Status:0000B534)  // slot 9, Status:00001E48
+    virtual void StatusDrawListener_vf3();  // overrides App::Status::StatusDrawListener's slot 3, through the base at +0x18 (its thunk Status:0000B6A4)  // slot 10, Status:00001FB8
+    virtual void StatusDrawListener_vf4(u32 a1);  // overrides App::Status::StatusDrawListener's slot 4, through the base at +0x18 (its thunk Status:0000B69C)  // slot 11, Status:00001FB0
+    virtual u8 StatusDrawListener_vf5();  // overrides App::Status::StatusDrawListener's slot 5, through the base at +0x18 (its thunk Status:0000B4F4)  // slot 12, Status:00001BF0
+    virtual u8 StatusDrawListener_vf6();  // overrides App::Status::StatusDrawListener's slot 6, through the base at +0x18 (its thunk Status:0000B4D4)  // slot 13, Status:00001A9C
+    virtual void StatusDrawListener_vf7();  // overrides App::Status::StatusDrawListener's slot 7, through the base at +0x18 (its thunk Status:0000BAC4)  // slot 14, Status:0000261C
+    virtual bool StatusDrawListener_vf8();  // overrides App::Status::StatusDrawListener's slot 8, through the base at +0x18 (its thunk Status:0000B7AC)  // slot 15, Status:000020BC
     virtual bool vf16();  // slot 16, Status:00002048; the return type is a guess from its code
     virtual bool vf17();  // slot 17, Status:00002338; the return type is a guess from its code
-    virtual void vf18();  // slot 18, Status:00001E18
-    virtual void vf19();  // slot 19, Status:00001F80
+    virtual void StatusDrawListener_vf11();  // overrides App::Status::StatusDrawListener's slot 11, through the base at +0x18 (its thunk Status:0000B4FC)  // slot 18, Status:00001E18
+    virtual void StatusDrawListener_vf12();  // overrides App::Status::StatusDrawListener's slot 12, through the base at +0x18 (its thunk Status:0000B66C)  // slot 19, Status:00001F80
     virtual void StatusDrawListener_vf13(u32 a1);  // overrides App::Status::StatusDrawListener's slot 13, through the base at +0x18 (its thunk Status:0000B4DC)  // slot 20, Status:00001AA4
     virtual void vf21();  // slot 21, Status:00007C64
-    virtual void vf22(u32 a1);  // slot 22, Status:00001F48; the parameters are a guess from its code (types too)
-    virtual void vf23();  // slot 23, Status:0000200C
-    virtual bool vf24(u32 a1);  // slot 24, Status:0000224C; the parameters are a guess from its code (types too); the return type is a guess from its code
-    virtual void vf25();  // slot 25, Status:00002388
-    virtual void vf26();  // slot 26, Status:00002238
-    virtual bool vf27();  // slot 27, Status:000025D8; the return type is a guess from its code
-    virtual void vf28();  // slot 28, Status:00002524
-    virtual void vf29();  // slot 29, Status:00002598
-    virtual void vf30();  // slot 30, Status:000023C4
-    virtual void vf31(u32 a1);  // slot 31, Status:00002230; the parameters are a guess from its code (types too)
+    virtual void StatusDrawListener_vf15(u32 a1);  // overrides App::Status::StatusDrawListener's slot 15, through the base at +0x18 (its thunk Status:0000B634)  // slot 22, Status:00001F48
+    virtual void StatusDrawListener_vf16();  // overrides App::Status::StatusDrawListener's slot 16, through the base at +0x18 (its thunk Status:0000B6F8)  // slot 23, Status:0000200C
+    virtual bool StatusDrawListener_vf17(u32 a1);  // overrides App::Status::StatusDrawListener's slot 17, through the base at +0x18 (its thunk Status:0000B838)  // slot 24, Status:0000224C
+    virtual void StatusDrawListener_vf18();  // overrides App::Status::StatusDrawListener's slot 18, through the base at +0x18 (its thunk Status:0000B97C)  // slot 25, Status:00002388
+    virtual void StatusDrawListener_vf19();  // overrides App::Status::StatusDrawListener's slot 19, through the base at +0x18 (its thunk Status:0000B824)  // slot 26, Status:00002238
+    virtual bool StatusDrawListener_vf20();  // overrides App::Status::StatusDrawListener's slot 20, through the base at +0x18 (its thunk Status:0000BA80)  // slot 27, Status:000025D8
+    virtual void StatusDrawListener_vf21();  // overrides App::Status::StatusDrawListener's slot 21, through the base at +0x18 (its thunk Status:0000B9CC)  // slot 28, Status:00002524
+    virtual void StatusDrawListener_vf22();  // overrides App::Status::StatusDrawListener's slot 22, through the base at +0x18 (its thunk Status:0000BA40)  // slot 29, Status:00002598
+    virtual void StatusDrawListener_vf23();  // overrides App::Status::StatusDrawListener's slot 23, through the base at +0x18 (its thunk Status:0000B9B8)  // slot 30, Status:000023C4
+    virtual void StatusDrawListener_vf24(u32 a1);  // overrides App::Status::StatusDrawListener's slot 24, through the base at +0x18 (its thunk Status:0000B81C)  // slot 31, Status:00002230
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_1C[0x8];  // +0x1c: nothing seen to use it

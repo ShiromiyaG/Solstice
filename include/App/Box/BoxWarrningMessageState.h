@@ -42,7 +42,7 @@ public:
     virtual void vf2();  // overrides  // slot 2, Box:00025FA0
     virtual s32 InitFunc();  // overrides applib::frame::CellSuper's slot 2, through the base at +0x3c (its thunk Box:000284D0)  // slot 3, Box:00025F90
     virtual bool vf4();  // slot 4, Box:00025E60; the return type is a guess from its code
-    virtual void vf5();  // slot 5, Box:00025F88
+    virtual void DrawFunc(::gfl2::gfx::CtrDisplayNo);  // overrides applib::frame::CellSuper's slot 4, through the base at +0x3c (its thunk Box:000284C8)  // slot 5, Box:00025F88
     virtual bool vf6();  // slot 6, Box:00025F54; the return type is a guess from its code
     virtual void vf7(u32 a1);  // slot 7, Box:00025F98; the parameters are a guess from its code (types too)
 

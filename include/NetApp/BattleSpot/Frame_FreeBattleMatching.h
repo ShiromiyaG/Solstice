@@ -40,10 +40,10 @@ public:
     virtual void vf16();  // overrides  // slot 16, BattleSpot:000149E4; as NetAppLib::System::NetAppFrameBase declares it
     virtual void vf17(u32 a1, u32 a2);  // slot 17, BattleSpot:000084B8; the parameters are a guess from its code (types too)
     virtual void vf18();  // slot 18, BattleSpot:00008618
-    virtual void vf19();  // slot 19, BattleSpot:0000883C
+    virtual void NexRankingClientListener_vf2();  // overrides gflnet2::nex::NexRankingClientListener's slot 2, through the base at +0x2c (its thunk BattleSpot:000161CC)  // slot 19, BattleSpot:0000883C
     virtual void vf20(u32 a1);  // slot 20, BattleSpot:000087F4; the parameters are a guess from its code (types too)
-    virtual void vf21(u32 a1);  // slot 21, BattleSpot:000084F4; the parameters are a guess from its code (types too)
-    virtual void vf22();  // slot 22, BattleSpot:000087C8
+    virtual void NexRankingClientListener_vf10(u32 a1);  // overrides gflnet2::nex::NexRankingClientListener's slot 10, through the base at +0x2c (its thunk BattleSpot:00016068)  // slot 21, BattleSpot:000084F4
+    virtual bool SystemEventListener_vf7();  // overrides System::SystemEventListener's slot 7, through the base at +0x28 (its thunk BattleSpot:00015A4C)  // slot 22, BattleSpot:000087C8
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_34;  // +0x34, a guess: a pointer, from 8 functions

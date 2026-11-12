@@ -41,7 +41,7 @@ public:
     virtual void Create2DOneLayout(::NetAppLib::System::ApplicationWorkBase*, int, unsigned int, unsigned int, ::app::util::G2DUtil::SETUP_DISPLAY_TYPE, ::NetAppLib::Message::MessageUtility*, unsigned int);  // overrides  // slot 21, imported; as NetAppLib::System::NetApplicationViewBase declares it
     virtual void IEventHandler_vf2(u32 a1);  // overrides App::Tool::MessageMenuView::IEventHandler's slot 2, through the base at +0xa0 (its thunk P2PTrade:00001FC0)  // slot 22, P2PTrade:00000A64
     virtual void vf23(u32 a1);  // slot 23, P2PTrade:000009CC; the parameters are a guess from its code (types too)
-    virtual void vf24(u32 a1);  // slot 24, P2PTrade:000008FC; the parameters are a guess from its code (types too)
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0xa4 (its thunk P2PTrade:000020FC)  // slot 24, P2PTrade:000008FC
 
     // data members, from how the class's functions use this (tools/fields.py)
     void *field_A8;  // +0xa8, a guess: a pointer, from 2 functions

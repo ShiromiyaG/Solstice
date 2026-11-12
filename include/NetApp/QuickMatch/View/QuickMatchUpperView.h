@@ -36,9 +36,9 @@ public:
     virtual void UIView_vf18();  // overrides  // slot 18, QuickMatch:000004E0; as app::ui::UIView declares it
     virtual void Initalize2D(::app::util::Heap*, ::gfl2::lyt::LytSys*, unsigned int, ::app::util::G2DUtil::LytResData const*, unsigned int, ::app::util::G2DUtil::LytwkData const*, unsigned int, int, int);  // overrides  // slot 19, imported; as app::ui::UIView declares it
     virtual bool DoInputAction();  // overrides  // slot 20, imported; as app::ui::UIView declares it
-    virtual bool vf21();  // slot 21, QuickMatch:000012B0; the return type is a guess from its code
+    virtual bool UIInputListener_vf2(u32 a1);  // overrides app::ui::UIInputListener's slot 2, through the base at +0x80 (its thunk QuickMatch:0000354C)  // slot 21, QuickMatch:000012B0
     virtual void vf22();  // slot 22, QuickMatch:00001388
-    virtual bool vf23();  // slot 23, QuickMatch:000010AC; the return type is a guess from its code
+    virtual bool UIInputListener_vf6(u32 a1, u32 a2, u32 a3);  // overrides app::ui::UIInputListener's slot 6, through the base at +0x80 (its thunk QuickMatch:00003544)  // slot 23, QuickMatch:000010AC
 
     // data members, from how the class's functions use this (tools/fields.py)
     u8 unk_84[0x4];  // +0x84: nothing seen to use it

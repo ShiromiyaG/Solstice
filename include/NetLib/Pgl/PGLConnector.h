@@ -22,7 +22,7 @@ public:
     virtual void vf1(u32 a1, u32 a2);  // slot 1, code.bin:003EC1BC; the parameters are a guess from its code (types too)
     virtual void vf2();  // slot 2, code.bin:003EC380
     virtual ~PGLConnector();
-    virtual bool vf5();  // slot 5, code.bin:003EC3A8; the return type is a guess from its code
+    virtual bool SystemEventListener_vf7();  // overrides System::SystemEventListener's slot 7, through the base at +0x4 (its thunk code.bin:004D0D88)  // slot 5, code.bin:003EC3A8
 
     // member functions the game names. static or not is not in a name, nor is the return type
     // (void until config/<version>/returns.csv has it)

@@ -44,7 +44,7 @@ public:
     virtual void vf23(u32 a1);  // slot 23, GTS:00014974; the parameters are a guess from its code (types too)
     virtual void vf24(u32 a1, u32 a2, u32 a3);  // slot 24, GTS:00014E2C; the parameters are a guess from its code (types too)
     virtual void ListListener_vf1(u32 a1, u32 a2, u32 a3);  // overrides App::Tool::NewPaneList::ListListener's slot 1, through the base at +0xa4 (its thunk GTS:0001A594)  // slot 25, GTS:0001503C
-    virtual void vf26();  // slot 26, GTS:00014FC4
+    virtual void ListListener_vf2();  // overrides App::Tool::NewPaneList::ListListener's slot 2, through the base at +0xa4 (its thunk GTS:0001A51C)  // slot 26, GTS:00014FC4
     virtual void vf27();  // slot 27, GTS:00015048
     virtual void vf28();  // slot 28, GTS:00015044
 

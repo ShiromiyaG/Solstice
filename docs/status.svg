@@ -3,16 +3,16 @@
 <rect x="14" y="14" width="62" height="22" fill="#555d66"/>
 <rect x="76" y="14" width="57" height="22" fill="#2ea043"/>
 <text x="22" y="29" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#fff">matched</text>
-<text x="84" y="29" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#fff">10.77%</text>
+<text x="84" y="29" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#fff">10.78%</text>
 <rect x="139.6" y="14" width="128" height="22" fill="#555d66"/>
 <rect x="268" y="14" width="120" height="22" fill="#2ea043"/>
 <text x="147.6" y="29" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#fff">functions matched</text>
-<text x="276" y="29" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#fff">18,660 / 62,462</text>
+<text x="276" y="29" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#fff">18,686 / 62,462</text>
 <rect x="393.29999999999995" y="14" width="135" height="22" fill="#555d66"/>
 <rect x="528" y="14" width="23" height="22" fill="#3d444d"/>
 <text x="401.29999999999995" y="29" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#fff">matched by a trick</text>
 <text x="536" y="29" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#fff">0</text>
-<text x="14" y="62" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#e6edf3">Game code (us-v1.2): 10.7684% (1,207,524 of 11,213,612 bytes, 133 modules)</text>
+<text x="14" y="62" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#e6edf3">Game code (us-v1.2): 10.7783% (1,208,640 of 11,213,612 bytes, 133 modules)</text>
 <rect x="14.0" y="70.0" width="194.7" height="384.0" fill="#0d1117"/>
 <rect x="15.0" y="71.0" width="6.2" height="6.1" fill="#3d444d"/>
 <rect x="22.2" y="71.0" width="6.2" height="6.1" fill="#3d444d"/>
@@ -1445,7 +1445,7 @@
 <rect x="187.2" y="439.8" width="6.2" height="6.1" fill="#3d444d"/>
 <rect x="194.4" y="439.8" width="6.2" height="6.1" fill="#3d444d"/>
 <rect x="201.5" y="439.8" width="6.2" height="6.1" fill="#3d444d"/>
-<rect x="15.0" y="446.9" width="6.2" height="6.1" fill="#3d444d"/>
+<rect x="15.0" y="446.9" width="6.2" height="6.1" fill="#2ea043"/>
 <rect x="22.2" y="446.9" width="6.2" height="6.1" fill="#2ea043"/>
 <rect x="29.3" y="446.9" width="6.2" height="6.1" fill="#2ea043"/>
 <rect x="36.5" y="446.9" width="6.2" height="6.1" fill="#2ea043"/>
@@ -3234,36 +3234,36 @@
 <rect x="451.8" y="453.8" width="0.2" height="-0.8" fill="#3d444d"/>
 <rect x="452.9" y="451.6" width="1.1" height="2.4" fill="#0d1117"/>
 <rect x="453.9" y="452.6" width="-0.9" height="0.4" fill="#3d444d"/>
-<text x="474" y="62" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#e6edf3">Functions in src/ by state (18726)</text>
+<text x="474" y="62" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#e6edf3">Functions in src/ by state (18775)</text>
 <text x="474" y="83" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3">Matched</text>
 <rect x="614" y="74" width="170" height="10" fill="#3d444d"/>
-<rect x="614" y="74" width="169.4" height="10" fill="#2ea043"/>
-<text x="858" y="83" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">18660/18726</text>
+<rect x="614" y="74" width="169.2" height="10" fill="#2ea043"/>
+<text x="858" y="83" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">18686/18775</text>
 <text x="474" y="101" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3">Matched by a trick</text>
 <rect x="614" y="92" width="170" height="10" fill="#3d444d"/>
 <rect x="614" y="92" width="0.0" height="10" fill="#d29922"/>
-<text x="858" y="101" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">0/18726</text>
+<text x="858" y="101" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">0/18775</text>
 <text x="474" y="119" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3">Relocation unchecked</text>
 <rect x="614" y="110" width="170" height="10" fill="#3d444d"/>
 <rect x="614" y="110" width="1.0" height="10" fill="#388bfd"/>
-<text x="858" y="119" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">1/18726</text>
+<text x="858" y="119" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">1/18775</text>
 <text x="474" y="137" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3">Differs</text>
 <rect x="614" y="128" width="170" height="10" fill="#3d444d"/>
 <rect x="614" y="128" width="1.0" height="10" fill="#9198a1"/>
-<text x="858" y="137" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">51/18726</text>
+<text x="858" y="137" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">65/18775</text>
 <text x="474" y="155" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3">Does not compile</text>
 <rect x="614" y="146" width="170" height="10" fill="#3d444d"/>
 <rect x="614" y="146" width="1.0" height="10" fill="#9198a1"/>
-<text x="858" y="155" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">12/18726</text>
+<text x="858" y="155" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">21/18775</text>
 <text x="474" y="186" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#e6edf3">Largest modules (bytes matched)</text>
 <text x="474" y="207" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3">code.bin</text>
 <rect x="614" y="198" width="170" height="10" fill="#3d444d"/>
 <rect x="614" y="198" width="3.0" height="10" fill="#2ea043"/>
-<text x="858" y="207" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">88,464/4,846K</text>
+<text x="858" y="207" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">88,560/4,846K</text>
 <text x="474" y="225" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3">Battle</text>
 <rect x="614" y="216" width="170" height="10" fill="#3d444d"/>
 <rect x="614" y="216" width="17.0" height="10" fill="#2ea043"/>
-<text x="858" y="225" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">108,908/1,065K</text>
+<text x="858" y="225" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">108,936/1,065K</text>
 <text x="474" y="243" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3">FieldRo</text>
 <rect x="614" y="234" width="170" height="10" fill="#3d444d"/>
 <rect x="614" y="234" width="32.1" height="10" fill="#2ea043"/>
@@ -3275,19 +3275,19 @@
 <text x="474" y="279" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3">Box</text>
 <rect x="614" y="270" width="170" height="10" fill="#3d444d"/>
 <rect x="614" y="270" width="19.2" height="10" fill="#2ea043"/>
-<text x="858" y="279" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">21,872/189K</text>
+<text x="858" y="279" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">21,904/189K</text>
 <text x="474" y="297" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3">MantainSurf</text>
 <rect x="614" y="288" width="170" height="10" fill="#3d444d"/>
 <rect x="614" y="288" width="34.1" height="10" fill="#2ea043"/>
 <text x="858" y="297" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">36,772/179K</text>
 <text x="474" y="315" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3">Resort</text>
 <rect x="614" y="306" width="170" height="10" fill="#3d444d"/>
-<rect x="614" y="306" width="20.1" height="10" fill="#2ea043"/>
-<text x="858" y="315" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">20,636/170K</text>
+<rect x="614" y="306" width="20.3" height="10" fill="#2ea043"/>
+<text x="858" y="315" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">20,776/170K</text>
 <text x="474" y="333" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3">GTS</text>
 <rect x="614" y="324" width="170" height="10" fill="#3d444d"/>
-<rect x="614" y="324" width="37.5" height="10" fill="#2ea043"/>
-<text x="858" y="333" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">37,360/165K</text>
+<rect x="614" y="324" width="37.6" height="10" fill="#2ea043"/>
+<text x="858" y="333" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3" text-anchor="end">37,464/165K</text>
 <text x="474" y="351" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#e6edf3">Kawaigari</text>
 <rect x="614" y="342" width="170" height="10" fill="#3d444d"/>
 <rect x="614" y="342" width="19.0" height="10" fill="#2ea043"/>
