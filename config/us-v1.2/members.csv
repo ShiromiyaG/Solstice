@@ -1,0 +1,2 @@
+class,offset,width,type,of,evidence
+NetApp::NBR::Frame::NBRFrameBase,28,4,p,,"a pointer to a view: NBRTeamSelectWaitFrame::vf21 (NBR:0x00005B70) stores 0 to +0x5C of what it holds"

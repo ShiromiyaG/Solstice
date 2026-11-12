@@ -1,0 +1,8 @@
+key,type,evidence
+Field::IFieldActorBase#12,gfl2::math::Vector3,"a struct returned by value: FieldMapJumpActor's (FieldRo:0008B130) copies 3 floats through r0 and reads this from r1; the base's (FieldRo:0008AFF4) stores one constant float 3 times. the type is a guess from the size"
+Field::IFieldActorBase#13,gfl2::math::Quaternion,"a struct returned by value: FieldMapJumpActor's (FieldRo:0008B144) copies 4 floats through r0 from right after slot 12's 3; the base's (FieldRo:0008B00C) stores one constant float 4 times. Quaternion or Vector4: a guess"
+app::ui::UIView#17,bool,"IsDrawing (the name asks): UIView's (code.bin:004AADF4) returns 0 or G2DUtil::IsDrawing's result; NetAppCursorView's (code.bin:004C90F4) returns movne r0, #1 / mov r0, #0"
+app::tool::ButtonManager::SingleProcessManager#9,s8,"SingleProcessManager's (code.bin:004AB43C) returns a byte loaded with ldrsb (+0x4d) untested, or 0; MultipleProcessManager's (code.bin:004AB5F4) tests the same byte: a signed byte fits both, bool does not"
+app::tool::ButtonManager::MultipleProcessManager#9,s8,"SingleProcessManager's (code.bin:004AB43C) returns a byte loaded with ldrsb (+0x4d) untested, or 0; MultipleProcessManager's (code.bin:004AB5F4) tests the same byte: a signed byte fits both, bool does not"
+_ZNK8Savedata17JoinFestaDataSave14GetRewardStateEN15JoinFestaScript10RewardTypeE,u8,"its own code (code.bin:004C5E40) returns a byte loaded with ldrb from a table of 11 untested, or 0 after an assert: a state, not a bool"
+_ZN7gflnet23nex10NexManager14GetCredentialsEv,nn::nex::Credentials *,"returns field_138's +0x78, or 0 without field_138 (code.bin:0040B514); the type is a guess from the name"

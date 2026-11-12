@@ -1,0 +1,2 @@
+# compilers and flags a whole library is built with, beside the defaults of tools/config.py:
+# <compiler> <flags>   # which library, and the evidence

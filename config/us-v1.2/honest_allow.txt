@@ -1,0 +1,2 @@
+# exceptions to tools/honest.py, added by the owner only:
+# <source path> <reason>   # why the original had it

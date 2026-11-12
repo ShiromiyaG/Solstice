@@ -1,0 +1,3 @@
+# names we gave: name = 0xADDRESS, or name = Module:0xOFFSET. checked by tools/match.py.
+# GTSFrameBase's destructor: slot 0 of its vtable in GTS (functions.csv), called by GTSStateConfirmFrame's
+_ZN6NetApp3GTS12GTSFrameBaseD1Ev = GTS:0x00012814

@@ -1,0 +1,23 @@
+# each person's own: the game, the compilers, what the tools write
+orig/
+toolchain/
+build/
+
+# sources the tools write from each person's copy of the game (tools/refresh.py --derive):
+# only sources people wrote are kept here
+src/*/generated/
+
+# the maintainer's working notes and local instructions
+PLAN.md
+CLAUDE.local.md
+project.local.toml
+docs/difficulty.md
+docs/resources.md
+docs/compiler.md
+
+# experiments, and objexport.py's list for objdiff (made from build/)
+probes/
+objdiff.json
+
+__pycache__/
+*.o

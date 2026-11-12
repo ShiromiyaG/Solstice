@@ -1,0 +1,42 @@
+# what the tools (tools/, the matching-decomp-tools repository) need to know of this decomp.
+# a subset of TOML: [sections], key = "string" | integer | ["list", "of", "strings"], # comments.
+
+[project]
+name = "solstice"
+main = "us-v1.2"                 # the version of the tables, of every //! address and sub_ name
+own = ["game", "gfl2"]           # the libraries to decompile (unknown ones are always counted too)
+
+[versions]                       # every version of the game, and the id GAME_VERSION gets (include/version.h)
+"us-v1.2" = 32
+"um-v1.2" = 33
+
+[compiler]                       # found by the sweeps (docs/compiler.md)
+default = "4.1/b1049"
+flags = "--cpu=MPCore --arm --fpmode=fast --apcs=/interwork -O3 -Otime --split_sections --data_reorder --signed_chars --wchar16 --multibyte_chars --no_allow_fpreg_for_nonfpdata"
+
+[libraries]                      # the first namespace of a name -> the library it is from
+nn = "sdk"
+nw = "nw"
+gfl2 = "gfl2"
+gflnet2 = "gfl2"
+mw = "middleware"
+imgdb = "middleware"
+pead = "middleware"
+MoLive = "middleware"
+hangul = "middleware"
+std = "armlib"
+__rw = "armlib"
+__cxxabiv1 = "armlib"
+St = "armlib"
+
+[library_files]                  # a source file the game names -> its library
+applet_API = "sdk"
+fs_Api = "sdk"
+init_Default = "sdk"
+os_Default = "sdk"
+lyt_Drawer = "nw"
+
+# your machine's paths (Ghidra, IDA's databases, m2c) go in project.local.toml beside this
+# file, kept out of git: see tools/project.example.toml.
+[ghidra]                         # tools/local/ghidra_server.py
+port = 18970
