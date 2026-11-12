@@ -5,7 +5,7 @@
 0. **The repository**, with the tools (a submodule in `tools/`):
 
    ```sh
-   git clone --recursive https://github.com/ShiromiyaG/Solstice.git
+   git clone --recursive https://github.com/Tsukimi-Labs/Solstice.git
    # or, in a clone made without it: git submodule update --init
    ```
 
