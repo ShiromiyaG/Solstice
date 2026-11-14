@@ -56,7 +56,7 @@ in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - [decomp.me](https://decomp.me) and [decompme/compilers](https://github.com/decompme/compilers):
   the armcc build that is the judge here. armcc (ARM Compiler) is Arm's.
-- The tools ([matching-decomp-tools](https://github.com/Tsukimi-Labs/matching-decomp-tools), MIT) stand on
+- The tools ([matching-decomp-tools](https://github.com/ShiromiyaG/matching-decomp-tools), MIT) stand on
   [Capstone](https://www.capstone-engine.org/), [objdiff](https://github.com/encounter/objdiff),
   [Ghidra](https://github.com/NationalSecurityAgency/ghidra) and, as references only,
   [m2c](https://github.com/matt-kempster/m2c) and IDA; their README credits each.
